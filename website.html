@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <!--
 TODO:
-1)Use bootstrap to fix the size of the bar at the top when the screen gets too small or big
-2)Use some media queries to fix the size of the content of the webpage when it gets small or big
-3)Seperate files into index.html, styles.css and script.js
-4)Put the libraries for PJS at their initial descriptions
-5)Code snippets that I am going to have:
+1)Seperate files into index.html, styles.css and script.js
+2)Change footer
+3)Code snippets that I am going to have:
 PJS:
 -create a function that moves a character with WASD and/or arrow keys
 -->
@@ -18,6 +16,12 @@ PJS:
             html {
                 line-height: 30px;
                 word-spacing: 1px;
+                background-repeat: no-repeat;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
             }
             
             footer {
@@ -26,7 +30,7 @@ PJS:
                 font-family: sans-serif;
                 position: relative;
                 height: 15vh;
-                width: 98.6vw;
+                width: calc(100vw + 10px);
                 right: 10px;
                 top: 15px;
                 margin: 0;
@@ -90,6 +94,7 @@ PJS:
                 background: none;
                 transform: scale(2);
                 border: none;
+                margin-top: 10px;
             }
             
             #exit-settings:hover {
@@ -97,19 +102,12 @@ PJS:
             }
             
             #apply-btn {
-                background-color: cyan;
-                border-radius: 10px;
-                border: 1px ridge rgba(0,0,0,0);
-                padding: 5px;
-            }
-            
-            #apply-btn:hover {
-                cursor: grab;
+                margin-top: 20px;
             }
             
             #for-flex {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
             }
             
             #color-display {
@@ -119,7 +117,7 @@ PJS:
             }
             
             #temp {
-                margin-top: 35px;
+                margin-top: 70px;
             }
             
             #non-settings {
@@ -153,12 +151,6 @@ PJS:
                 cursor: grab;
             }
             
-            #nav-order {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-content: space-between;
-            }
-            
             #search-change {
                 height: 100%;
                 width: 100%;
@@ -179,8 +171,9 @@ PJS:
             
             #arrow {
                 position: relative;
-                top: 9px;
+                top: 12px;
                 font-size: 2em;
+
             }
             
             #snippets-btn {
@@ -201,6 +194,10 @@ PJS:
                 text-align: center;
                 margin-top: 40px;
             }
+
+            #everything {
+                padding-left: 10px;
+            }
             
             #nav-bar {
                 top: 0;
@@ -210,6 +207,7 @@ PJS:
                 width: 100%;
                 z-index: 2;
                 border-bottom: 1px solid lightgrey;
+                padding-left: 50px;
             }
             
             #nav-snippets {
@@ -223,6 +221,11 @@ PJS:
             
             #nav-snippets a {
                 color: rgb(16, 102, 207);
+            }
+
+            #nav-snippets a:hover {
+                cursor: pointer;
+                text-decoration: underline;
             }
             
             #settings h4 {
@@ -265,11 +268,25 @@ PJS:
                     left: 110%;
                 }
             }
+
+            @media only screen and (min-width: 800px) {
+            	html {
+                	font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+            	html {
+                	font-size: 22px;
+                    line-height: 35px;
+                }
+            }
             
         </style>
     </head>
     <body>
-        <div>
+        <div id="everything">
             <!--settings-->
             <div id="settings" class="tab">
                 <button id="exit-settings" onClick="changeScreen('non-settings');"> ←</button>
@@ -280,7 +297,7 @@ PJS:
                 <article>
                     <h2> Color Customization</h2>
                     <label> Choose if you want a background made up of only 1 color or a background comprised of 2 colors by using linear gradient:</label>
-                    <select id="background-style">
+                    <select class="custom-select-sm bg-primary" style="display: inline;" id="background-style">
                         <option value="1"> 1 color</option>
                         <option value="2"> 2 color(linear-gradient)</option>
                     </select>
@@ -344,7 +361,7 @@ PJS:
                     <div id="color-display"> </div>
                 </article>
                 
-                <button id="apply-btn" onClick="changeBackground();"> Apply changes</button>
+                <button id="apply-btn" class="btn btn-primary" onClick="changeBackground();"> Apply changes</button>
                 
                 <!--the footer-->
                 <footer> Created by <a href="https://www.khanacademy.org/profile/fotis2008/" target="_blank"> fotis2008</a></footer>
@@ -353,10 +370,16 @@ PJS:
             <!--every tab except the settings-->
             <div id="non-settings">
                 <div id="nav-bar">
-                    <div id="nav-order">
-                        <button id="snippets-btn" onClick="changeNav();"> Code Snippets <span id="arrow"> ˅</span></button>
-                        <input id="searchbar" placeholder="Search">
-                        <span><img onClick="changeScreen('settings')" id="settings-btn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ic_settings_48px.svg/2048px-Ic_settings_48px.svg.png"></span>
+                    <div id="nav-order" class="row">
+                        <div class="col my-auto">
+                            <button id="snippets-btn" onClick="changeNav();"> Code Snippets <span id="arrow"> ˅</span></button>
+                        </div>
+                        <div class="col my-auto">
+                            <input id="searchbar" placeholder="Search">
+                        </div>
+                        <div class="col my-auto">
+                            <span><img onClick="changeScreen('settings')" id="settings-btn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ic_settings_48px.svg/2048px-Ic_settings_48px.svg.png"></span>
+                        </div>
                     </div>
                     <nav id="nav-snippets"> 
                         <div>
@@ -1778,6 +1801,9 @@ PJS:
         
         <!--Include the jQuery library-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Include Bootstrap library-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
         <script> 
             
@@ -1944,12 +1970,15 @@ PJS:
             }
             
             function changeBackground() {
+                console.log("Hello "+$("#background-style").val());
                 if ($("#background-style").val() == 1) {
-                    $("html").css("background", "none");
-                    $("html").css("background-color", "rgb("+$("#red-1").val()+", "+$("#green-1").val()+", "+$("#blue-1").val()+")");
+                    console.log($("#red-1").val()+" "+$("#green-1").val()+" "+$("#blue-1").val());
+                    $("html,body").css("background", "none");
+                    $("html,body").css("background-color", "rgb("+$("#red-1").val()+", "+$("#green-1").val()+", "+$("#blue-1").val()+")");
+                    console.log($("html").css("background-color"));
                 }
                 else {
-                    $("html").css("background", "linear-gradient("+$("#degrees").val()+"deg, rgb("+$("#red-1-2").val()+", "+$("#green-1-2").val()+", "+$("#blue-1-2").val()+"), rgb("+$("#red-2-2").val()+", "+$("#green-2-2").val()+", "+$("#blue-2-2").val()+")"+")");
+                    $("html,body").css("background", "linear-gradient("+$("#degrees").val()+"deg, rgb("+$("#red-1-2").val()+", "+$("#green-1-2").val()+", "+$("#blue-1-2").val()+"), rgb("+$("#red-2-2").val()+", "+$("#green-2-2").val()+", "+$("#blue-2-2").val()+")"+")");
                 }
             }
             
