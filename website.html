@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <!--
 TODO:
-1)Use react to fix the size of the bar at the top when the screen gets too small or big
+1)Use bootstrap to fix the size of the bar at the top when the screen gets too small or big
 2)Use some media queries to fix the size of the content of the webpage when it gets small or big
 3)Seperate files into index.html, styles.css and script.js
-4)Put the libraries for PJS and Bootstrap at their initial descriptions
+4)Put the libraries for PJS at their initial descriptions
 5)Code snippets that I am going to have:
 PJS:
--create a bunch of different backgrounds(linear one, mountains, clouds etc), CUSTOMIZE TO USE FOR REGULAR CANVAS
 -create a function that moves a character with WASD and/or arrow keys
-Bootstrap:
--button classes
--centering things
 -->
 <html>
     <head>
@@ -392,12 +388,12 @@ Bootstrap:
                     <article> 
                         <h2> About</h2>
                         <p> This webpage includes a bunch of different functions commonly used in coding such as sorting and searching functions for Javascript and some useful Objects for PJS. Together with the code snippet you will also find a small explanation about its usage and purpose.</p>
-                        <p> The purpose of this webpage is to help anyone who is interested in learning more about coding or are just too bored to make functions they have made a billion times in the past(<em>which includes me</em>).</p>
+                        <p> The purpose of this webpage is to help anyone who is interested in learning more about programming or are just too bored to make functions they have made a billion times in the past(<em>which includes me</em>).</p>
                         <p> Of course if you have any more ideas of what I should add to this webpage then I will gladly do it.</p>
                     </article>
                     <article> 
                         <h2> How</h2>
-                        <p> This webpage is pretty straightforward, all you need to do to find out where all the code snippets are, is to click on the <q>Code Snippets</q> button at the top of the page.</p>
+                        <p> This webpage is pretty straightforward, all you need to do to find out where all the code snippets are, is to click on the <q>Code Snippets</q> button at the top of the page or use the searchbar at the top of the webpage to search for it. Also, you can change the color of the background by going on to the settings.</p>
                     </article>
                     <span id="go-home" style="visibility: hidden !important; position: absolute;"><h3 align="center">Home</h3></span>
                 </main>
@@ -1489,6 +1485,8 @@ Bootstrap:
                             <p> This is the code needed to make a mountains in the background in Javascript:</p>
                             <!--&emsp; &ensp; &nbsp;-->
                             <div class="code">
+                                width=1000;<br>
+                                height=800;<br>
                                 //create one mountain range<br>
                                 var mountainRange = function(start, x, y, Color) {<br>
                                 &emsp; //NOTE: x doesn't completely work with positive values<br>
@@ -1536,29 +1534,30 @@ Bootstrap:
                             <h2> Javascript Implementation</h2>
                             <!--&emsp; &ensp; &nbsp;-->
                             <div class="code">
-                                //create one mountain range<br>
-                                var cloud = function(start, x, y, Color, size) {<br>
+                                width=800;<br>
+                                height=600;<br>
+                                //create one cloud, recommended not to put a very small or big value for last parameter, around 10 to 20 is good enough<br>
+                                var cloud = function(x, y, Color, size, amount) {<br>
                                 &emsp; pushMatrix();<br>
                                 &emsp; translate(x, y);<br>
                                 &emsp; scale(1.1, 0.4);<br>
-                                &emsp; stroke(Color);<br>
-                                &emsp; var increase = 0.018;<br>
-                                &emsp; var angle = 0.0625;<br>
-                                &emsp; for (var t = start; t&lt;increase*360*16+start; t+=increase) {<br>
-                                &emsp; &ensp; var temp = noise(t);<br>
-                                &emsp; &ensp; rotate(angle);<br>
-                                &emsp; &ensp; var rectHeight = map(temp, 0, 1, 0, 200);<br>
-                                &emsp; &ensp; rect(0, 0, 1, temp*size);<br>
-                                &emsp; &ensp; rotate(1);<br>
+                                &emsp; fill(Color);<br>
+                                &emsp; noStroke();<br>
+                                &emsp; ellipse(x,y,size/2,size/2);<br>
+                                &emsp; for (var i = 0; i&lt;amount; i++) {<br>
+                                &emsp; &ensp; pushMatrix();<br>
+                                &emsp; &ensp; ellipse(x+Math.floor(Math.random()*size/1.1), y+Math.floor(Math.random()*size/1.1), size, size);<br>
+                                &emsp; &ensp; rotate(360/amount*i);<br>
+                                &emsp; &ensp; popMatrix();<br>
                                 &emsp; }<br>
                                 &emsp; popMatrix();<br>
                                 };<br>
                                 <br>
                                 function createBackground() {<br>
                                 &emsp; background(146, 236, 252);<br>
-                                &emsp; cloud(9, 139, 200, color(255, 255, 255), 200);<br>
-                                &emsp; cloud(1009, 277, 81, color(255, 255, 255), 100);<br>
-                                &emsp; cloud(2000, 270, 327, color(255, 255, 255), 80);<br>
+                                &emsp; cloud(139, 200, color(255, 255, 255), 200, 10);<br>
+                                &emsp; cloud(50, 81, color(255, 255, 255), 100, 10);<br>
+                                &emsp; cloud(200, 327, color(255, 255, 255), 80, 10);<br>
                                 }<br>
                                 <br>
                                 createBackground();
@@ -1585,6 +1584,8 @@ Bootstrap:
                             <p> This is the code needed to make the linear gradient function for the background:</p>
                             <!--&emsp; &ensp; &nbsp;-->
                             <div class="code">
+                                height = 700;<br>
+                                width = 600;<br>
                                 //if start == 1 then colors start from top-left to bottom right, 2 == top-right to bottom-left, 3 == top to bottom, 4 == left to right<br>
                                 function linearGradient(Color1, Color2, start) {<br>
                                 &emsp; pushMatrix();<br>
@@ -1593,7 +1594,7 @@ Bootstrap:
                                 &emsp; &ensp; factor = 2;<br>
                                 &emsp; &ensp; if (start === 2) {<br>
                                 &emsp; &ensp; &nbsp; translate(width, 0);<br>
-                                &emsp; &ensp; &nbsp; rotate(90);<br>
+                                &emsp; &ensp; &nbsp; rotate(Math.PI/2);<br>
                                 &emsp; &ensp; }<br>
                                 &emsp; }<br>
                                 &emsp; for (var i = 0; i&lt;height*2; i+=0.5) {<br>
@@ -1629,7 +1630,7 @@ Bootstrap:
                             <p> I have made 2 different functions to make the radial gradient. They both do the same thing however one of them is faster and easier to make whereas the other is a bit more customizable.</p>
                             <p> The first one is called <em> radialBackground()</em> and and has 3 parameters, <strong>Color1</strong>, <strong>Color2</strong> and <strong>distance</strong>. <u>Color1</u> is the color that starts in the middle, <u>Color2</u> is the color that is most evident around the edges and distance is basically how noticeable you want the middle color to be. This function works by adjusting the color of every individual pixel on the screen.</p>
                             <p> The second one is called <em> radialBackground2()</em> and has 2 parameters, <strong> Color1</strong>, <strong> Color2</strong>. <u> Color1</u> is the color that starts in the center of the screen whereas <u> Color2</u> is the color that is most noticeable around the edges of the canvas. This function works by drawing ellipses. It starts with one that covers the whole screen and is colored with <u>Color2</u> and then continiusly makes more ellipses each one being 1 pixel smaller that the previous one and being colored with a color closer to the one in the middle, this is achieved by using lerpColor(). </p>
-                            <p>The second function is faster than the first one however it doesn't have that third parameter. It's up to you to choose which one is more suitable for your project. </p>
+                            <p>The second function is faster than the first one, however, it doesn't have that third parameter. It's up to you to choose which one is more suitable for your project. </p>
                         </article>
                         
                         <!--code-->
@@ -1638,19 +1639,19 @@ Bootstrap:
                             <p> I made two different functions for the radial background. You can use wichever one you want. This is the code needed to write both of them in Javascript:</p>
                             <!--&emsp; &ensp; &nbsp;-->
                             <div class="code">
-                                loadPixels();<br>
+                                size(500, 500);<br>
                                 <br>
                                 //this one changes the individual color of every pixel<br>
                                 function radialBackground(Color1, Color2, distance) {<br>
-                                &emsp; var tempP = imageData.data;<br>
+                                &emsp; loadPixels();<br>
                                 &emsp; var pointX = width/2;<br>
                                 &emsp; var pointY = height/2;<br>
-                                &emsp; var pixels = imageData.data;<br>
-                                &emsp; for (var x = 0; x&lt;width; x++) {<br>
-                                &emsp; &ensp; for (var y = 0; y&lt;height; y++) {<br>
+                                &emsp; for (var y = 0; y&lt;height; y++) {<br>
+                                &emsp; &ensp; for (var x = 0; x&lt;width; x++) {<br>
                                 &emsp; &ensp; &nbsp; var d = dist(pointX, pointY, x, y);<br>
                                 &emsp; &ensp; &nbsp; var d = map(d, 0, distance, 255, 0);<br>
                                 &emsp; &ensp; &nbsp; var tempColor = lerpColor(Color1, Color2, map(abs(d), 255, 0, 0, 1));<br>
+                                &emsp; &ensp; &nbsp; console.log(tempColor);<br>
                                 &emsp; &ensp; &nbsp; set(x, y, tempColor);<br>
                                 &emsp; &ensp; }<br>
                                 &emsp; }<br>
@@ -1660,14 +1661,15 @@ Bootstrap:
                                 //this one uses a for loop to draw ellipses each one being 1 pixel smaller than the previous one and with a bit of a closer color to the one on the center<br>
                                 function radialBackground2(Color1, Color2) {<br>
                                 &emsp; noStroke();<br>
-                                &emsp; for (var i = 565; i>0; i--) {<br>
-                                &emsp; &ensp; fill(lerpColor(Color1, Color2, map(i, 1, 565, 0, 1)));<br>
+                                &emsp; var end = Math.sqrt(width*width+height*height);<br>
+                                &emsp; for (var i = end; i>0; i--) {<br>
+                                &emsp; &ensp; fill(lerpColor(Color1, Color2, map(i, 1, end, 0, 1)));<br>
                                 &emsp; &ensp; ellipse(width/2, height/2, i, i);<br>
                                 &emsp; }<br>
                                 }<br>
                                 <br>
                                 radialBackground2(color(27, 132, 224), color(217, 115, 115));<br>
-                                radialBackground(color(27, 132, 224), color(217, 115, 115), 280); //if the third parameter is around 280 then the two functions will produce roughly the same result
+                                radialBackground(color(27, 132, 224), color(217, 115, 115), 350);
                             </div>
                         </article>
                     </section>
