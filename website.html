@@ -1674,7 +1674,6 @@ PJS:
                                 &emsp; &ensp; &nbsp; var d = dist(pointX, pointY, x, y);<br>
                                 &emsp; &ensp; &nbsp; var d = map(d, 0, distance, 255, 0);<br>
                                 &emsp; &ensp; &nbsp; var tempColor = lerpColor(Color1, Color2, map(abs(d), 255, 0, 0, 1));<br>
-                                &emsp; &ensp; &nbsp; console.log(tempColor);<br>
                                 &emsp; &ensp; &nbsp; set(x, y, tempColor);<br>
                                 &emsp; &ensp; }<br>
                                 &emsp; }<br>
@@ -1970,12 +1969,9 @@ PJS:
             }
             
             function changeBackground() {
-                console.log("Hello "+$("#background-style").val());
                 if ($("#background-style").val() == 1) {
-                    console.log($("#red-1").val()+" "+$("#green-1").val()+" "+$("#blue-1").val());
                     $("html,body").css("background", "none");
                     $("html,body").css("background-color", "rgb("+$("#red-1").val()+", "+$("#green-1").val()+", "+$("#blue-1").val()+")");
-                    console.log($("html").css("background-color"));
                 }
                 else {
                     $("html,body").css("background", "linear-gradient("+$("#degrees").val()+"deg, rgb("+$("#red-1-2").val()+", "+$("#green-1-2").val()+", "+$("#blue-1-2").val()+"), rgb("+$("#red-2-2").val()+", "+$("#green-2-2").val()+", "+$("#blue-2-2").val()+")"+")");
