@@ -1,0 +1,273 @@
+html {
+    line-height: 30px;
+    word-spacing: 1px;
+    background-repeat: no-repeat;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    height: 15vh;
+    width: calc(100vw + 10px);
+    right: 10px;
+    top: 15px;
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.category {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.code {
+    line-height: 25px !important;
+    background-color: lightgrey;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.fix {
+    padding: 5px;
+}
+
+.show-whole {
+    position: relative;
+    right: 0%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0);
+    transform: scale(1);
+    transition: all 0.4s linear;
+}
+
+.show-whole:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: grab;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+#exit-settings {
+    position: absolute;
+    background: none;
+    transform: scale(2);
+    border: none;
+    margin-top: 10px;
+}
+
+#exit-settings:hover {
+    cursor: grab;
+}
+
+#apply-btn {
+    margin-top: 20px;
+}
+
+#for-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#color-display {
+    border: 2px solid black;
+    height: 200px;
+    width: 210px;
+}
+
+#temp {
+    margin-top: 70px;
+}
+
+#non-settings {
+    position: relative;
+    left: 0%;
+    animation-name: none;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    /*it exist*/
+}
+
+#non-settings:hover {
+    left: 0;
+}
+
+#settings {
+    position: relative;
+    right: 110%;
+    animation-name: move-in-1;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    /*it exist*/
+}
+
+#settings-btn {
+    float: right;
+    margin-right: 15px;
+    width: 28px;
+    transform: translate(0, 9%);
+}
+
+#settings-btn:hover {
+    cursor: grab;
+}
+
+#search-change {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#searchbar {
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(224, 224, 224);
+    padding: 4px;
+}
+
+#searchbar::placeholder {
+    color: blue;
+}
+
+#arrow {
+    position: relative;
+    top: 12px;
+    font-size: 2em;
+}
+
+#snippets-btn {
+    position: relative;
+    left: -30px;
+    transform: scale(1.1);
+    margin: 0;
+    background: none;
+    border: none;
+    color: blue;
+}
+
+#snippets-btn:hover {
+    cursor: grab;
+}
+
+#main-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#everything {
+    padding-left: 10px;
+}
+
+#nav-bar {
+    top: 0;
+    left: 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 50px;
+}
+
+#nav-snippets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+#nav-snippets a {
+    color: rgb(16, 102, 207);
+}
+
+#nav-snippets a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#settings h4 {
+    margin: 0;
+    margin-top: 10px !important;
+}
+
+@keyframes move-in-1 {
+    from {
+        right: 110%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes move-out-1 {
+    from {
+        right: 0%;
+    }
+
+    to {
+        right: 110%;
+    }
+}
+
+@keyframes move-in-2 {
+    from {
+        left: 110%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes move-out-2 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 110%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 22px;
+        line-height: 35px;
+    }
+}
