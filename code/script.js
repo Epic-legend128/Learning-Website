@@ -102,6 +102,8 @@ $(".tab").hide();
 $("#" + currentScreen).show();
 $("#settings input[type='range']").attr("min", "0").attr("max", "255").attr("value", "255");
 
+$("footer").html("Created by <a href=\"https://www.khanacademy.org/profile/fotis2008/\" target=\"_blank\"> fotis2008</a>");
+
 function changeDisplay() {
     if ($("#background-style").val() == 1) {
         $("#color-display").css("background", "none");
@@ -111,8 +113,8 @@ function changeDisplay() {
     }
 }
 
-function changeNav() {
-    if ($("#nav-snippets").is(":visible")) {
+function changeNav(s=0) {
+    if ($("#nav-snippets").is(":visible") || s==1) {
         $("#nav-snippets").slideUp();
         $("#arrow").text("˅").css("font-size", "2em").css("top", "9px");
     } else {
@@ -123,16 +125,17 @@ function changeNav() {
 
 function changeScreen(screen) {
     if (screen != "settings" && screen != "non-settings") {
-        $("#" + currentScreen).hide();
-        currentScreen = screen;
-        $("#" + screen).show();
+        $("#" + currentScreen).fadeOut(() => {
+            currentScreen = screen;
+            $("#" + screen).fadeIn();
+        });
         window.scroll(0, 0);
     } else if (screen === "settings") {
         window.scroll(0, 0);
         $("#nav-bar").slideUp();
-        setTimeout(function() {
+        setTimeout(() => {
             $("#non-settings").css("animation-name", "move-out-2");
-            setTimeout(function() {
+            setTimeout(() => {
                 $("#non-settings").hide();
                 $("#settings").show();
             }, 1000);
@@ -140,11 +143,11 @@ function changeScreen(screen) {
     } else {
         window.scroll(0, 0);
         $("#settings").css("animation-name", "move-out-1");
-        setTimeout(function() {
+        setTimeout(() => {
             $("#settings").hide();
             $("#non-settings").show();
             $("#non-settings").css("animation-name", "move-in-2");
-            setTimeout(function() {
+            setTimeout(() => {
                 $("#nav-bar").slideDown();
                 $("#settings").css("animation-name", "move-in-1");
             }, 350);
@@ -160,6 +163,10 @@ function changeBackground() {
         $("html,body").css("background", "linear-gradient(" + $("#degrees").val() + "deg, rgb(" + $("#red-1-2").val() + ", " + $("#green-1-2").val() + ", " + $("#blue-1-2").val() + "), rgb(" + $("#red-2-2").val() + ", " + $("#green-2-2").val() + ", " + $("#blue-2-2").val() + ")" + ")");
     }
 }
+
+$("#non-nav").on("click", function() {
+    changeNav(1);
+});
 
 $("#searchbar").on("input", function() {
     $("#" + currentScreen).hide();
@@ -190,9 +197,10 @@ $("#searchbar").on("focus", function() {
 });
 
 $("#searchbar").on("blur", function() {
-    $("#search-change").slideUp();
-    $("#" + currentScreen).show();
-    $("footer").show();
+    $("#search-change").slideUp(() => {
+        $("#" + currentScreen).fadeIn();
+        $("footer").show();
+    });
 });
 
 $("#background-style").on("change", function() {
