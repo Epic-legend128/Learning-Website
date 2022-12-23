@@ -2,8 +2,6 @@
 <!--
 TODO:
 1)Change footer
-2)Fix the grid centering a div method
-3)Proofread all the content
 -->
 <html>
     <head>
@@ -93,7 +91,7 @@ TODO:
                 <button id="apply-btn" class="btn btn-primary" onClick="changeBackground();"> Apply changes</button>
                 
                 <!--the footer-->
-                <footer> Created by <a href="https://www.khanacademy.org/profile/fotis2008/" target="_blank"> fotis2008</a></footer>
+                <footer> </footer>
             </div>
             
             <!--every tab except the settings-->
@@ -133,1397 +131,1382 @@ TODO:
                 
                 <div id="search-change"> </div>
                 
-                <main id="home" class="tab"> 
-                    <header> 
-                        <h1 id="main-title"> Useful Code Functions</h1>
-                    </header>
-                    <article> 
-                        <h2> About</h2>
-                        <p> This webpage includes a bunch of different functions commonly used in coding such as sorting and searching functions for Javascript and some useful Objects for PJS. Together with the code snippet you will also find a small explanation about its usage and purpose.</p>
-                        <p> The purpose of this webpage is to help anyone who is interested in learning more about programming or are just too bored to make functions they have made a billion times in the past(<em>which includes me</em>).</p>
-                        <p> Of course if you have any more ideas of what I should add to this webpage then I will gladly do it.</p>
-                    </article>
-                    <article> 
-                        <h2> How</h2>
-                        <p> This webpage is pretty straightforward, all you need to do to find out where all the code snippets are, is to click on the <q>Code Snippets</q> button at the top of the page or use the searchbar at the top of the webpage to search for it. Also, you can change the color of the background by going on to the settings.</p>
-                    </article>
-                    <span id="go-home" style="visibility: hidden !important; position: absolute;"><h3 align="center">Home</h3></span>
-                </main>
-                
-                <!--searching-->
-                <section id="searching" class="tab"> 
-                    <h1 class="title"> Searching Algorithms</h1>
-                    <article> 
-                        <p> Searching algorithms are often used in programming to find a specific value so they are really useful in programming because of how often they are used.</p>
-                        <p> Here we have 2 searching algorithms:</p>
-                        <ul> 
-                            <li> <a href="#go-linear">Linear Search</a></li>
-                            <li> <a href="#go-binary">Binary Search</a></li>
-                        </ul>
-                    </article>
+                <div id="non-nav">
+
+                    <main id="home" class="tab"> 
+                        <header> 
+                            <h1 id="main-title"> Useful Code Functions</h1>
+                        </header>
+                        <article> 
+                            <h2> About</h2>
+                            <p> This webpage includes a bunch of different functions commonly used in coding such as sorting and searching functions for Javascript and some useful Objects for PJS. Together with the code snippet you will also find a small explanation about its usage and purpose.</p>
+                            <p> The purpose of this webpage is to help anyone who is interested in learning more about programming or are just too bored to make functions they have made a billion times in the past(<em>which includes me</em>).</p>
+                            <p> Of course if you have any more ideas of what I should add to this webpage then I will gladly do it.</p>
+                        </article>
+                        <article> 
+                            <h2> How</h2>
+                            <p> This webpage is pretty straightforward, all you need to do to find out where all the code snippets are, is to click on the <q>Code Snippets</q> button at the top of the page or use the searchbar at the top of the webpage to search for it. Also, you can change the color of the background by going on to the settings.</p>
+                        </article>
+                        <span id="go-home" style="visibility: hidden !important; position: absolute;"><h3 align="center">Home</h3></span>
+                    </main>
                     
-                    <!--Linear Search-->
-                    <div id="go-linear" class="show-whole" onClick="changeScreen('linear')"> 
-                        <h3> Linear Search</h3>
-                        <p> Linear Search is a very simple and easy to learn algorithm. It's asymptotic time notation is O(n) however that is very slow compared to that of Binary Seacrh.</p>
-                    </div>
-                    
-                    <!--Binary Search-->
-                    <div id="go-binary" class="show-whole" onClick="changeScreen('binary')">
-                        <h3> Binary Search</h3>
-                        <p> Binary Search is a simple yet fast searching algorithm with an asymptotic time notation of O(logn). However it is only performed on sorted arrays.</p>
-                    </div>
-                </section>
-                
-                <!--sorting-->
-                <section id="sorting" class="tab">
-                    <h1 class="title"> Sorting Algorithms</h1>
-                    <article>
-                        <p> Sorting Algorithms are used by programmers so as to sort elements, in order to make analyzing data easier. Therefore, it's necessary to know at least one of them.</p>
-                        <p> This webpage has the following sorting algorithms:</p>
-                        <ul> 
-                            <li> <a href="#go-bubble"> Bubble Sort</a></li>
-                            <li> <a href="#go-selection"> Selection Sort</a></li>
-                            <li> <a href="#go-insertion"> Insertion Sort</a></li>
-                            <li> <a href="#go-merge"> Merge Sort</a></li>
-                            <li> <a href="#go-quick"> Quick Sort</a></li>
-                        </ul>
-                    </article>
-                    
-                    <!--Bubble Sort-->
-                    <div class="show-whole" id="go-bubble" onClick="changeScreen('bubble')">
-                        <h3> Bubble Sort</h3>
-                         <p> Bubble sort is very simple and easy to learn but slow sorting algorithm. It's definitely one of the best sorting algorithms to learn first.</p>
-        
-                    </div>
-                    
-                    <!--Selection Sort-->
-                    <div class="show-whole" id="go-selection" onClick="changeScreen('selection')">
-                        <h3> Selection Sort</h3>
-                        <p> Selection Sort is a very simple and easy to learn sorting algorithm but is very slow when trying to sort very large arrays. However, it is faster than the bubble sort algorithm and it also is a great first sorting algorithm to learn. </p>
-                    </div>
-                    
-                    <!--Insertion Sort-->
-                    <div class="show-whole" id="go-insertion" onClick="changeScreen('insertion')"> 
-                        <h3> Insertion Sort</h3>
-                        <p> Insertion Sort is a simple and easy to learn sorting algorithm and is very similar to Selection Sort because they both split the array in an unsorted and sorted part. However, Insertion Sort is faster in most cases.</p>
-                    </div>
-                    
-                    <!--Merge Sort-->
-                    <div class="show-whole" id="go-merge" onClick="changeScreen('merge')">
-                        <h3> Merge Sort</h3>
-                        <p> Merge Sort is a complex and difficult to learn sorting algorithm, however it's very fast.</p>
-                    </div>
-                    
-                    <!--Quick Sort-->
-                    <div  class="show-whole" id="go-quick" onClick="changeScreen('quick')"> 
-                        <h3> Quick Sort</h3>
-                        <p>Quick Sort is a complex and difficult to learn sorting algorithm, however, it is one of the fastest and most efficient ways to sort arrays and uses a very important technic in computer programming, which is called divide and conquer.</p>
-                    </div>
-                </section>
-                
-                <!--buttons-->
-                <section class="tab" id="button">
-                    <h1 class="title"> Buttons</h1>
-                    <article>
-                        <p> When working with the Processing library in Javascript you may need to create some kind of buttons to make your projects more interactive. Therefore, I have made 3 button objects, 1 with some simple parameters and 1 with many more for you to customize better and one which has a flexible shape, meaning it could be an image, a circle, a rectangle or even a complicated shape comprised of many more shapes and images.</p>
-                        <p> These are the buttons offered here:</p>
-                        <ul> 
-                            <li> <a href="#go-simple-btn">Simple Button</a></li>
-                            <li> <a href="#go-adv-btn">Advanced Button</a></li>
-                            <li> <a href="#go-flex-btn"> Flexible Shape Button</a></li>
-                        </ul>
-                    </article>
-                    
-                    <!--simple button-->
-                    <div class="show-whole" id="go-simple-btn" onClick="changeScreen('simple-btn')">
-                        <h3> Simple Button</h3>
-                        <p> This button has some simple parameters so you can create a simple button without getting confused.</p>
-                    </div>
-                    
-                    <!--advanced button-->
-                    <div class="show-whole" id="go-adv-btn" onClick="changeScreen('adv-btn')">
-                        <h3> Advanced Button</h3>
-                        <p> This button has many paramers so you can customize it better.</p>
-                    </div>
-                    
-                    <!--flexible shape button-->
-                    <div class="show-whole" id="go-flex-btn" onClick="changeScreen('flex-btn')"> 
-                        <h3> Flexible Shape Button</h3>
-                        <p> This button can have any kind of shape even a combination of many shapes and images.</p>
-                    </div>
-                </section>
-                
-                <!--ciphers-->
-                <section id="cipher" class="tab"> 
-                    <h1 class="title"> Ciphers for Encryption/Decryption</h1>
-                    <article> 
-                        <p> Personally, I have made a lot of projects  concerning cryptography and they are really important because they protect sensitive data. Therefore, here I have 5 encryption methods that I am sure will prove to be useful. Those are:</p>
-                        <ul> 
-                            <li> <a href="#go-caesar">Caesar Cipher</a></li>
-                            <li> <a href="#go-vigenere"> Vigenere Cipher</a></li>
-                            <li> <a href="#go-otp"> Using One Time Pad(OTP)</a></li>
-                            <li> <a href="#go-polybius"> Using a Polybius Square</a></li>
-                            <li> <a href="#go-ascii"> Using ASCII code</a></li>
-                        </ul>
-                        <aside>
-                            <p> It's also important to mention that all of these ciphers work only with characters that exist on the ASCII table except from the Polybius Square one which works only with lower-case letters.</p>
-                        </aside>
-                    </article>
-                    
-                    <!--Caesar Cipher-->
-                    <div class="show-whole" id="go-caesar" onClick="changeScreen('caesar')">
-                        <h3> Caesar Cipher</h3>
-                        <p> Caesar Cipher is a simple and easy to break cipher. Therefore, it's not used for encrypting data that is highly at risk.</p>
-                    </div>
-                    
-                    <!--Vigenere Cipher-->
-                    <div class="show-whole" id="go-vigenere" onClick="changeScreen('vigenere')">
-                        <h3> Vigenere Cipher</h3>
-                        <p> Vigenere Cipher is hard to crack without a key but not impossible.</p>
-                    </div>
-                    
-                    <!--One Time Pad-->
-                    <div class="show-whole" id="go-otp" onClick="changeScreen('otp')">
-                        <h3> Using One Time Pad</h3>
-                        <p> If you use One Time Pad for encryption then it would be impossible to decrypt without having the OTP that was used for encryption.</p>
-                    </div>
-                    
-                    <!--Polybius Square-->
-                    <div class="show-whole" id="go-polybius" onClick="changeScreen('polybius')">
-                        <h3> Using Polybius Square</h3>
-                        <p> Using a Polybius Square to encrypt is simple and easy to decipher.</p>
-                    </div>
-                    
-                    <!--ASCII-->
-                    <div class="show-whole" id="go-ascii" onClick="changeScreen('ascii')">
-                        <h3> Using ASCII</h3>
-                        <p> Using ASCII to encrypt a text is easy to do and easy to crack as well.</p>
-                    </div>
-                </section>
-                
-                <!--backgrounds-->
-                <section class="tab" id="background">
-                    <h1 class="title"> Backgrounds</h1>
-                    <article>
-                        <p> In PJS you will make a lot of games and other things, and I am sure you will need a way to decorate the background and not just leave it all with one color. Therefore I have made the following ways to decorate the background of your PJS project in a more creative way:</p>
-                        <ul>
-                            <li> <a href="#go-mountains"> Mountains</a></li>
-                            <li> <a href="#go-clouds"> Clouds</a></li>
-                            <li> <a href="#go-linear-gradient"> Linear Gradient</a></li>
-                            <li> <a href="#go-radial"> Radial Gradient</a></li>
-                        </ul>
-                    </article>
-                    
-                    <!--using mountains to decorate the background-->
-                    <div class="show-whole" id="go-mountains" onClick="changeScreen('mountains')">
-                        <h3> Mountains</h3>
-                        <p> Using mountains to decorate the background of a PJS project sure is cool because it shows that you know about <strong>Perlin Noise</strong>.</p>
-                    </div>
-                    
-                    <!--using clouds to decorate the background-->
-                    <div class="show-whole" id="go-clouds" onClick="changeScreen('clouds')">
-                        <h3> Clouds</h3>
-                        <p> Using clouds as a background is an excellent way to ensure that the background on one of your projects isn't boring.</p>
-                    </div>
-                    
-                    <!--linear gradient background-->
-                    <div class="show-whole" id="go-linear-gradient" onClick="changeScreen('linear-gradient')">
-                        <h3> Linear Gradient</h3>
-                        <p> Using linear gradient to decorate the background creates a stunning effect if you use the appropriate combination of colors.</p>
-                    </div>
-                    
-                    <!--radial gradient background-->
-                    <div class="show-whole" id="go-radial" onClick="changeScreen('radial')">
-                        <h3> Radial Gradient</h3>
-                        <p> Using radial gradient on the background  makes the background really attracting if the right combination of colors is used.</p>
-                    </div>
-                </section>
-                
-                <!--centering a div-->
-                <section id="center-div" class="tab">
-                    <h1 class="title"> Centering a div</h1>
-                    <article>
-                        <p> Centering a div in CSS is the hardest thing that you can do in CSS... Therefore, I am going to show you here a bunch of different ways to center a div!</p>
-                        <p> Here I have made 3 different ways to center a div:</p>
-                        <ul>
-                            <li> <a href="#go-auto"> Using auto</a></li>
-                            <li> <a href="#go-flexbox"> Using flexbox</a></li>
-                            <li> <a href="#go-grid"> Using grid</a></li>
-                        </ul>
-                    </article>
-                    
-                    <div onClick="changeScreen('auto')" class="show-whole" id="go-auto">
-                        <h3> Using auto</h3>
-                        <p> This is the simplest and probably the best way to do this because it's simple and easy to do, and it works.</p>
-                    </div>
-                    
-                    <div onClick="changeScreen('flexbox')" class="show-whole" id="go-flexbox">
-                        <h3> Using flexbox</h3>
-                        <p> This is one of the best ways to do center a div.</p>
-                    </div>
-                    
-                    <div onClick="changeScreen('grid')" class="show-whole" id="go-grid">
-                        <h3> Using grid</h3>
-                        <p> This one is also quite effective, but not the one I usually go for.</p>
-                    </div>
-                </section>
-                
-                <!--all tabs with code snippets-->
-                <div id="most-tabs"> 
-                    <!--linear search-->
-                    <section id="linear" class="tab">
-                        <header>
-                    	    <h1 class="title"> Linear Search</h1>
-                    	</header>
-                    	
-                    	<!--general information-->
-                    	<article>
-                    	    <p> Linear Search is a very simple and easy to learn algorithm. It's asymptotic time notation is O(n) however that is very slow compared to that of Binary Seacrh.</p>
-                    	</article>
-                    	
-                    	<!--how it works-->
-                    	<article>
-                    	    <h2> How it works</h2>
-                    	    <p> It works by checking all values of the array to see if they are equal to the one that we are looking for. It starts checking from the very first element in the array and if that value is different than the one we are looking for then it checks the one after that, and it continues this process until it finds the value that we are seeking or it reaches the end of the array.</p>
-                    	</article>
-                    	
-                    	<!--implemantation-->
-                    	<article>
-                    	    <h2> Javascript Implementation</h2>
-                    	    <p> The code needed to write this algorithm in Javascript is the following:</p>
-                    	    <!--&emsp; &ensp; &nbsp;-->
-                    	    <div class="code"> 
-                                //this function returns the index at which the key is found but if it's not then it returns -1<br>
-                                function linear(array, key) {<br>
-                                &emsp; for (var i = 0; i &lt; array.length; i++) {<br>
-                                &emsp; &ensp; if (array[i] == key) {<br>
-                                &emsp; &ensp; &nbsp; return i;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; return -1;<br>
-                                }
-                    	    </div>
-                    	</article>
+                    <!--searching-->
+                    <section id="searching" class="tab"> 
+                        <h1 class="title"> Searching Algorithms</h1>
+                        <article> 
+                            <p> Searching algorithms are often used in programming to find a specific value so they are really useful because of how often they are used.</p>
+                            <p> Here we have 2 searching algorithms:</p>
+                            <ul> 
+                                <li> <a href="#go-linear">Linear Search</a></li>
+                                <li> <a href="#go-binary">Binary Search</a></li>
+                            </ul>
+                        </article>
+                        
+                        <!--Linear Search-->
+                        <div id="go-linear" class="show-whole" onClick="changeScreen('linear')"> 
+                            <h3> Linear Search</h3>
+                            <p> Linear Search is a very simple and easy to learn algorithm. It's asymptotic time notation is O(n) however that is very slow compared to that of Binary Seacrh.</p>
+                        </div>
+                        
+                        <!--Binary Search-->
+                        <div id="go-binary" class="show-whole" onClick="changeScreen('binary')">
+                            <h3> Binary Search</h3>
+                            <p> Binary Search is a simple yet fast searching algorithm with an asymptotic time notation of O(logn). However it is only performed on sorted arrays.</p>
+                        </div>
                     </section>
                     
-                    <!--binary search-->
-                    <section class="tab" id="binary">
-                        <header>
-                    	    <h2 class="title"> Binary Search</h2>
-                    	</header>
-                    	<!--general information-->
-                    	<article>
-                    	    <p> Binary Search is a simple yet fast searching algorithm with an asymptotic time notation of O(logn). However it is only performed on sorted arrays.</p>
-                    	</article>
-            	
-            	        <!--how it works-->
-                    	<article>
-                    	    <h2>How it works</h2>
-                    	    <p> Binary Search takes advantage of the fact that the array is sorted so it can only be executed on a sorted array. It starts in the middle of the array, checks if it has found the value it's looking for, if not then it checks if the value is bigger or smaller and goes to the left or right part of the array accordingly. Then it continues to do the same process on the other half of the array until it either finds the value it wants or there are no more elements to check in the array.</p>
-                    	</article>
-                    	
-                    	<!--implemantation-->
-                    	<article>
-                    	    <h2>Javascript Implementation</h2>
-                    	    <p>The code needed to write this algorithm in Javascript is the following:</p>
-                    	    <!--&emsp; &ensp; &nbsp;-->
-                    	    <div class="code">
-                                //this works for arrays sorted in ascending order<br>
-                                function binary(array, key) {<br>
-                                &emsp; var start = 0;<br>
-                                &emsp; var end = array.length;<br>
-                                &emsp; while(start &lt;= end) {<br>
-                                &emsp; &ensp; var mid = Math.floor((start+end)/2);<br>
-                                &emsp; &ensp; if (array[mid] == key) {<br>
-                                &emsp; &ensp; &nbsp; return mid;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else if (array[mid] > key) {<br>
-                                &emsp; &ensp; &nbsp; end = mid-1;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; start = mid+1;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; return -1;<br>
-                                }
-                    	    </div>
-                    	</article>
-                    </section>
-                    
-                    <!--bubble sort-->
-                    <section class="tab" id="bubble">
-                        <header>
-                            <h1 class="title"> Bubble Sort</h1>
+                    <!--sorting-->
+                    <section id="sorting" class="tab">
+                        <h1 class="title"> Sorting Algorithms</h1>
+                        <article>
+                            <p> Sorting Algorithms are used by programmers so as to sort elements, in order to make analyzing data easier. Therefore, it's necessary to know at least one of them.</p>
+                            <p> This webpage has the following sorting algorithms:</p>
+                            <ul> 
+                                <li> <a href="#go-bubble"> Bubble Sort</a></li>
+                                <li> <a href="#go-selection"> Selection Sort</a></li>
+                                <li> <a href="#go-insertion"> Insertion Sort</a></li>
+                                <li> <a href="#go-merge"> Merge Sort</a></li>
+                                <li> <a href="#go-quick"> Quick Sort</a></li>
+                            </ul>
+                        </article>
+                        
+                        <!--Bubble Sort-->
+                        <div class="show-whole" id="go-bubble" onClick="changeScreen('bubble')">
+                            <h3> Bubble Sort</h3>
                             <p> Bubble sort is very simple and easy to learn but slow sorting algorithm. It's definitely one of the best sorting algorithms to learn first.</p>
-                        </header>
+            
+                        </div>
                         
-                        <!--how the algorithm works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> Bubble Sort works by repeatedly swapping adjacents elements only if they are in wrong order. </p>
-                        </article>
-                        
-                        <!--implementation-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <p> The following code is Bubble Sort written in Javascript:</p>
-                            <div class="code"> 
-                                <!--note: &ensp; &emsp; and  &nbsp; helped me indent the "code"-->
-                                var Bubble = function(array) {
-                                <br> &ensp;var end = array.length; //this is how to know when to stop the for loop and do while loop
-                                <br> &ensp;var swapped = false; // a variable used to exit the do while loop
-                                <br> &ensp;do {
-                                <br> &emsp; for (var i = 0; end > i-1; i++) {
-                                <br> &emsp; &ensp; //if the current element is bigget than the next one then swap
-                                <br> &emsp; &ensp; if (array[i] > array[i+1]) {
-                                <br> &emsp; &ensp; &nbsp; var temp = array[i];
-                                <br> &emsp; &ensp; &nbsp; array[i] = array[i+1];
-                                <br> &emsp; &ensp; &nbsp; array[i+1] = temp;
-                                <br> &emsp; &ensp; &nbsp; swapped = true;
-                                <br> &emsp; &ensp; }
-                                <br> &emsp; }
-                                <br> &emsp; end--; //because the last element gets sorted
-                                <br> &ensp; } while (swapped && end >= 0);
-                                <br>}
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--selection sort-->
-                    <section class="tab" id="selection"> 
-                         <header>
-                            <h1 class="title"> Selection Sort</h1>
+                        <!--Selection Sort-->
+                        <div class="show-whole" id="go-selection" onClick="changeScreen('selection')">
+                            <h3> Selection Sort</h3>
                             <p> Selection Sort is a very simple and easy to learn sorting algorithm but is very slow when trying to sort very large arrays. However, it is faster than the bubble sort algorithm and it also is a great first sorting algorithm to learn. </p>
-                        </header>
+                        </div>
                         
-                        <!--how it works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> Selection Sort works by repeatedly finding the minimum element in the unsorted part of the array and placing it at the beggining.</p>
-                        </article>
+                        <!--Insertion Sort-->
+                        <div class="show-whole" id="go-insertion" onClick="changeScreen('insertion')"> 
+                            <h3> Insertion Sort</h3>
+                            <p> Insertion Sort is a simple and easy to learn sorting algorithm and is very similar to Selection Sort because they both split the array in an unsorted and sorted part. However, Insertion Sort is faster in most cases.</p>
+                        </div>
                         
-                        <!--implementation-->
-                        <article>
-                            <h2> Javascript implementation</h2>
-                            <p> The following code is Selection Sort written in Javascript:</p>
-                            <div class="code"> 
-                                <!--&emsp; &ensp; &nbsp;-->
-                                var Selection = function(array) {
-                                <br> &emsp;var mn; //mn means minimum
-                                <br> &emsp;var limit = array.length;
-                                <br> &emsp;for (var i = 0; array.length>i; i++) {
-                                <br> &emsp; &ensp;mn = i;
-                                <br> &emsp; &ensp;//find the index of the minimum element in the unsorted array
-                                <br> &emsp; &ensp;for (var j = mn+1; limit > j; j++) {
-                                <br> &emsp; &ensp; &nbsp;if (array[mn] > array[j]) {
-                                <br> &emsp; &ensp; &nbsp; &emsp;mn = j;
-                                <br> &emsp; &ensp; &nbsp;}
-                                <br> &emsp; &ensp;}
-                                <br> &emsp; &ensp;//swap the minimum element in the unsorted array with the first one
-                                <br> &emsp; &ensp;var temp = array[mn];
-                                <br> &emsp; &ensp;array[mn] = array[i];
-                                <br> &emsp; &ensp;array[i] = temp;
-                                <br> &emsp;}
-                                <br>}
-                            </div>
-                        </article>
+                        <!--Merge Sort-->
+                        <div class="show-whole" id="go-merge" onClick="changeScreen('merge')">
+                            <h3> Merge Sort</h3>
+                            <p> Merge Sort is a complex and difficult to learn sorting algorithm, however it's very fast.</p>
+                        </div>
+                        
+                        <!--Quick Sort-->
+                        <div  class="show-whole" id="go-quick" onClick="changeScreen('quick')"> 
+                            <h3> Quick Sort</h3>
+                            <p>Quick Sort is a complex and difficult to learn sorting algorithm, however, it is one of the fastest and most efficient ways to sort arrays and uses a very important technique in computer programming, which is called divide and conquer.</p>
+                        </div>
                     </section>
                     
-                    <!--insertion sort-->
-                    <section class="tab" id="insertion">
-                        <header>
-                            <h1 class="title"> Insertion Sort</h1>
-                            <p> Insertion Sort is a simple and easy to learn sorting algorithm and is very similar to Selection Sort because they both split the array in an unsorted and sorted part. However, Insertion Sort is faster in most cases.</p>
-                        </header>
-                        
-                        <!--how it works-->
+                    <!--buttons-->
+                    <section class="tab" id="button">
+                        <h1 class="title"> Buttons</h1>
                         <article>
-                            <h2> How it works</h2>
-                            <p> Insertion sort works by having a sorted and unsorted part in the array. It considers the sorted array to be the first element of the array and the rest to be the unsorted one. Then it repeatedly inserts the first element from the unsorted array into the sorted array and with a quick scan over the sorted array figures out where to place it. It continues with the same logic until there are no more elements left in the unsorted list.</p>
-                            <!--some extra information-->
-                            <aside> 
-                                <p> It can be improved by using binary search each time you want to insert an element into the unsorted part of the list, however we are not going to be discussing that here.</p>
+                            <p> When working with the Processing library in Javascript you may need to create some kind of buttons to make your projects more interactive. Therefore, I have made 3 button objects, 1 with some simple parameters and 1 with many more for you to customize better and one which has a flexible shape, meaning it could be an image, a circle, a rectangle or even a complicated shape comprised of many more shapes and images.</p>
+                            <p> These are the buttons offered here:</p>
+                            <ul> 
+                                <li> <a href="#go-simple-btn">Simple Button</a></li>
+                                <li> <a href="#go-adv-btn">Advanced Button</a></li>
+                                <li> <a href="#go-flex-btn"> Flexible Shape Button</a></li>
+                            </ul>
+                        </article>
+                        
+                        <!--simple button-->
+                        <div class="show-whole" id="go-simple-btn" onClick="changeScreen('simple-btn')">
+                            <h3> Simple Button</h3>
+                            <p> This button has some simple parameters so you can create a simple button without getting confused.</p>
+                        </div>
+                        
+                        <!--advanced button-->
+                        <div class="show-whole" id="go-adv-btn" onClick="changeScreen('adv-btn')">
+                            <h3> Advanced Button</h3>
+                            <p> This button has many paramers so you can customize it better.</p>
+                        </div>
+                        
+                        <!--flexible shape button-->
+                        <div class="show-whole" id="go-flex-btn" onClick="changeScreen('flex-btn')"> 
+                            <h3> Flexible Shape Button</h3>
+                            <p> This button can have any kind of shape even a combination of many shapes and images.</p>
+                        </div>
+                    </section>
+                    
+                    <!--ciphers-->
+                    <section id="cipher" class="tab"> 
+                        <h1 class="title"> Ciphers for Encryption/Decryption</h1>
+                        <article> 
+                            <p> Personally, I have made a lot of projects  concerning cryptography and they are really important because they protect sensitive data. Therefore, here I have 5 encryption methods that I am sure will prove to be useful. Those are:</p>
+                            <ul> 
+                                <li> <a href="#go-caesar">Caesar Cipher</a></li>
+                                <li> <a href="#go-vigenere"> Vigenere Cipher</a></li>
+                                <li> <a href="#go-otp"> Using One Time Pad(OTP)</a></li>
+                                <li> <a href="#go-polybius"> Using a Polybius Square</a></li>
+                                <li> <a href="#go-ascii"> Using ASCII code</a></li>
+                            </ul>
+                            <aside>
+                                <p> It's also important to mention that all of these ciphers work only with characters that exist on the ASCII table except from the Polybius Square one which works only with lower-case letters.</p>
                             </aside>
                         </article>
                         
-                        <!--implementation-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code"> 
-                                var Insertion = function(array) {
-                                <br> &emsp;for (var i = 1; array.length > i; i++) {
-                                <br> &emsp; &ensp;var value = array[i];
-                                <br> &emsp; &ensp;for (var j = i-1; j >= 0 && array[j] > value; j--) {
-                                <br> &emsp; &ensp; &nbsp;//swap
-                                <br> &emsp; &ensp; &nbsp;var temp = array[j+1];
-                                <br> &emsp; &ensp; &nbsp;array[j+1] = array[j];
-                                <br> &emsp; &ensp; &nbsp;array[j] = temp;
-                                <br> &emsp; &ensp;}
-                                <br> &emsp;}
-                                <br>}
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--merge sort-->
-                    <section class="tab" id="merge">
-                        <header>
-                            <h1 class="title"> Merge Sort</h1>
-                            <p> Merge Sort is a complex and difficult to learn sorting algorithm, however it's very fast.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> Merge Sort divides the array into n subarrays each containing only one element. Then it merges all the subarrays creating a new sorted array.</p>
-                        </article>
-                        
-                        <!--implementation-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <p> The following code is Merge Sort written in Javascript</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                function merge(array, p, q, r) {<br>
-                                &emsp; var lowHalf = [];<br>
-                                &emsp; var highHalf = [];<br>
-                                &emsp; var k = p;<br>
-                                &emsp; var i;<br>
-                                &emsp; var j;<br>
-                                &emsp; //first part of the array<br>
-                                &emsp; for (i = 0; k &lt;= q; i++, k++) {<br>
-                                &emsp; &ensp; lowHalf[i] = array[k];<br>
-                                &emsp; }<br>
-                                &emsp; //second part of the array<br>
-                                &emsp; for (j = 0; k &lt;= r; j++, k++) {<br>
-                                &emsp; &ensp; highHalf[j] = array[k];<br>
-                                &emsp; }<br>
-                                &emsp; k = p;<br>
-                                &emsp; i = 0;<br>
-                                &emsp; j = 0;<br>
-                                &emsp; //merge the two arrays<br>
-                                &emsp; while(i &lt; lowHalf.length && j &lt; highHalf.length) {<br>
-                                &emsp; &ensp; if (lowHalf[i] &lt; highHalf[j]) {<br>
-                                &emsp; &ensp; &nbsp; array[k] = lowHalf[i++];<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; array[k] = highHalf[j++];<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; k++;<br>
-                                &emsp; }<br>
-                                &emsp; while (i &lt; lowHalf.length) {<br>
-                                &emsp; &ensp; array[k++] = lowHalf[i++];<br>
-                                &emsp; }<br>
-                                &emsp; while(j &lt; highHalf.length) {<br>
-                                &emsp; &ensp; array[k++] = highHalf[j++];<br>
-                                &emsp; }<br>
-                                };<br>
-                                <br>
-                                function mergesort(array, p, r) {<br>
-                                &emsp; if (p &lt; r) {<br>
-                                &emsp; &ensp; var q = Math.floor((p+r)/2);<br>
-                                &emsp; &ensp; mergesort(array, p, q);<br>
-                                &emsp; &ensp; mergesort(array, q+1, r);<br>
-                                &emsp; &ensp; merge(array, p, q, r);<br>
-                                &emsp; }<br>
-                                };
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--quick sort-->
-                    <section class="tab" id="quick">
-                        <header>
-                            <h1 class="title"> Quick Sort</h1>
-                            <p>Quick Sort is a complex and difficult to learn sorting algorithm, however, it is one of the fastest and most efficient ways to sort arrays and uses a very important technic in computer programming, which is called <strong><em>divide and conquer</em></strong>.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> Quick Sort works by picking a <strong>pivot</strong> and <strong>partitioning</strong> the rest of the elements in the array into two subarrays, one subarray contains all the elements in the array which are smaller than the pivot and the other one contains all the elements which are bigger than the pivot. Then, it <em>recursively</em> sorts the subarrays.</p>
-                            <p> There are many different ways to select a pivot. Some of the most common ones are:</p>
-                            <ul> 
-                                <li> Pick <strong>last</strong> element as pivot.</li>
-                                <li> Pick <strong>first</strong> element as pivot.</li>
-                                <li> Pick <strong>random</strong> element as pivot.</li>
-                                <li> Pick <strong>median</strong>(of first, middle and last element in the array) as pivot.</li>
-                            </ul>
-                            <p> All of them have their advantages and disadvantages, however, here we are going to be picking the last element as pivot.</p>
-                            <p> The most important part in this algorithm is <em>partitioning</em>. The purpose of the partition() function is to divide the array into two subarrays, one containing all elements in the array smaller than the pivot and the other one containing all elements bigger than it. We will be using <a href="https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/linear-time-partitioning" target="_blank">linear time partitioning</a> which is the best way to partition the array.</p>
-                        </article>
-                        
-                        <!--implementation-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <p> Here is the code needed for the partition() function in Javascript: </p>
-                            <!--partition in Javascript-->
-                            <div class="code">
-                                <!--&emsp; &ensp; &nbsp;-->
-                                var partition = function(array, p, r) {
-                                <br> &emsp;var q = p;
-                                <br> &emsp;for (var j = p; r > j; j++) {
-                                <br> &emsp; &ensp;if (array[r] >= array[j]) {
-                                <br> &emsp; &ensp; &nbsp;//swap the elements
-                                <br> &emsp; &ensp; &nbsp;var temp = array[j];
-                                <br> &emsp; &ensp; &nbsp;array[j] = array[q];
-                                <br> &emsp; &ensp; &nbsp;array[q] = temp;
-                                <br> &emsp; &ensp; &nbsp;q++;
-                                <br> &emsp; &ensp;}
-                                <br> &emsp;}
-                                <br> &emsp;//swap elements
-                                <br> &emsp;var temp = array[r];
-                                <br> &emsp;array[r] = array[q];
-                                <br> &emsp;array[q] = temp;
-                                <br> &emsp;//return the index of the pivot
-                                <br> &emsp;return q;
-                                <br>}
-                            </div>
-                            
-                            <p> Here is the code needed for the quicksort() function in Javascript:</p>
-                            <!--quicksort in Javascript-->
-                            <div class="code">
-                                <!--&emsp; &ensp; &nbsp;-->
-                                //l is the left limit and r is the right one
-                                <br>var quicksort = function(array, l, r) {
-                                <br> &emsp;if (l &lt; r) {
-                                <br> &emsp; &ensp;var p = partition(array, l , r); //this is the pivot
-                                <br> &emsp; &ensp;quicksort(array, l, p-1);
-                                <br> &emsp; &ensp;quicksort(array, p+1, r);
-                                <br> &emsp;}
-                                <br>}
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--simple button object-->
-                    <section class="tab" id="simple-btn"> 
-                        <header> 
-                            <h1 class="title"> Simple Button</h1>
-                            <p> This button has some simple parameters so you can create a simple button without getting confused.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> This simple button is an object. The object has the following paramers in order <em>(x, y, w, h, Text, action, Color)</em>, <em>x</em> is the x position of the button, <em>y</em> is the y position of the button, <em>w</em> is the width of the button, <em>h</em> is its height, <em>Text</em> is the text that is going to be displayed on top of the button, <em>action</em> is what the button should do when it's clicked on(it must be a function), <em>Color</em> is the color of the button. To display the button just use the command <span class="code fix"> &lt;button-name>.display();</span>(<em>&lt;button-name></em> is the name you have given to the button, it could be anything)</p>
-                        </article>
-                        
-                        <!--code-->
-                        <article>
-                            <h2> The code</h2>
-                            <p> This is the code of the button object in Javascript:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button<br>
-                                var Button = function(x, y, w, h, Text, action, Color) {<br>
-                                &emsp; //variables {<br>
-                                &emsp; this.x = x; //the x coordinates<br>
-                                &emsp; this.y = y; //the y coordinates<br>
-                                &emsp; this.w = w; //the width<br>
-                                &emsp; this.h = h; //the height<br>
-                                &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                &emsp; this.r = 3; //the radius of the button<br>
-                                &emsp; this.Text = Text; //the text that the button has<br>
-                                &emsp; this.color = Color;<br>
-                                &emsp; this.size = 15;<br>
-                                &emsp; //}<br>
-                                <br>
-                                &emsp; //the object's methods {<br>
-                                &emsp; //check if the something at the given coordiantes is inside the object<br>
-                                &emsp; this.isInside = function(x, y) {<br>
-                                &emsp; &ensp; //x and y are the cooridnates that I want to check if they are inside the object<br>
-                                &emsp; &ensp; return this.x &lt; x && this.x+this.w > x && this.y &LT; y && this.y+this.h > y;<br>
-                                &emsp; };<br>
-                                    
-                                &emsp; //display the button<br>
-                                &emsp; this.display = function() {<br>
-                                &emsp; &ensp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
-                                &emsp; &ensp; &nbsp; //if clicked on button<br>
-                                &emsp; &ensp; &nbsp; this.action();<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else if (this.isInside(mouseX, mouseY)) {<br>
-                                &emsp; &ensp; &nbsp; //if above button<br>
-                                &emsp; &ensp; &nbsp; this.r = 8;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; //else<br>
-                                &emsp; &ensp; &nbsp; this.r = 3;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; fill(this.color);<br>
-                                &emsp; &ensp; stroke(0, 0, 0);<br>
-                                &emsp; &ensp; rect(this.x, this.y, this.w, this.h, this.r); //show the button<br>
-                                &emsp; &ensp; fill(0, 0, 0); //color for the text<br>
-                                &emsp; &ensp; textSize(this.size);<br>
-                                &emsp; &ensp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2));//show the text<br>
-                                &emsp; };<br>
-                                &emsp; //}<br>
-                                };
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--advanced button object-->
-                    <section class="tab" id="adv-btn">
-                        <header> 
-                            <h1 class="title"> Advanced Button</h1>
-                            <p> This button has many paramers so you can customize it better.</p>
-                        </header>
-                        
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> This advanced button is an object. It has the following paramers:</p>
-                            <ol>
-                                <li> <strong>x</strong> is the x position of the button</li>
-                                <li> <strong> y</strong> is the y position of the button</li>
-                                <li> <strong> w</strong> is the width of the button</li>
-                                <li> <strong> h</strong> is the height of the button</li>
-                                <li> <strong> Text</strong> is the text that will be displayed on the button</li>
-                                <li> <strong> action</strong> is what the button should do after you click it(must be a function)</li>
-                                <li> <strong> Color</strong> is the color of the button</li>
-                                <li> <strong> Color2</strong> is the color of the button while the cursor is hovering over it</li>
-                                <li> <strong> textColor</strong> is the color of the text</li>
-                                <li> <strong> sizeText</strong> is the size of the text</li>
-                                <li> <strong> border</strong> is a boolean, if it's true then the button will have a border, otherwise it will not</li>
-                                <li> <strong> borderColor</strong> is the color of the border</li>
-                                <li> <strong> borderSize</strong> is the size of the border</li>
-                                <li> <strong> radius</strong> is the radius of the rectangle that represents the button</li>
-                                <li> <strong> radius2</strong> is the radius of the rectangle that represents the button when the cursor hovers over it</li>
-                            </ol>
-                        </article>
-                        
-                        <!--the code-->
-                        <article>
-                            <h2> The Code</h2>
-                            <p> This is the code of the button object in Javascript:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button, Color2 == color when cursor is above button, textColor == the color of the text, sizeText == the size of the text, border == a boolean, if true then show a border for the button otherwise do not, borderColor == the color of the border, borderSize == the size of the border, radius == the radius when drawing the rectangle, radius2 == the radius when drawing the rectangle but the cursor is above the button<br><br>
-                                var Button = function(x, y, w, h, Text, action, Color, Color2, textColor, sizeText, border, borderColor, borderSize, radius, radius2) {<br>
-                                &emsp; //variables {<br>
-                                &emsp; this.x = x; //the x coordinates<br>
-                                &emsp; this.y = y; //the y coordinates<br>
-                                &emsp; this.w = w; //the width<br>
-                                &emsp; this.h = h; //the height<br>
-                                &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                &emsp; this.r = radius; //the radius of the button<br>
-                                &emsp; this.r2 = radius2; //the radius when the cursor is over the button<br>
-                                &emsp; this.rTemp = this.r; // a temporary radius<br>
-                                &emsp; this.Text = Text; //the text that the button has<br>
-                                &emsp; this.color = Color; //the initial color of the button<br>
-                                &emsp; this.color2 = Color2; // the color of the button when the cursor is hovering over it<br>
-                                &emsp; this.textColor = textColor || color(0, 0, 0); //the color of the text<br>
-                                &emsp; this.border = border; //it's a boolean, if it's true then it should have a border if it's false it will not have a border<br>
-                                &emsp; this.bordColor = borderColor || color(0, 0, 0); //the color of the border<br>
-                                &emsp; this.borderSize = borderSize || 1;<br>
-                                &emsp; this.size = sizeText || 15; // the textSize<br>
-                                &emsp; //}<br>
-                                <br>
-                                &emsp; //the object's methods {<br>
-                                &emsp; //check if the something at the given coordiantes is inside the object<br>
-                                &emsp; this.isInside = function(x, y) {<br>
-                                &emsp; &ensp; //x and y are the cooridnates that I want to check if they are inside the object<br>
-                                &emsp; &ensp; return this.x &lt; x && this.x+this.w > x && this.y &lt; y && this.y+this.h > y;<br>
-                                &emsp; };<br>
-                                <br>
-                                &emsp; //display the button<br>
-                                &emsp; this.display = function() {<br>
-                                &emsp; &ensp; fill(this.color2);<br>
-                                &emsp; &ensp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
-                                &emsp; &ensp; &nbsp; //if clicked on button<br>
-                                &emsp; &ensp; &nbsp; this.action();<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else if (this.isInside(mouseX, mouseY)) {<br>
-                                &emsp; &ensp; &nbsp; //if above button<br>
-                                &emsp; &ensp; &nbsp; this.rTemp = this.r2;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; //else<br>
-                                &emsp; &ensp; &nbsp; this.rTemp = this.r;<br>
-                                &emsp; &ensp; &nbsp; fill(this.color);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; if (this.border) {<br>
-                                &emsp; &ensp; &nbsp; stroke(this.bordColor);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; noStroke();<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; strokeWeight(this.borderSize);<br>
-                                &emsp; &ensp; rect(this.x, this.y, this.w, this.h, this.rTemp); //show the button<br>
-                                <br>
-                                &emsp; &ensp; fill(this.textColor); //color for the text<br>
-                                &emsp; &ensp; textSize(this.size);<br>
-                                &emsp; &ensp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2)-1);//show the text<br>
-                                &emsp; };<br>
-                                &emsp; //}<br>
-                                };
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--flexible shape button object-->
-                    <section class="tab" id="flex-btn">
-                        <header>
-                            <h1 class="title"> Flexible Shape Button</h1>
-                            <p> This button can have any kind of shape even a combination of many shapes and images.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> This button is an object. It has some paramers which only two of them are variables, the rest are functions, so you will need to write some code for this object to completetly work. The parameters are the following:</p>
-                            <ol> 
-                                <li> <strong> x</strong>, is the x position of the button</li>
-                                <li> <strong> y</strong> is the y position of the button</li>
-                                <li> <strong> show</strong> is a function that you should write so the button can have any appearance you want, any shape,image or combination of these(must be a function)</li>
-                                <li> <strong> isInside</strong> is a function that checks if the cursor(you can use mouseX and mouseY to find the coordinates of the cursor) is inside the button that you have made(must be a function)</li>
-                                <li> <strong> action</strong> is a function that activates when you click on the button</li>
-                                <li> <strong> show2</strong> is function that draws the button when the cursor is hovering over it(must be a function and is an optional parameter)</li>
-                            </ol>
-                        </article>
-                        
-                        <!--the code-->
-                        <article>
-                            <h2> The Code</h2>
-                            <p> This is the code of the button object in Javascript: </p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                //x == x position of the button, y == y position of the button, show is a function that draws the button that you want, isInside is function that checks if the cursor is inside the button, action is what should happen if the button is clicked, show2 a function that draws the button when your mouse hovers over it<br>
-                                var Button = function(x, y, show, isInside, action, show2) {<br>
-                                &emsp; //variables {<br>
-                                &emsp; this.x = x; //the x coordinates<br>
-                                &emsp; this.y = y; //the y coordinates<br>
-                                &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                &emsp; this.isInside = isInside;<br>
-                                &emsp; this.show = show;<br>
-                                &emsp; this.show2 = show2 || show;<br>
-                                &emsp; //}<br>
-                                <br>
-                                &emsp; //the object's methods {<br>
-                                &emsp; //display the button<br>
-                                &emsp; this.display = function() {<br>
-                                &emsp; &ensp; if (this.isInside() && mousePressed) {<br>
-                                &emsp; &ensp; &nbsp; //if clicked on button<br>
-                                &emsp; &ensp; &nbsp; this.action();<br>
-                                &emsp; &ensp; &nbsp; this.show2();<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else if (this.isInside()) {<br>
-                                &emsp; &ensp; &nbsp; this.show2();<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; this.show();<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; };<br>
-                                &emsp; //}<br>
-                                };
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--Caesar Cipher-->
-                    <section class="tab" id="caesar">
-                        <header>
-                            <h1 class="title"> Caesar Cipher</h1>
+                        <!--Caesar Cipher-->
+                        <div class="show-whole" id="go-caesar" onClick="changeScreen('caesar')">
+                            <h3> Caesar Cipher</h3>
                             <p> Caesar Cipher is a simple and easy to break cipher. Therefore, it's not used for encrypting data that is highly at risk.</p>
-                        </header>
+                        </div>
                         
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> Caesar Cipher works by picking a number from 1 to 26 and and shifting each letter by that number meaning it will move forward in the alphabet by that amount.</p>
-                        </article>
-                        
-                        <!--code-->
-                        <article>
-                            <h2> Code</h2>
-                            <p> This is the code needed for the Caesar Cipher in Javascript:</p>
-                            <!--&ensp; &emsp; &nbsp;-->
-                            <div class="code">
-                                //encryption<br>
-                                var CaesarCipherEncrypt = function(text, key) {<br>
-                                &ensp; var encryptedText = "";//holds the encrypted text<br>
-                                &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                &ensp; &emsp; var temp = (text.charCodeAt(i)+key)%256;<br>
-                                &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
-                                &ensp; &emsp; &nbsp; encryptedText += String.fromCharCode(temp);<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; &emsp; else {<br>
-                                &ensp; &emsp; &nbsp; encryptedText += " ";<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; }<br>
-                                &ensp; return encryptedText;<br>
-                                };<br>
-                                <br>
-                                //decryption<br>
-                                var CaesarCipherDecrypt = function(text, key) {<br>
-                                &ensp; var decryptedText = "";<br>
-                                &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                &ensp; &emsp; var temp = (text.charCodeAt(i)+(256-key))%256;<br>
-                                &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
-                                &ensp; &emsp; &nbsp; decryptedText += String.fromCharCode(temp);<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; &emsp; else {<br>
-                                &ensp; &emsp; &nbsp; decryptedText += " ";<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; }<br>
-                                &ensp; return decryptedText;<br>
-                                };<br>
-                            </div>
-                        </article>
-                        
-                    </section>
-                    
-                    <!--Vigenere Cipher-->
-                    <section class="tab" id="vigenere"> 
-                        <header>
-                            <h1 class="title"> Vigenere Cipher</h1>
+                        <!--Vigenere Cipher-->
+                        <div class="show-whole" id="go-vigenere" onClick="changeScreen('vigenere')">
+                            <h3> Vigenere Cipher</h3>
                             <p> Vigenere Cipher is hard to crack without a key but not impossible.</p>
-                        </header>
+                        </div>
                         
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> The Vigenere Cipher works by having a keyword and using that keyword to shift the text. That happens by shifting the first character by the first character of the keyword, then the second one with the second character of the keyword, and that continues to happen until the keyword has run out of letters. Then it starts from the first letter of the keyword but from the place where it left of in the original text so it can continue with the encryption.</p>
-                        </article>
-                        
-                        <!--code-->
-                        <article>
-                            <h2> Code</h2>
-                            <p> The code for Vigenere Cipher: </p>
-                            <!--&emsp; &ensp; enbsp;-->
-                            <div class="code">
-                                function removeSpaces(shiftWordEl) {<br>
-                                &emsp; var k = 0;<br>
-                                &emsp; var wholeKey = "";<br>
-                                &emsp; while (k&lt;shiftWordEl.length) {<br>
-                                &emsp; &ensp; if (shiftWordEl[k] !== " ") {<br>
-                                &emsp; &ensp; &nbsp; wholeKey += shiftWordEl[k];<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; k++;<br>
-                                &emsp; }<br>
-                                &emsp; return wholeKey;<br>
-                                }<br>
-                                <br>
-                                function encrypt(input, shiftWord) {<br>
-                                &emsp; var wholeKey = removeSpaces(shiftWord);<br>
-                                &emsp; var encrypted = "";<br>
-                                &emsp; var key = 0;<br>
-                                &emsp; var counter = 0;<br>
-                                &emsp; var counter2 = 0;<br>
-                                &emsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length+counter) {<br>
-                                &emsp; &ensp; counter = 0;<br>
-                                &emsp; &ensp; counter2 = 0;<br>
-                                &emsp; &ensp; for (var j = 0; j+counter2&lt;wholeKey.length && j+i&lt;input.length; j++) {<br>
-                                &emsp; &ensp; &nbsp; if (input[j+counter+i]!==" ") {<br>
-                                &emsp; &ensp; &nbsp; &emsp; if (wholeKey[j+counter2] === " ") {<br>
-                                &emsp; &ensp; &nbsp; &emsp; &ensp; counter2++;<br>
-                                &emsp; &ensp; &nbsp; &emsp; }<br>
-                                &emsp; &ensp; &nbsp; &emsp; key = wholeKey.charCodeAt(j+counter2);<br>
-                                &emsp; &ensp; &nbsp; &emsp; encrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+key)%256);<br>
-                                &emsp; &ensp; &nbsp; }<br>
-                                &emsp; &ensp; &nbsp; else {<br>
-                                &emsp; &ensp; &nbsp; &emsp; encrypted += " ";<br>
-                                &emsp; &ensp; &nbsp; &emsp; counter++;<br>
-                                &emsp; &ensp; &nbsp; &emsp; j--;<br>
-                                &emsp; &ensp; &nbsp; }<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; return encrypted;<br>
-                                }<br>
-                                <br>
-                                function decrypt(input, shiftWord) {<br>
-                                &emsp; var wholeKey = removeSpaces(shiftWord);<br>
-                                &emsp; var decrypted = "";<br>
-                                &emsp; var counter = 0;<br>
-                                &emsp; var counter2 = 0;<br>
-                                &emsp; var key = 0;<br>
-                                &emsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length) {<br>
-                                &emsp; &ensp; for (var j = 0; (j+i)&lt;input.length && j&lt;wholeKey.length; j++) {<br>
-                                &emsp; &ensp; &nbsp; if (input[j+counter+i] !== " ") {<br>
-                                &emsp; &ensp; &nbsp; &emsp; if (wholeKey[j+counter2] === " ") {<br>
-                                &emsp; &ensp; &nbsp; &emsp; &ensp; counter2++;<br>
-                                &emsp; &ensp; &nbsp; &emsp; }<br>
-                                &emsp; &ensp; &nbsp; &emsp; key = wholeKey.charCodeAt(j+counter2);<br>
-                                &emsp; &ensp; &nbsp; &emsp; decrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+(256-key))%256);<br>
-                                &emsp; &ensp; &nbsp; }<br>
-                                &emsp; &ensp; &nbsp; else {<br>
-                                &emsp; &ensp; &nbsp; &emsp; decrypted += " ";<br>
-                                &emsp; &ensp; &nbsp; &emsp; counter++;<br>
-                                &emsp; &ensp; &nbsp; &emsp; j--;<br>
-                                &emsp; &ensp; &nbsp; }<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; return decrypted;<br>
-                                }
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--Polybius Square-->
-                    <section class="tab" id="polybius"> 
-                        <header>
-                            <h1 class="title"> Using a Polybius Square</h1>
-                            <p> Using a Polybius Square to encrypt is simple and easy to decipher.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> It works by having a 2d array in which all of it's places have a letter in them. Then all you need to do is find the index of each letter in the text you want to encrypt and replace the letter by its index in the Polybius Square.</p>
-                        </article>
-                        
-                        <!--code-->
-                        <article>
-                            <h2> Code</h2>
-                            <p> This is the code needed to encrypt/decrypt using the Polybius Square in Javascript:</p>
-                            <!--&ensp; &emsp; &nbsp;-->
-                            <div class="code">
-                                //encryption<br>
-                                var PolybiusSquareEncrypt = function(text) {<br>
-                                &ensp; var encrypt = "";<br>
-                                &ensp; for (var i = 0; i &lt; text.length; i++) {<br>
-                                &ensp; &emsp; var temp = text.charCodeAt(i)-97; //turns a character into a number according to its value on the ascii table<br>
-                                &ensp; &emsp; if (temp &lt;= 26 && temp >= 0) {<br>
-                                &ensp; &emsp; &nbsp; encrypt += Math.floor(temp/5) + "" + temp%5;<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; &emsp; else if (temp+97 === 32) {<br>
-                                &ensp; &emsp; &nbsp; encrypt += " ";<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; }<br>
-                                &ensp; return encrypt;<br>
-                                };<br>
-                                <br>
-                                //decryption<br>
-                                var CaesarCipherDecrypt = function(text, key) {<br>
-                                &ensp; var decryptedText = "";<br>
-                                &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                &ensp; &emsp; var temp = (text.charCodeAt(i)-97+(26-key))%26;<br>
-                                &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
-                                &ensp; &emsp; &nbsp; decryptedText += String.fromCharCode(temp+97);<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; &emsp; else {<br>
-                                &ensp; &emsp; &nbsp; decryptedText += " ";<br>
-                                &ensp; &emsp; }<br>
-                                &ensp; }<br>
-                                &ensp; return decryptedText;<br>
-                                };
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--One Time Pad(OTP)-->
-                    <section class="tab" id="otp"> 
-                        <header>
-                            <h1 class="title"> Using One Time Pad</h1>
+                        <!--One Time Pad-->
+                        <div class="show-whole" id="go-otp" onClick="changeScreen('otp')">
+                            <h3> Using One Time Pad</h3>
                             <p> If you use One Time Pad for encryption then it would be impossible to decrypt without having the OTP that was used for encryption.</p>
-                        </header>
+                        </div>
                         
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> When shifting each character of a text by a random number then you have used a One Time Pad(OTP) to encrypt a text. That is also the best way to encrypt a text because it is impossible to decipher it without the OTP.</p>
-                        </article>
+                        <!--Polybius Square-->
+                        <div class="show-whole" id="go-polybius" onClick="changeScreen('polybius')">
+                            <h3> Using Polybius Square</h3>
+                            <p> Using a Polybius Square to encrypt is simple and easy to decipher.</p>
+                        </div>
                         
-                        <!--code-->
-                        <article>
-                            <h2> Code</h2>
-                            <p> This is the code needed to encrypt/decrypt using the One Time Pad in Javascript:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                function encryptOTP(text, otp) {<br>
-                                &emsp; var keys = [];<br>
-                                &emsp; keys = otp;<br>
-                                &emsp; var encrypted = "";<br>
-                                &emsp; countSpaces=0;<br>
-                                &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                &emsp; &ensp; if (text[i]!==" ") {<br>
-                                &emsp; &ensp; &nbsp; char = text.charCodeAt(i);<br>
-                                &emsp; &ensp; &nbsp; encrypted += String.fromCharCode((char+keys.charCodeAt(i-countSpaces))%256);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; encrypted += " ";<br>
-                                &emsp; &ensp; &nbsp; countSpaces++;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; return encrypted;<br>
-                                }<br><br>
-                                function decryptOTP(text, keysInput) {<br>
-                                &emsp; var keys = keysInput;<br>
-                                &emsp; var countSpaces = 0;<br>
-                                &emsp; var char;<br>
-                                &emsp; var decrypted = "";<br>
-                                &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                &emsp; &ensp; if (text[i] !== " ") {<br>
-                                &emsp; &ensp; &nbsp; char = (text.charCodeAt(i));<br>
-                                &emsp; &ensp; &nbsp; decrypted += String.fromCharCode((char+(256-keys.charCodeAt(i-countSpaces)))%256);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; decrypted += " ";<br>
-                                &emsp; &ensp; &nbsp; countSpaces++;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; return decrypted;<br>
-                                }
-                            </div>
-                        </article>
+                        <!--ASCII-->
+                        <div class="show-whole" id="go-ascii" onClick="changeScreen('ascii')">
+                            <h3> Using ASCII</h3>
+                            <p> Using ASCII to encrypt a text is easy to do and easy to crack as well.</p>
+                        </div>
                     </section>
                     
-                    <!--ASCII-->
-                    <section class="tab" id="ascii"> 
-                        <header>
-                            <h1 class="title"> Using ASCII</h1>
-                            <p> Using Ascii to encrypt a text is easy to do and easy to crack as well.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> ASCII matches each character to a binary number and we are taking advantage of that turning each letter of a text into its binary form.</p>
-                        </article>
-                        
-                        <!--code-->
+                    <!--backgrounds-->
+                    <section class="tab" id="background">
+                        <h1 class="title"> Backgrounds</h1>
                         <article>
-                            <h2> Code</h2>
-                            <p> This is the code needed to encrypt/decrypt using the ASCII in Javascript:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                function toBin(text) {<br>
-                                &emsp; var final = "";<br>
-                                &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                &emsp; &ensp; var temp = parseInt(text.charCodeAt(i));<br>
-                                &emsp; &ensp; var temp2 = (temp.toString(2)).toString();<br>
-                                &emsp; &ensp; for (var j = temp2.length; j&lt;8; j++) {<br>
-                                &emsp; &ensp; &nbsp; temp2 = "0" + temp2;<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; final += temp2;<br>
-                                &emsp; }<br>
-                                &emsp; return final;<br>
-                                }<br>
-                                <br>
-                                function fromBin(binNum) {<br>
-                                &emsp; var final = "";<br>
-                                &emsp; for (var i = 0; i&lt;binNum.length; i+=8) {<br>
-                                &emsp; &ensp; var temp = "";<br>
-                                &emsp; &ensp; for (var j = i; j&lt;i+8; j++) {<br>
-                                &emsp; &ensp; &nbsp; temp += binNum[j];<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; final += String.fromCharCode(parseInt(temp, 2));<br>
-                                &emsp; }<br>
-                                &emsp; return final;<br>
-                                }
-        
-        
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--Mountains background-->
-                    <section class="tab" id="mountains">
-                        <header> 
-                            <h1 class="title"> Mountains</h1>
-                            <p> Using mountains to decorate the background of a PJS project sure is cool because it shows that you know about <strong> Perlin Noise</strong>.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> To generate mountains we are going to be using something called <strong>Perlin Noise</strong>, which is something that generates a more natural sequence of numbers than that of the normal random() function.</p>
+                            <p> In PJS you will make a lot of games and other things, and I am sure you will need a way to decorate the background and not just leave it all with one color. Therefore I have made the following ways to decorate the background of your PJS project in a more creative way:</p>
+                            <ul>
+                                <li> <a href="#go-mountains"> Mountains</a></li>
+                                <li> <a href="#go-clouds"> Clouds</a></li>
+                                <li> <a href="#go-linear-gradient"> Linear Gradient</a></li>
+                                <li> <a href="#go-radial"> Radial Gradient</a></li>
+                            </ul>
                         </article>
                         
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <p> This is the code needed to make a mountains in the background in Javascript:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                width=1000;<br>
-                                height=800;<br>
-                                //create one mountain range<br>
-                                var mountainRange = function(start, x, y, Color) {<br>
-                                &emsp; //NOTE: x doesn't completely work with positive values<br>
-                                &emsp; //x and y parameters work more like width and height<br>
-                                &emsp; pushMatrix();<br>
-                                &emsp; translate(x, y);<br>
-                                &emsp; stroke(Color);<br>
-                                &emsp; var increase = 0.01;<br>
-                                &emsp; for (var t = start; t&lt;increase*width+abs(x/100)+start; t+=increase) {<br>
-                                &emsp; &ensp; var temp = noise(t);<br>
-                                &emsp; &ensp; var rectHeight = map(temp, 0, 1, 0, 200);<br>
-                                &emsp; &ensp; rect(t*100-start*100, height-rectHeight, 1, rectHeight-y);<br>
-                                &emsp; }<br>
-                                &emsp; popMatrix();<br>
-                                };<br>
-                                <br>
-                                //create the background<br>
-                                var createBackground = function() {<br>
-                                &emsp; background(146, 236, 252);<br>
-                                &emsp; mountainRange(300, 0, -201, color(189, 187, 189));<br>
-                                &emsp; mountainRange(150, 0, -100, color(99, 97, 99));<br>
-                                &emsp; mountainRange(0, 0, 0, color(0, 0, 0));<br>
-                                };<br>
-                                <br>
-                                createBackground();
-        
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--clouds background-->
-                    <section class="tab" id="clouds">
-                        <header>
-                            <h1 class="title"> Clouds</h1>
+                        <!--using mountains to decorate the background-->
+                        <div class="show-whole" id="go-mountains" onClick="changeScreen('mountains')">
+                            <h3> Mountains</h3>
+                            <p> Using mountains to decorate the background of a PJS project sure is cool because it shows that you know about <strong>Perlin Noise</strong>.</p>
+                        </div>
+                        
+                        <!--using clouds to decorate the background-->
+                        <div class="show-whole" id="go-clouds" onClick="changeScreen('clouds')">
+                            <h3> Clouds</h3>
                             <p> Using clouds as a background is an excellent way to ensure that the background on one of your projects isn't boring.</p>
-                        </header>
+                        </div>
                         
-                        <article>
-                            <h2> How it works</h2>
-                            <p> The program generates clouds by using <strong> Perlin Noise</strong>. Of course I have to mention that these are not the best clouds you will ever see they are kind of crappy but at least I tried.</p>
-                        </article>
-                        
-                        <!--code-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                width=800;<br>
-                                height=600;<br>
-                                //create one cloud, recommended not to put a very small or big value for last parameter, around 10 to 20 is good enough<br>
-                                var cloud = function(x, y, Color, size, amount) {<br>
-                                &emsp; pushMatrix();<br>
-                                &emsp; translate(x, y);<br>
-                                &emsp; scale(1.1, 0.4);<br>
-                                &emsp; fill(Color);<br>
-                                &emsp; noStroke();<br>
-                                &emsp; ellipse(x,y,size/2,size/2);<br>
-                                &emsp; for (var i = 0; i&lt;amount; i++) {<br>
-                                &emsp; &ensp; pushMatrix();<br>
-                                &emsp; &ensp; ellipse(x+Math.floor(Math.random()*size/1.1), y+Math.floor(Math.random()*size/1.1), size, size);<br>
-                                &emsp; &ensp; rotate(360/amount*i);<br>
-                                &emsp; &ensp; popMatrix();<br>
-                                &emsp; }<br>
-                                &emsp; popMatrix();<br>
-                                };<br>
-                                <br>
-                                function createBackground() {<br>
-                                &emsp; background(146, 236, 252);<br>
-                                &emsp; cloud(139, 200, color(255, 255, 255), 200, 10);<br>
-                                &emsp; cloud(50, 81, color(255, 255, 255), 100, 10);<br>
-                                &emsp; cloud(200, 327, color(255, 255, 255), 80, 10);<br>
-                                }<br>
-                                <br>
-                                createBackground();
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--linear gradient background-->
-                    <section class="tab" id="linear-gradient">
-                        <header>
-                            <h1 class="title"> Linear Gradient</h1>
+                        <!--linear gradient background-->
+                        <div class="show-whole" id="go-linear-gradient" onClick="changeScreen('linear-gradient')">
+                            <h3> Linear Gradient</h3>
                             <p> Using linear gradient to decorate the background creates a stunning effect if you use the appropriate combination of colors.</p>
-                        </header>
+                        </div>
                         
-                        <!--how it works-->
-                        <article> 
-                            <h2> How it works</h2>
-                            <p> It works by choosing two colors and using the <em> lerpColor()</em> function to blend the two colors. It draws lines continiously increasing each time the third parameter of the <em>lerpColor()</em> function.</p>
-                        </article>
-                        
-                        <!--code-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <p> This is the code needed to make the linear gradient function for the background:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                height = 700;<br>
-                                width = 600;<br>
-                                //if start == 1 then colors start from top-left to bottom right, 2 == top-right to bottom-left, 3 == top to bottom, 4 == left to right<br>
-                                function linearGradient(Color1, Color2, start) {<br>
-                                &emsp; pushMatrix();<br>
-                                &emsp; var factor = 1;<br>
-                                &emsp; if (start &lt;= 2) {<br>
-                                &emsp; &ensp; factor = 2;<br>
-                                &emsp; &ensp; if (start === 2) {<br>
-                                &emsp; &ensp; &nbsp; translate(width, 0);<br>
-                                &emsp; &ensp; &nbsp; rotate(Math.PI/2);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; for (var i = 0; i&lt;height*2; i+=0.5) {<br>
-                                &emsp; &ensp; stroke(lerpColor(Color1, Color2, map(i, 0, height*factor, 0, 1)));<br>
-                                &emsp; &ensp; if (start &lt;= 2) {<br>
-                                &emsp; &ensp; &nbsp; line(0, i, i, 0);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else if (start === 3) {<br>
-                                &emsp; &ensp; &nbsp; line(0, i, width, i);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; &ensp; else {<br>
-                                &emsp; &ensp; &nbsp; line(i, 0, i, height);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; popMatrix();<br>
-                                }<br>
-                                <br>
-                                linearGradient(color(230, 37, 37), color(8, 84, 199), 1);
-                            </div>
-                        </article>
+                        <!--radial gradient background-->
+                        <div class="show-whole" id="go-radial" onClick="changeScreen('radial')">
+                            <h3> Radial Gradient</h3>
+                            <p> Using radial gradient on the background  makes the background really attracting if the right combination of colors is used.</p>
+                        </div>
                     </section>
                     
-                    <!--radial gradient background-->
-                    <section id="radial" class="tab">
-                        <header>
-                            <h1 class="title"> Radial Gradient</h1>
-                            <p> Using radial gradient on the background makes the background really attracting if the right combination of colors is used.</p>
-                        </header>
-                        
-                        <!--how it works-->
+                    <!--centering a div-->
+                    <section id="center-div" class="tab">
+                        <h1 class="title"> Centering a div</h1>
                         <article>
-                            <h2> How it works</h2>
-                            <p> I have made 2 different functions to make the radial gradient. They both do the same thing however one of them is faster and easier to make whereas the other is a bit more customizable.</p>
-                            <p> The first one is called <em> radialBackground()</em> and and has 3 parameters, <strong>Color1</strong>, <strong>Color2</strong> and <strong>distance</strong>. <u>Color1</u> is the color that starts in the middle, <u>Color2</u> is the color that is most evident around the edges and distance is basically how noticeable you want the middle color to be. This function works by adjusting the color of every individual pixel on the screen.</p>
-                            <p> The second one is called <em> radialBackground2()</em> and has 2 parameters, <strong> Color1</strong>, <strong> Color2</strong>. <u> Color1</u> is the color that starts in the center of the screen whereas <u> Color2</u> is the color that is most noticeable around the edges of the canvas. This function works by drawing ellipses. It starts with one that covers the whole screen and is colored with <u>Color2</u> and then continiusly makes more ellipses each one being 1 pixel smaller that the previous one and being colored with a color closer to the one in the middle, this is achieved by using lerpColor(). </p>
-                            <p>The second function is faster than the first one, however, it doesn't have that third parameter. It's up to you to choose which one is more suitable for your project. </p>
+                            <p> Centering a div in CSS is the hardest thing that you can do in CSS... Therefore, I am going to show you here a bunch of different ways to center a div!</p>
+                            <p> Here I have made 3 different ways to center a div:</p>
+                            <ul>
+                                <li> <a href="#go-auto"> Using auto</a></li>
+                                <li> <a href="#go-flexbox"> Using flexbox</a></li>
+                                <li> <a href="#go-grid"> Using grid</a></li>
+                            </ul>
                         </article>
                         
-                        <!--code-->
-                        <article>
-                            <h2> Javascript Implementation</h2>
-                            <p> I made two different functions for the radial background. You can use wichever one you want. This is the code needed to write both of them in Javascript:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                size(500, 500);<br>
-                                <br>
-                                //this one changes the individual color of every pixel<br>
-                                function radialBackground(Color1, Color2, distance) {<br>
-                                &emsp; loadPixels();<br>
-                                &emsp; var pointX = width/2;<br>
-                                &emsp; var pointY = height/2;<br>
-                                &emsp; for (var y = 0; y&lt;height; y++) {<br>
-                                &emsp; &ensp; for (var x = 0; x&lt;width; x++) {<br>
-                                &emsp; &ensp; &nbsp; var d = dist(pointX, pointY, x, y);<br>
-                                &emsp; &ensp; &nbsp; var d = map(d, 0, distance, 255, 0);<br>
-                                &emsp; &ensp; &nbsp; var tempColor = lerpColor(Color1, Color2, map(abs(d), 255, 0, 0, 1));<br>
-                                &emsp; &ensp; &nbsp; set(x, y, tempColor);<br>
-                                &emsp; &ensp; }<br>
-                                &emsp; }<br>
-                                &emsp; updatePixels();<br>
-                                }<br>
-                                <br>
-                                //this one uses a for loop to draw ellipses each one being 1 pixel smaller than the previous one and with a bit of a closer color to the one on the center<br>
-                                function radialBackground2(Color1, Color2) {<br>
-                                &emsp; noStroke();<br>
-                                &emsp; var end = Math.sqrt(width*width+height*height);<br>
-                                &emsp; for (var i = end; i>0; i--) {<br>
-                                &emsp; &ensp; fill(lerpColor(Color1, Color2, map(i, 1, end, 0, 1)));<br>
-                                &emsp; &ensp; ellipse(width/2, height/2, i, i);<br>
-                                &emsp; }<br>
-                                }<br>
-                                <br>
-                                radialBackground2(color(27, 132, 224), color(217, 115, 115));<br>
-                                radialBackground(color(27, 132, 224), color(217, 115, 115), 350);
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--auto centering a div-->
-                    <section class="tab" id="auto">
-                        <header>
-                            <h1 class="title"> Using auto</h1>
+                        <div onClick="changeScreen('auto')" class="show-whole" id="go-auto">
+                            <h3> Using auto</h3>
                             <p> This is the simplest and probably the best way to do this because it's simple and easy to do, and it works.</p>
-                        </header>
+                        </div>
                         
-                        <!--how it works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> Well, if you want to use <em>auto</em>, then just use <em>auto</em> with margin and it will center automatically.</p>
-                        </article>
+                        <div onClick="changeScreen('flexbox')" class="show-whole" id="go-flexbox">
+                            <h3> Using flexbox</h3>
+                            <p> This is one of the best ways to do center a div.</p>
+                        </div>
                         
-                        <!--CSS code-->
-                        <article>
-                            <h2> CSS Implementation</h2>
-                            <p> This is the code needed to write it in CSS:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                .center {<br>
-                                &emsp; margin: 0 auto;<br>
-                                }
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--using flexbox to center a div-->
-                    <section class="tab" id="flexbox">
-                        <header>
-                            <h1 class="title"> Using flexbox</h1>
-                            <p> This is one of the best ways to center a div.</p>
-                        </header>
-                        
-                        <article>
-                            <h2> How it works</h2>
-                            <p> This one works in a weird way. With that I mean that there are two ways to do this. The first one is to only center the contents of the div, without centering the div itself, and the second option is to use a second div which has the class <em> .center</em> and in that div put the div you want to center. That way the div itself will be centered.</p>
-                        </article>
-                        
-                        <article>
-                            <h2> CSS Implementation</h2>
-                            <p> This the code needed to write it in CSS:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                .center {<br>
-                                &emsp; display: flex;<br>
-                                &emsp; justify-content: center;<br>
-                                &emsp; color: green;<br>
-                                }
-                            </div>
-                        </article>
-                    </section>
-                    
-                    <!--using grid to center a div-->
-                    <section class="tab" id="grid">
-                        <header>
-                            <h1 class="title"> Using grid</h1>
+                        <div onClick="changeScreen('grid')" class="show-whole" id="go-grid">
+                            <h3> Using grid</h3>
                             <p> This one is also quite effective, but not the one I usually go for.</p>
-                        </header>
-                        
-                        <!--how it works-->
-                        <article>
-                            <h2> How it works</h2>
-                            <p> There are 2 ways to center a div in CSS. The first one centers the div both horizontally and vertically. The second method only cetners the div horizontally. However, it needs an additional div which will contain the div you want to center. In the outside div you will need to use the class <em>out</em> and in the div you want ot center you will need to use the class <em> in</em>.</p>
-                        </article>
-                        
-                        <!--CSS code-->
-                        <article>
-                            <h2> CSS Implementation</h2>
-                            <p> This is the code in CSS to center a div both horizontally and vertically:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                body, html {<br>
-                                &emsp; height: 100%;<br>
-                                &emsp; display: grid;<br>
-                                }<br>
-                                <br>
-                                .center {<br>
-                                &emsp; margin: auto;<br>
-                                }
-                            </div>
-                            
-                            <p> This is the code in CSS to center a div only horizontally:</p>
-                            <!--&emsp; &ensp; &nbsp;-->
-                            <div class="code">
-                                .out {<br>
-                                &emsp; display: grid;<br>
-                                &emsp; grid-template-columns: [start] 1fr [middle-first] 1fr [middle-second] 1fr [end];<br>
-                                }<br>
-                                <br>
-                                .in {<br>
-                                &emsp; grid-column-start: middle-first;<br>
-                                &emsp; grid-column-end: middle-second;<br>
-                                }
-                            </div>
-                        </article>
+                        </div>
                     </section>
+                    
+                    <!--all tabs with code snippets-->
+                    <div id="most-tabs"> 
+                        <!--linear search-->
+                        <section id="linear" class="tab">
+                            <header>
+                                <h1 class="title"> Linear Search</h1>
+                            </header>
+                            
+                            <!--general information-->
+                            <article>
+                                <p> Linear Search is a very simple and easy to learn algorithm. It's asymptotic time notation is O(n) however that is very slow compared to that of Binary Seacrh.</p>
+                            </article>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> It works by checking all values of the array to see if they are equal to the one that we are looking for. It starts checking from the very first element in the array and if that value is different than the one we are looking for then it checks the one after that, and it continues this process until it finds the value that we are seeking or it reaches the end of the array.</p>
+                            </article>
+                            
+                            <!--implemantation-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> The code needed to write this algorithm in Javascript is the following:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code"> 
+                                    //this function returns the index at which the key is found but if it's not then it returns -1<br>
+                                    function linear(array, key) {<br>
+                                    &emsp; for (var i = 0; i &lt; array.length; i++) {<br>
+                                    &emsp; &ensp; if (array[i] == key) {<br>
+                                    &emsp; &ensp; &nbsp; return i;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; return -1;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--binary search-->
+                        <section class="tab" id="binary">
+                            <header>
+                                <h2 class="title"> Binary Search</h2>
+                            </header>
+                            <!--general information-->
+                            <article>
+                                <p> Binary Search is a simple yet fast searching algorithm with an asymptotic time notation of O(logn). However it is only performed on sorted arrays.</p>
+                            </article>
+                    
+                            <!--how it works-->
+                            <article>
+                                <h2>How it works</h2>
+                                <p> Binary Search takes advantage of the fact that the array is sorted so it can only be executed on a sorted array. It starts in the middle of the array, checks if it has found the value it's looking for, if not then it checks if the value is bigger or smaller and goes to the left or right part of the array accordingly. Then it continues to do the same process on the other half of the array until it either finds the value it wants or there are no more elements to check in the array.</p>
+                            </article>
+                            
+                            <!--implemantation-->
+                            <article>
+                                <h2>Javascript Implementation</h2>
+                                <p>The code needed to write this algorithm in Javascript is the following:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    //this works for arrays sorted in ascending order<br>
+                                    function binary(array, key) {<br>
+                                    &emsp; var start = 0;<br>
+                                    &emsp; var end = array.length;<br>
+                                    &emsp; while(start &lt;= end) {<br>
+                                    &emsp; &ensp; var mid = Math.floor((start+end)/2);<br>
+                                    &emsp; &ensp; if (array[mid] == key) {<br>
+                                    &emsp; &ensp; &nbsp; return mid;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else if (array[mid] > key) {<br>
+                                    &emsp; &ensp; &nbsp; end = mid-1;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; start = mid+1;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; return -1;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--bubble sort-->
+                        <section class="tab" id="bubble">
+                            <header>
+                                <h1 class="title"> Bubble Sort</h1>
+                                <p> Bubble sort is very simple and easy to learn but slow sorting algorithm. It's definitely one of the best sorting algorithms to learn first.</p>
+                            </header>
+                            
+                            <!--how the algorithm works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> Bubble Sort works by repeatedly swapping adjacents elements only if they are in wrong order. </p>
+                            </article>
+                            
+                            <!--implementation-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> The following code is Bubble Sort written in Javascript:</p>
+                                <div class="code"> 
+                                    <!--note: &ensp; &emsp; and  &nbsp; helped me indent the "code"-->
+                                    var Bubble = function(array) {
+                                    <br> &ensp;var end = array.length; //this is how to know when to stop the for loop and do while loop
+                                    <br> &ensp;var swapped = false; // a variable used to exit the do while loop
+                                    <br> &ensp;do {
+                                    <br> &emsp; for (var i = 0; end > i-1; i++) {
+                                    <br> &emsp; &ensp; //if the current element is bigget than the next one then swap
+                                    <br> &emsp; &ensp; if (array[i] > array[i+1]) {
+                                    <br> &emsp; &ensp; &nbsp; var temp = array[i];
+                                    <br> &emsp; &ensp; &nbsp; array[i] = array[i+1];
+                                    <br> &emsp; &ensp; &nbsp; array[i+1] = temp;
+                                    <br> &emsp; &ensp; &nbsp; swapped = true;
+                                    <br> &emsp; &ensp; }
+                                    <br> &emsp; }
+                                    <br> &emsp; end--; //because the last element gets sorted
+                                    <br> &ensp; } while (swapped && end >= 0);
+                                    <br>}
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--selection sort-->
+                        <section class="tab" id="selection"> 
+                            <header>
+                                <h1 class="title"> Selection Sort</h1>
+                                <p> Selection Sort is a very simple and easy to learn sorting algorithm but is very slow when trying to sort very large arrays. However, it is faster than the bubble sort algorithm and it also is a great first sorting algorithm to learn. </p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> Selection Sort works by repeatedly finding the minimum element in the unsorted part of the array and placing it at the beggining.</p>
+                            </article>
+                            
+                            <!--implementation-->
+                            <article>
+                                <h2> Javascript implementation</h2>
+                                <p> The following code is Selection Sort written in Javascript:</p>
+                                <div class="code"> 
+                                    <!--&emsp; &ensp; &nbsp;-->
+                                    var Selection = function(array) {
+                                    <br> &emsp;var mn; //mn means minimum
+                                    <br> &emsp;var limit = array.length;
+                                    <br> &emsp;for (var i = 0; array.length>i; i++) {
+                                    <br> &emsp; &ensp;mn = i;
+                                    <br> &emsp; &ensp;//find the index of the minimum element in the unsorted array
+                                    <br> &emsp; &ensp;for (var j = mn+1; limit > j; j++) {
+                                    <br> &emsp; &ensp; &nbsp;if (array[mn] > array[j]) {
+                                    <br> &emsp; &ensp; &nbsp; &emsp;mn = j;
+                                    <br> &emsp; &ensp; &nbsp;}
+                                    <br> &emsp; &ensp;}
+                                    <br> &emsp; &ensp;//swap the minimum element in the unsorted array with the first one
+                                    <br> &emsp; &ensp;var temp = array[mn];
+                                    <br> &emsp; &ensp;array[mn] = array[i];
+                                    <br> &emsp; &ensp;array[i] = temp;
+                                    <br> &emsp;}
+                                    <br>}
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--insertion sort-->
+                        <section class="tab" id="insertion">
+                            <header>
+                                <h1 class="title"> Insertion Sort</h1>
+                                <p> Insertion Sort is a simple and easy to learn sorting algorithm and is very similar to Selection Sort because they both split the array in an unsorted and sorted part. However, Insertion Sort is faster in most cases.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> Insertion sort works by having a sorted and unsorted part in the array. It considers the sorted array to be the first element of the array and the rest to be the unsorted one. Then it repeatedly inserts the first element from the unsorted array into the sorted array and with a quick scan over the sorted array figures out where to place it. It continues with the same logic until there are no more elements left in the unsorted list.</p>
+                                <!--some extra information-->
+                                <aside> 
+                                    <p> It can be improved by using binary search each time you want to insert an element into the unsorted part of the list, however we are not going to be discussing that here.</p>
+                                </aside>
+                            </article>
+                            
+                            <!--implementation-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code"> 
+                                    var Insertion = function(array) {
+                                    <br> &emsp;for (var i = 1; array.length > i; i++) {
+                                    <br> &emsp; &ensp;var value = array[i];
+                                    <br> &emsp; &ensp;for (var j = i-1; j >= 0 && array[j] > value; j--) {
+                                    <br> &emsp; &ensp; &nbsp;//swap
+                                    <br> &emsp; &ensp; &nbsp;var temp = array[j+1];
+                                    <br> &emsp; &ensp; &nbsp;array[j+1] = array[j];
+                                    <br> &emsp; &ensp; &nbsp;array[j] = temp;
+                                    <br> &emsp; &ensp;}
+                                    <br> &emsp;}
+                                    <br>}
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--merge sort-->
+                        <section class="tab" id="merge">
+                            <header>
+                                <h1 class="title"> Merge Sort</h1>
+                                <p> Merge Sort is a complex and difficult to learn sorting algorithm, however it's very fast.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> Merge Sort divides the array into n subarrays each containing only one element. Then it merges all the subarrays creating a new sorted array.</p>
+                            </article>
+                            
+                            <!--implementation-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> The following code is Merge Sort written in Javascript</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    function merge(array, p, q, r) {<br>
+                                    &emsp; var lowHalf = [];<br>
+                                    &emsp; var highHalf = [];<br>
+                                    &emsp; var k = p;<br>
+                                    &emsp; var i;<br>
+                                    &emsp; var j;<br>
+                                    &emsp; //first part of the array<br>
+                                    &emsp; for (i = 0; k &lt;= q; i++, k++) {<br>
+                                    &emsp; &ensp; lowHalf[i] = array[k];<br>
+                                    &emsp; }<br>
+                                    &emsp; //second part of the array<br>
+                                    &emsp; for (j = 0; k &lt;= r; j++, k++) {<br>
+                                    &emsp; &ensp; highHalf[j] = array[k];<br>
+                                    &emsp; }<br>
+                                    &emsp; k = p;<br>
+                                    &emsp; i = 0;<br>
+                                    &emsp; j = 0;<br>
+                                    &emsp; //merge the two arrays<br>
+                                    &emsp; while(i &lt; lowHalf.length && j &lt; highHalf.length) {<br>
+                                    &emsp; &ensp; if (lowHalf[i] &lt; highHalf[j]) {<br>
+                                    &emsp; &ensp; &nbsp; array[k] = lowHalf[i++];<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; array[k] = highHalf[j++];<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; k++;<br>
+                                    &emsp; }<br>
+                                    &emsp; while (i &lt; lowHalf.length) {<br>
+                                    &emsp; &ensp; array[k++] = lowHalf[i++];<br>
+                                    &emsp; }<br>
+                                    &emsp; while(j &lt; highHalf.length) {<br>
+                                    &emsp; &ensp; array[k++] = highHalf[j++];<br>
+                                    &emsp; }<br>
+                                    };<br>
+                                    <br>
+                                    function mergesort(array, p, r) {<br>
+                                    &emsp; if (p &lt; r) {<br>
+                                    &emsp; &ensp; var q = Math.floor((p+r)/2);<br>
+                                    &emsp; &ensp; mergesort(array, p, q);<br>
+                                    &emsp; &ensp; mergesort(array, q+1, r);<br>
+                                    &emsp; &ensp; merge(array, p, q, r);<br>
+                                    &emsp; }<br>
+                                    };
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--quick sort-->
+                        <section class="tab" id="quick">
+                            <header>
+                                <h1 class="title"> Quick Sort</h1>
+                                <p>Quick Sort is a complex and difficult to learn sorting algorithm, however, it is one of the fastest and most efficient ways to sort arrays and uses a very important technique in computer programming, which is called <strong><em>divide and conquer</em></strong>.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> Quick Sort works by picking a <strong>pivot</strong> and <strong>partitioning</strong> the rest of the elements in the array into two subarrays, one subarray contains all the elements in the array which are smaller than the pivot and the other one contains all the elements which are bigger than the pivot. Then, it <em>recursively</em> sorts the subarrays.</p>
+                                <p> There are many different ways to select a pivot. Some of the most common ones are:</p>
+                                <ul> 
+                                    <li> Pick <strong>last</strong> element as pivot.</li>
+                                    <li> Pick <strong>first</strong> element as pivot.</li>
+                                    <li> Pick <strong>random</strong> element as pivot.</li>
+                                    <li> Pick <strong>median</strong>(of first, middle and last element in the array) as pivot.</li>
+                                </ul>
+                                <p> All of them have their advantages and disadvantages, however, here we are going to be picking the last element as pivot.</p>
+                                <p> The most important part in this algorithm is <em>partitioning</em>. The purpose of the partition() function is to divide the array into two subarrays, one containing all elements in the array smaller than the pivot and the other one containing all elements bigger than it. We will be using <a href="https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/linear-time-partitioning" target="_blank">linear time partitioning</a> which is the best way to partition the array.</p>
+                            </article>
+                            
+                            <!--implementation-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> Here is the code needed for the partition() function in Javascript: </p>
+                                <!--partition in Javascript-->
+                                <div class="code">
+                                    <!--&emsp; &ensp; &nbsp;-->
+                                    var partition = function(array, p, r) {
+                                    <br> &emsp;var q = p;
+                                    <br> &emsp;for (var j = p; r > j; j++) {
+                                    <br> &emsp; &ensp;if (array[r] >= array[j]) {
+                                    <br> &emsp; &ensp; &nbsp;//swap the elements
+                                    <br> &emsp; &ensp; &nbsp;var temp = array[j];
+                                    <br> &emsp; &ensp; &nbsp;array[j] = array[q];
+                                    <br> &emsp; &ensp; &nbsp;array[q] = temp;
+                                    <br> &emsp; &ensp; &nbsp;q++;
+                                    <br> &emsp; &ensp;}
+                                    <br> &emsp;}
+                                    <br> &emsp;//swap elements
+                                    <br> &emsp;var temp = array[r];
+                                    <br> &emsp;array[r] = array[q];
+                                    <br> &emsp;array[q] = temp;
+                                    <br> &emsp;//return the index of the pivot
+                                    <br> &emsp;return q;
+                                    <br>}
+                                </div>
+                                <br>
+                                <p> Here is the code needed for the quicksort() function in Javascript:</p>
+                                <!--quicksort in Javascript-->
+                                <div class="code">
+                                    <!--&emsp; &ensp; &nbsp;-->
+                                    //l is the left limit and r is the right one
+                                    <br>var quicksort = function(array, l, r) {
+                                    <br> &emsp;if (l &lt; r) {
+                                    <br> &emsp; &ensp;var p = partition(array, l , r); //this is the pivot
+                                    <br> &emsp; &ensp;quicksort(array, l, p-1);
+                                    <br> &emsp; &ensp;quicksort(array, p+1, r);
+                                    <br> &emsp;}
+                                    <br>}
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--simple button object-->
+                        <section class="tab" id="simple-btn"> 
+                            <header> 
+                                <h1 class="title"> Simple Button</h1>
+                                <p> This button has some simple parameters so you can create a simple button without getting confused.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> This simple button is an object. The object has the following paramers in order <em>(x, y, w, h, Text, action, Color)</em>, <em>x</em> is the x position of the button, <em>y</em> is the y position of the button, <em>w</em> is the width of the button, <em>h</em> is its height, <em>Text</em> is the text that is going to be displayed on top of the button, <em>action</em> is what the button should do when it's clicked on(it must be a function), <em>Color</em> is the color of the button. To display the button just use the command <span class="code fix"> &lt;button-name>.display();</span>(<em>&lt;button-name></em> is the name you have given to the button, it could be anything)</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> The code</h2>
+                                <p> This is the code of the button object in Javascript:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button<br>
+                                    var Button = function(x, y, w, h, Text, action, Color) {<br>
+                                    &emsp; //variables {<br>
+                                    &emsp; this.x = x; //the x coordinates<br>
+                                    &emsp; this.y = y; //the y coordinates<br>
+                                    &emsp; this.w = w; //the width<br>
+                                    &emsp; this.h = h; //the height<br>
+                                    &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &emsp; this.r = 3; //the radius of the button<br>
+                                    &emsp; this.Text = Text; //the text that the button has<br>
+                                    &emsp; this.color = Color;<br>
+                                    &emsp; this.size = 15;<br>
+                                    &emsp; //}<br>
+                                    <br>
+                                    &emsp; //the object's methods {<br>
+                                    &emsp; //check if the something at the given coordiantes is inside the object<br>
+                                    &emsp; this.isInside = function(x, y) {<br>
+                                    &emsp; &ensp; //x and y are the cooridnates that I want to check if they are inside the object<br>
+                                    &emsp; &ensp; return this.x &lt; x && this.x+this.w > x && this.y &LT; y && this.y+this.h > y;<br>
+                                    &emsp; };<br>
+                                        
+                                    &emsp; //display the button<br>
+                                    &emsp; this.display = function() {<br>
+                                    &emsp; &ensp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
+                                    &emsp; &ensp; &nbsp; //if clicked on button<br>
+                                    &emsp; &ensp; &nbsp; this.action();<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else if (this.isInside(mouseX, mouseY)) {<br>
+                                    &emsp; &ensp; &nbsp; //if above button<br>
+                                    &emsp; &ensp; &nbsp; this.r = 8;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; //else<br>
+                                    &emsp; &ensp; &nbsp; this.r = 3;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; fill(this.color);<br>
+                                    &emsp; &ensp; stroke(0, 0, 0);<br>
+                                    &emsp; &ensp; rect(this.x, this.y, this.w, this.h, this.r); //show the button<br>
+                                    &emsp; &ensp; fill(0, 0, 0); //color for the text<br>
+                                    &emsp; &ensp; textSize(this.size);<br>
+                                    &emsp; &ensp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2));//show the text<br>
+                                    &emsp; };<br>
+                                    &emsp; //}<br>
+                                    };
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--advanced button object-->
+                        <section class="tab" id="adv-btn">
+                            <header> 
+                                <h1 class="title"> Advanced Button</h1>
+                                <p> This button has many paramers so you can customize it better.</p>
+                            </header>
+                            
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> This advanced button is an object. It has the following paramers:</p>
+                                <ol>
+                                    <li> <strong>x</strong> is the x position of the button</li>
+                                    <li> <strong> y</strong> is the y position of the button</li>
+                                    <li> <strong> w</strong> is the width of the button</li>
+                                    <li> <strong> h</strong> is the height of the button</li>
+                                    <li> <strong> Text</strong> is the text that will be displayed on the button</li>
+                                    <li> <strong> action</strong> is what the button should do after you click it(must be a function)</li>
+                                    <li> <strong> Color</strong> is the color of the button</li>
+                                    <li> <strong> Color2</strong> is the color of the button while the cursor is hovering over it</li>
+                                    <li> <strong> textColor</strong> is the color of the text</li>
+                                    <li> <strong> sizeText</strong> is the size of the text</li>
+                                    <li> <strong> border</strong> is a boolean, if it's true then the button will have a border, otherwise it will not</li>
+                                    <li> <strong> borderColor</strong> is the color of the border</li>
+                                    <li> <strong> borderSize</strong> is the size of the border</li>
+                                    <li> <strong> radius</strong> is the radius of the rectangle that represents the button</li>
+                                    <li> <strong> radius2</strong> is the radius of the rectangle that represents the button when the cursor hovers over it</li>
+                                </ol>
+                            </article>
+                            
+                            <!--the code-->
+                            <article>
+                                <h2> The Code</h2>
+                                <p> This is the code of the button object in Javascript:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button, Color2 == color when cursor is above button, textColor == the color of the text, sizeText == the size of the text, border == a boolean, if true then show a border for the button otherwise do not, borderColor == the color of the border, borderSize == the size of the border, radius == the radius when drawing the rectangle, radius2 == the radius when drawing the rectangle but the cursor is above the button<br><br>
+                                    var Button = function(x, y, w, h, Text, action, Color, Color2, textColor, sizeText, border, borderColor, borderSize, radius, radius2) {<br>
+                                    &emsp; //variables {<br>
+                                    &emsp; this.x = x; //the x coordinates<br>
+                                    &emsp; this.y = y; //the y coordinates<br>
+                                    &emsp; this.w = w; //the width<br>
+                                    &emsp; this.h = h; //the height<br>
+                                    &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &emsp; this.r = radius; //the radius of the button<br>
+                                    &emsp; this.r2 = radius2; //the radius when the cursor is over the button<br>
+                                    &emsp; this.rTemp = this.r; // a temporary radius<br>
+                                    &emsp; this.Text = Text; //the text that the button has<br>
+                                    &emsp; this.color = Color; //the initial color of the button<br>
+                                    &emsp; this.color2 = Color2; // the color of the button when the cursor is hovering over it<br>
+                                    &emsp; this.textColor = textColor || color(0, 0, 0); //the color of the text<br>
+                                    &emsp; this.border = border; //it's a boolean, if it's true then it should have a border if it's false it will not have a border<br>
+                                    &emsp; this.bordColor = borderColor || color(0, 0, 0); //the color of the border<br>
+                                    &emsp; this.borderSize = borderSize || 1;<br>
+                                    &emsp; this.size = sizeText || 15; // the textSize<br>
+                                    &emsp; //}<br>
+                                    <br>
+                                    &emsp; //the object's methods {<br>
+                                    &emsp; //check if the something at the given coordiantes is inside the object<br>
+                                    &emsp; this.isInside = function(x, y) {<br>
+                                    &emsp; &ensp; //x and y are the cooridnates that I want to check if they are inside the object<br>
+                                    &emsp; &ensp; return this.x &lt; x && this.x+this.w > x && this.y &lt; y && this.y+this.h > y;<br>
+                                    &emsp; };<br>
+                                    <br>
+                                    &emsp; //display the button<br>
+                                    &emsp; this.display = function() {<br>
+                                    &emsp; &ensp; fill(this.color2);<br>
+                                    &emsp; &ensp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
+                                    &emsp; &ensp; &nbsp; //if clicked on button<br>
+                                    &emsp; &ensp; &nbsp; this.action();<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else if (this.isInside(mouseX, mouseY)) {<br>
+                                    &emsp; &ensp; &nbsp; //if above button<br>
+                                    &emsp; &ensp; &nbsp; this.rTemp = this.r2;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; //else<br>
+                                    &emsp; &ensp; &nbsp; this.rTemp = this.r;<br>
+                                    &emsp; &ensp; &nbsp; fill(this.color);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; if (this.border) {<br>
+                                    &emsp; &ensp; &nbsp; stroke(this.bordColor);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; noStroke();<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; strokeWeight(this.borderSize);<br>
+                                    &emsp; &ensp; rect(this.x, this.y, this.w, this.h, this.rTemp); //show the button<br>
+                                    <br>
+                                    &emsp; &ensp; fill(this.textColor); //color for the text<br>
+                                    &emsp; &ensp; textSize(this.size);<br>
+                                    &emsp; &ensp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2)-1);//show the text<br>
+                                    &emsp; };<br>
+                                    &emsp; //}<br>
+                                    };
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--flexible shape button object-->
+                        <section class="tab" id="flex-btn">
+                            <header>
+                                <h1 class="title"> Flexible Shape Button</h1>
+                                <p> This button can have any kind of shape even a combination of many shapes and images.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> This button is an object. It has some paramers which only two of them are variables, the rest are functions, so you will need to write some code for this object to completetly work. The parameters are the following:</p>
+                                <ol> 
+                                    <li> <strong> x</strong>, is the x position of the button</li>
+                                    <li> <strong> y</strong> is the y position of the button</li>
+                                    <li> <strong> show</strong> is a function that you should write so the button can have any appearance you want, any shape,image or combination of these(must be a function)</li>
+                                    <li> <strong> isInside</strong> is a function that checks if the cursor(you can use mouseX and mouseY to find the coordinates of the cursor) is inside the button that you have made(must be a function)</li>
+                                    <li> <strong> action</strong> is a function that activates when you click on the button</li>
+                                    <li> <strong> show2</strong> is function that draws the button when the cursor is hovering over it(must be a function and is an optional parameter)</li>
+                                </ol>
+                            </article>
+                            
+                            <!--the code-->
+                            <article>
+                                <h2> The Code</h2>
+                                <p> This is the code of the button object in Javascript: </p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    //x == x position of the button, y == y position of the button, show is a function that draws the button that you want, isInside is function that checks if the cursor is inside the button, action is what should happen if the button is clicked, show2 a function that draws the button when your mouse hovers over it<br>
+                                    var Button = function(x, y, show, isInside, action, show2) {<br>
+                                    &emsp; //variables {<br>
+                                    &emsp; this.x = x; //the x coordinates<br>
+                                    &emsp; this.y = y; //the y coordinates<br>
+                                    &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &emsp; this.isInside = isInside;<br>
+                                    &emsp; this.show = show;<br>
+                                    &emsp; this.show2 = show2 || show;<br>
+                                    &emsp; //}<br>
+                                    <br>
+                                    &emsp; //the object's methods {<br>
+                                    &emsp; //display the button<br>
+                                    &emsp; this.display = function() {<br>
+                                    &emsp; &ensp; if (this.isInside() && mousePressed) {<br>
+                                    &emsp; &ensp; &nbsp; //if clicked on button<br>
+                                    &emsp; &ensp; &nbsp; this.action();<br>
+                                    &emsp; &ensp; &nbsp; this.show2();<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else if (this.isInside()) {<br>
+                                    &emsp; &ensp; &nbsp; this.show2();<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; this.show();<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; };<br>
+                                    &emsp; //}<br>
+                                    };
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--Caesar Cipher-->
+                        <section class="tab" id="caesar">
+                            <header>
+                                <h1 class="title"> Caesar Cipher</h1>
+                                <p> Caesar Cipher is a simple and easy to break cipher. Therefore, it's not used for encrypting data that is highly at risk.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> Caesar Cipher works by picking a number from 1 to 26 and and shifting each letter by that number meaning it will move forward in the alphabet by that amount.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Code</h2>
+                                <p> This is the code needed for the Caesar Cipher in Javascript:</p>
+                                <!--&ensp; &emsp; &nbsp;-->
+                                <div class="code">
+                                    //encryption<br>
+                                    var CaesarCipherEncrypt = function(text, key) {<br>
+                                    &ensp; var encryptedText = "";//holds the encrypted text<br>
+                                    &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &ensp; &emsp; var temp = (text.charCodeAt(i)+key)%256;<br>
+                                    &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
+                                    &ensp; &emsp; &nbsp; encryptedText += String.fromCharCode(temp);<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; &emsp; else {<br>
+                                    &ensp; &emsp; &nbsp; encryptedText += " ";<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; }<br>
+                                    &ensp; return encryptedText;<br>
+                                    };<br>
+                                    <br>
+                                    //decryption<br>
+                                    var CaesarCipherDecrypt = function(text, key) {<br>
+                                    &ensp; var decryptedText = "";<br>
+                                    &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &ensp; &emsp; var temp = (text.charCodeAt(i)+(256-key))%256;<br>
+                                    &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
+                                    &ensp; &emsp; &nbsp; decryptedText += String.fromCharCode(temp);<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; &emsp; else {<br>
+                                    &ensp; &emsp; &nbsp; decryptedText += " ";<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; }<br>
+                                    &ensp; return decryptedText;<br>
+                                    };<br>
+                                </div>
+                            </article>
+                            
+                        </section>
+                        
+                        <!--Vigenere Cipher-->
+                        <section class="tab" id="vigenere"> 
+                            <header>
+                                <h1 class="title"> Vigenere Cipher</h1>
+                                <p> Vigenere Cipher is hard to crack without a key but not impossible.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> The Vigenere Cipher works by having a keyword and using that keyword to shift the text. That happens by shifting the first character by the first character of the keyword, then the second one with the second character of the keyword, and that continues to happen until the keyword has run out of letters. Then it starts from the first letter of the keyword but from the place where it left of in the original text so it can continue with the encryption.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Code</h2>
+                                <p> The code for Vigenere Cipher: </p>
+                                <!--&emsp; &ensp; enbsp;-->
+                                <div class="code">
+                                    function removeSpaces(shiftWordEl) {<br>
+                                    &emsp; var k = 0;<br>
+                                    &emsp; var wholeKey = "";<br>
+                                    &emsp; while (k&lt;shiftWordEl.length) {<br>
+                                    &emsp; &ensp; if (shiftWordEl[k] !== " ") {<br>
+                                    &emsp; &ensp; &nbsp; wholeKey += shiftWordEl[k];<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; k++;<br>
+                                    &emsp; }<br>
+                                    &emsp; return wholeKey;<br>
+                                    }<br>
+                                    <br>
+                                    function encrypt(input, shiftWord) {<br>
+                                    &emsp; var wholeKey = removeSpaces(shiftWord);<br>
+                                    &emsp; var encrypted = "";<br>
+                                    &emsp; var key = 0;<br>
+                                    &emsp; var counter = 0;<br>
+                                    &emsp; var counter2 = 0;<br>
+                                    &emsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length+counter) {<br>
+                                    &emsp; &ensp; counter = 0;<br>
+                                    &emsp; &ensp; counter2 = 0;<br>
+                                    &emsp; &ensp; for (var j = 0; j+counter2&lt;wholeKey.length && j+i&lt;input.length; j++) {<br>
+                                    &emsp; &ensp; &nbsp; if (input[j+counter+i]!==" ") {<br>
+                                    &emsp; &ensp; &nbsp; &emsp; if (wholeKey[j+counter2] === " ") {<br>
+                                    &emsp; &ensp; &nbsp; &emsp; &ensp; counter2++;<br>
+                                    &emsp; &ensp; &nbsp; &emsp; }<br>
+                                    &emsp; &ensp; &nbsp; &emsp; key = wholeKey.charCodeAt(j+counter2);<br>
+                                    &emsp; &ensp; &nbsp; &emsp; encrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+key)%256);<br>
+                                    &emsp; &ensp; &nbsp; }<br>
+                                    &emsp; &ensp; &nbsp; else {<br>
+                                    &emsp; &ensp; &nbsp; &emsp; encrypted += " ";<br>
+                                    &emsp; &ensp; &nbsp; &emsp; counter++;<br>
+                                    &emsp; &ensp; &nbsp; &emsp; j--;<br>
+                                    &emsp; &ensp; &nbsp; }<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; return encrypted;<br>
+                                    }<br>
+                                    <br>
+                                    function decrypt(input, shiftWord) {<br>
+                                    &emsp; var wholeKey = removeSpaces(shiftWord);<br>
+                                    &emsp; var decrypted = "";<br>
+                                    &emsp; var counter = 0;<br>
+                                    &emsp; var counter2 = 0;<br>
+                                    &emsp; var key = 0;<br>
+                                    &emsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length) {<br>
+                                    &emsp; &ensp; for (var j = 0; (j+i)&lt;input.length && j&lt;wholeKey.length; j++) {<br>
+                                    &emsp; &ensp; &nbsp; if (input[j+counter+i] !== " ") {<br>
+                                    &emsp; &ensp; &nbsp; &emsp; if (wholeKey[j+counter2] === " ") {<br>
+                                    &emsp; &ensp; &nbsp; &emsp; &ensp; counter2++;<br>
+                                    &emsp; &ensp; &nbsp; &emsp; }<br>
+                                    &emsp; &ensp; &nbsp; &emsp; key = wholeKey.charCodeAt(j+counter2);<br>
+                                    &emsp; &ensp; &nbsp; &emsp; decrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+(256-key))%256);<br>
+                                    &emsp; &ensp; &nbsp; }<br>
+                                    &emsp; &ensp; &nbsp; else {<br>
+                                    &emsp; &ensp; &nbsp; &emsp; decrypted += " ";<br>
+                                    &emsp; &ensp; &nbsp; &emsp; counter++;<br>
+                                    &emsp; &ensp; &nbsp; &emsp; j--;<br>
+                                    &emsp; &ensp; &nbsp; }<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; return decrypted;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--Polybius Square-->
+                        <section class="tab" id="polybius"> 
+                            <header>
+                                <h1 class="title"> Using a Polybius Square</h1>
+                                <p> Using a Polybius Square to encrypt is simple and easy to decipher.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> It works by having a 2d array in which all of it's places have a letter in them. Then all you need to do is find the index of each letter in the text you want to encrypt and replace the letter by its index in the Polybius Square.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Code</h2>
+                                <p> This is the code needed to encrypt/decrypt using the Polybius Square in Javascript:</p>
+                                <!--&ensp; &emsp; &nbsp;-->
+                                <div class="code">
+                                    //encryption<br>
+                                    var PolybiusSquareEncrypt = function(text) {<br>
+                                    &ensp; var encrypt = "";<br>
+                                    &ensp; for (var i = 0; i &lt; text.length; i++) {<br>
+                                    &ensp; &emsp; var temp = text.charCodeAt(i)-97; //turns a character into a number according to its value on the ascii table<br>
+                                    &ensp; &emsp; if (temp &lt;= 26 && temp >= 0) {<br>
+                                    &ensp; &emsp; &nbsp; encrypt += Math.floor(temp/5) + "" + temp%5;<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; &emsp; else if (temp+97 === 32) {<br>
+                                    &ensp; &emsp; &nbsp; encrypt += " ";<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; }<br>
+                                    &ensp; return encrypt;<br>
+                                    };<br>
+                                    <br>
+                                    //decryption<br>
+                                    var CaesarCipherDecrypt = function(text, key) {<br>
+                                    &ensp; var decryptedText = "";<br>
+                                    &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &ensp; &emsp; var temp = (text.charCodeAt(i)-97+(26-key))%26;<br>
+                                    &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
+                                    &ensp; &emsp; &nbsp; decryptedText += String.fromCharCode(temp+97);<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; &emsp; else {<br>
+                                    &ensp; &emsp; &nbsp; decryptedText += " ";<br>
+                                    &ensp; &emsp; }<br>
+                                    &ensp; }<br>
+                                    &ensp; return decryptedText;<br>
+                                    };
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--One Time Pad(OTP)-->
+                        <section class="tab" id="otp"> 
+                            <header>
+                                <h1 class="title"> Using One Time Pad</h1>
+                                <p> If you use One Time Pad for encryption then it would be impossible to decrypt without having the OTP that was used for encryption.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> When shifting each character of a text by a random number then you have used a One Time Pad(OTP) to encrypt a text. That is also the best way to encrypt a text because it is impossible to decipher it without the OTP.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Code</h2>
+                                <p> This is the code needed to encrypt/decrypt using the One Time Pad in Javascript:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    function encryptOTP(text, otp) {<br>
+                                    &emsp; var keys = [];<br>
+                                    &emsp; keys = otp;<br>
+                                    &emsp; var encrypted = "";<br>
+                                    &emsp; countSpaces=0;<br>
+                                    &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &emsp; &ensp; if (text[i]!==" ") {<br>
+                                    &emsp; &ensp; &nbsp; char = text.charCodeAt(i);<br>
+                                    &emsp; &ensp; &nbsp; encrypted += String.fromCharCode((char+keys.charCodeAt(i-countSpaces))%256);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; encrypted += " ";<br>
+                                    &emsp; &ensp; &nbsp; countSpaces++;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; return encrypted;<br>
+                                    }<br><br>
+                                    function decryptOTP(text, keysInput) {<br>
+                                    &emsp; var keys = keysInput;<br>
+                                    &emsp; var countSpaces = 0;<br>
+                                    &emsp; var char;<br>
+                                    &emsp; var decrypted = "";<br>
+                                    &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &emsp; &ensp; if (text[i] !== " ") {<br>
+                                    &emsp; &ensp; &nbsp; char = (text.charCodeAt(i));<br>
+                                    &emsp; &ensp; &nbsp; decrypted += String.fromCharCode((char+(256-keys.charCodeAt(i-countSpaces)))%256);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; decrypted += " ";<br>
+                                    &emsp; &ensp; &nbsp; countSpaces++;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; return decrypted;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--ASCII-->
+                        <section class="tab" id="ascii"> 
+                            <header>
+                                <h1 class="title"> Using ASCII</h1>
+                                <p> Using Ascii to encrypt a text is easy to do and easy to crack as well.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> ASCII matches each character to a binary number and we are taking advantage of that turning each letter of a text into its binary form.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Code</h2>
+                                <p> This is the code needed to encrypt/decrypt using the ASCII in Javascript:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    function toBin(text) {<br>
+                                    &emsp; var final = "";<br>
+                                    &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &emsp; &ensp; var temp = parseInt(text.charCodeAt(i));<br>
+                                    &emsp; &ensp; var temp2 = (temp.toString(2)).toString();<br>
+                                    &emsp; &ensp; for (var j = temp2.length; j&lt;8; j++) {<br>
+                                    &emsp; &ensp; &nbsp; temp2 = "0" + temp2;<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; final += temp2;<br>
+                                    &emsp; }<br>
+                                    &emsp; return final;<br>
+                                    }<br>
+                                    <br>
+                                    function fromBin(binNum) {<br>
+                                    &emsp; var final = "";<br>
+                                    &emsp; for (var i = 0; i&lt;binNum.length; i+=8) {<br>
+                                    &emsp; &ensp; var temp = "";<br>
+                                    &emsp; &ensp; for (var j = i; j&lt;i+8; j++) {<br>
+                                    &emsp; &ensp; &nbsp; temp += binNum[j];<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; final += String.fromCharCode(parseInt(temp, 2));<br>
+                                    &emsp; }<br>
+                                    &emsp; return final;<br>
+                                    }
+            
+            
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--Mountains background-->
+                        <section class="tab" id="mountains">
+                            <header> 
+                                <h1 class="title"> Mountains</h1>
+                                <p> Using mountains to decorate the background of a PJS project sure is cool because it shows that you know about <strong> Perlin Noise</strong>.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> To generate mountains we are going to be using something called <strong>Perlin Noise</strong>, which is something that generates a more natural sequence of numbers than that of the normal random() function.</p>
+                            </article>
+                            
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> This is the code needed to make a mountains in the background in Javascript:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    width=1000;<br>
+                                    height=800;<br>
+                                    //create one mountain range<br>
+                                    var mountainRange = function(start, x, y, Color) {<br>
+                                    &emsp; //NOTE: x doesn't completely work with positive values<br>
+                                    &emsp; //x and y parameters work more like width and height<br>
+                                    &emsp; pushMatrix();<br>
+                                    &emsp; translate(x, y);<br>
+                                    &emsp; stroke(Color);<br>
+                                    &emsp; var increase = 0.01;<br>
+                                    &emsp; for (var t = start; t&lt;increase*width+abs(x/100)+start; t+=increase) {<br>
+                                    &emsp; &ensp; var temp = noise(t);<br>
+                                    &emsp; &ensp; var rectHeight = map(temp, 0, 1, 0, 200);<br>
+                                    &emsp; &ensp; rect(t*100-start*100, height-rectHeight, 1, rectHeight-y);<br>
+                                    &emsp; }<br>
+                                    &emsp; popMatrix();<br>
+                                    };<br>
+                                    <br>
+                                    //create the background<br>
+                                    var createBackground = function() {<br>
+                                    &emsp; background(146, 236, 252);<br>
+                                    &emsp; mountainRange(300, 0, -201, color(189, 187, 189));<br>
+                                    &emsp; mountainRange(150, 0, -100, color(99, 97, 99));<br>
+                                    &emsp; mountainRange(0, 0, 0, color(0, 0, 0));<br>
+                                    };<br>
+                                    <br>
+                                    createBackground();
+            
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--clouds background-->
+                        <section class="tab" id="clouds">
+                            <header>
+                                <h1 class="title"> Clouds</h1>
+                                <p> Using clouds as a background is an excellent way to ensure that the background on one of your projects isn't boring.</p>
+                            </header>
+                            
+                            <article>
+                                <h2> How it works</h2>
+                                <p> The program generates clouds by using <strong> Perlin Noise</strong>. Of course I have to mention that these are not the best clouds you will ever see they are kind of crappy but at least I tried.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    width=800;<br>
+                                    height=600;<br>
+                                    //create one cloud, recommended not to put a very small or big value for last parameter, around 10 to 20 is good enough<br>
+                                    var cloud = function(x, y, Color, size, amount) {<br>
+                                    &emsp; pushMatrix();<br>
+                                    &emsp; translate(x, y);<br>
+                                    &emsp; scale(1.1, 0.4);<br>
+                                    &emsp; fill(Color);<br>
+                                    &emsp; noStroke();<br>
+                                    &emsp; ellipse(x,y,size/2,size/2);<br>
+                                    &emsp; for (var i = 0; i&lt;amount; i++) {<br>
+                                    &emsp; &ensp; pushMatrix();<br>
+                                    &emsp; &ensp; ellipse(x+Math.floor(Math.random()*size/1.1), y+Math.floor(Math.random()*size/1.1), size, size);<br>
+                                    &emsp; &ensp; rotate(360/amount*i);<br>
+                                    &emsp; &ensp; popMatrix();<br>
+                                    &emsp; }<br>
+                                    &emsp; popMatrix();<br>
+                                    };<br>
+                                    <br>
+                                    function createBackground() {<br>
+                                    &emsp; background(146, 236, 252);<br>
+                                    &emsp; cloud(139, 200, color(255, 255, 255), 200, 10);<br>
+                                    &emsp; cloud(50, 81, color(255, 255, 255), 100, 10);<br>
+                                    &emsp; cloud(200, 327, color(255, 255, 255), 80, 10);<br>
+                                    }<br>
+                                    <br>
+                                    createBackground();
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--linear gradient background-->
+                        <section class="tab" id="linear-gradient">
+                            <header>
+                                <h1 class="title"> Linear Gradient</h1>
+                                <p> Using linear gradient to decorate the background creates a stunning effect if you use the appropriate combination of colors.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article> 
+                                <h2> How it works</h2>
+                                <p> It works by choosing two colors and using the <em> lerpColor()</em> function to blend the two colors. It draws lines continiously increasing each time the third parameter of the <em>lerpColor()</em> function.</p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> This is the code needed to make the linear gradient function for the background:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    height = 700;<br>
+                                    width = 600;<br>
+                                    //if start == 1 then colors start from top-left to bottom right, 2 == top-right to bottom-left, 3 == top to bottom, 4 == left to right<br>
+                                    function linearGradient(Color1, Color2, start) {<br>
+                                    &emsp; pushMatrix();<br>
+                                    &emsp; var factor = 1;<br>
+                                    &emsp; if (start &lt;= 2) {<br>
+                                    &emsp; &ensp; factor = 2;<br>
+                                    &emsp; &ensp; if (start === 2) {<br>
+                                    &emsp; &ensp; &nbsp; translate(width, 0);<br>
+                                    &emsp; &ensp; &nbsp; rotate(Math.PI/2);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; for (var i = 0; i&lt;height*2; i+=0.5) {<br>
+                                    &emsp; &ensp; stroke(lerpColor(Color1, Color2, map(i, 0, height*factor, 0, 1)));<br>
+                                    &emsp; &ensp; if (start &lt;= 2) {<br>
+                                    &emsp; &ensp; &nbsp; line(0, i, i, 0);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else if (start === 3) {<br>
+                                    &emsp; &ensp; &nbsp; line(0, i, width, i);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; &ensp; else {<br>
+                                    &emsp; &ensp; &nbsp; line(i, 0, i, height);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; popMatrix();<br>
+                                    }<br>
+                                    <br>
+                                    linearGradient(color(230, 37, 37), color(8, 84, 199), 1);
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--radial gradient background-->
+                        <section id="radial" class="tab">
+                            <header>
+                                <h1 class="title"> Radial Gradient</h1>
+                                <p> Using radial gradient on the background makes the background really attracting if the right combination of colors is used.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> I have made 2 different functions to make the radial gradient. They both do the same thing however one of them is faster and easier to make whereas the other is a bit more customizable.</p>
+                                <p> The first one is called <em> radialBackground()</em> and and has 3 parameters, <strong>Color1</strong>, <strong>Color2</strong> and <strong>distance</strong>. <u>Color1</u> is the color that starts in the middle, <u>Color2</u> is the color that is most evident around the edges and distance is basically how noticeable you want the middle color to be. This function works by adjusting the color of every individual pixel on the screen.</p>
+                                <p> The second one is called <em> radialBackground2()</em> and has 2 parameters, <strong> Color1</strong>, <strong> Color2</strong>. <u> Color1</u> is the color that starts in the center of the screen whereas <u> Color2</u> is the color that is most noticeable around the edges of the canvas. This function works by drawing ellipses. It starts with one that covers the whole screen and is colored with <u>Color2</u> and then continiusly makes more ellipses each one being 1 pixel smaller that the previous one and being colored with a color closer to the one in the middle, this is achieved by using lerpColor(). </p>
+                                <p>The second function is faster than the first one, however, it doesn't have that third parameter. It's up to you to choose which one is more suitable for your project. </p>
+                            </article>
+                            
+                            <!--code-->
+                            <article>
+                                <h2> Javascript Implementation</h2>
+                                <p> I made two different functions for the radial background. You can use wichever one you want. This is the code needed to write both of them in Javascript:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    size(500, 500);<br>
+                                    <br>
+                                    //this one changes the individual color of every pixel<br>
+                                    function radialBackground(Color1, Color2, distance) {<br>
+                                    &emsp; loadPixels();<br>
+                                    &emsp; var pointX = width/2;<br>
+                                    &emsp; var pointY = height/2;<br>
+                                    &emsp; for (var y = 0; y&lt;height; y++) {<br>
+                                    &emsp; &ensp; for (var x = 0; x&lt;width; x++) {<br>
+                                    &emsp; &ensp; &nbsp; var d = dist(pointX, pointY, x, y);<br>
+                                    &emsp; &ensp; &nbsp; var d = map(d, 0, distance, 255, 0);<br>
+                                    &emsp; &ensp; &nbsp; var tempColor = lerpColor(Color1, Color2, map(abs(d), 255, 0, 0, 1));<br>
+                                    &emsp; &ensp; &nbsp; set(x, y, tempColor);<br>
+                                    &emsp; &ensp; }<br>
+                                    &emsp; }<br>
+                                    &emsp; updatePixels();<br>
+                                    }<br>
+                                    <br>
+                                    //this one uses a for loop to draw ellipses each one being 1 pixel smaller than the previous one and with a bit of a closer color to the one on the center<br>
+                                    function radialBackground2(Color1, Color2) {<br>
+                                    &emsp; noStroke();<br>
+                                    &emsp; var end = Math.sqrt(width*width+height*height);<br>
+                                    &emsp; for (var i = end; i>0; i--) {<br>
+                                    &emsp; &ensp; fill(lerpColor(Color1, Color2, map(i, 1, end, 0, 1)));<br>
+                                    &emsp; &ensp; ellipse(width/2, height/2, i, i);<br>
+                                    &emsp; }<br>
+                                    }<br>
+                                    <br>
+                                    radialBackground2(color(27, 132, 224), color(217, 115, 115));<br>
+                                    radialBackground(color(27, 132, 224), color(217, 115, 115), 350);
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--auto centering a div-->
+                        <section class="tab" id="auto">
+                            <header>
+                                <h1 class="title"> Using auto</h1>
+                                <p> This is the simplest and probably the best way to do this because it's simple and easy to do, and it works.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> Well, if you want to use <em>auto</em>, then just use <em>auto</em> with margin and it will center automatically.</p>
+                            </article>
+                            
+                            <!--CSS code-->
+                            <article>
+                                <h2> CSS Implementation</h2>
+                                <p> This is the code needed to write it in CSS:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    .center {<br>
+                                    &emsp; margin: 0 auto;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--using flexbox to center a div-->
+                        <section class="tab" id="flexbox">
+                            <header>
+                                <h1 class="title"> Using flexbox</h1>
+                                <p> This is one of the best ways to center a div.</p>
+                            </header>
+                            
+                            <article>
+                                <h2> How it works</h2>
+                                <p> This one works in a weird way. With that I mean that there are two ways to do this. The first one is to only center the contents of the div, without centering the div itself, and the second option is to use a second div which has the class <em> .center</em> and in that div put the div you want to center. That way the div itself will be centered.</p>
+                            </article>
+                            
+                            <article>
+                                <h2> CSS Implementation</h2>
+                                <p> This is the code needed to write it in CSS:</p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    .center {<br>
+                                    &emsp; display: flex;<br>
+                                    &emsp; justify-content: center;<br>
+                                    &emsp; color: green;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                        
+                        <!--using grid to center a div-->
+                        <section class="tab" id="grid">
+                            <header>
+                                <h1 class="title"> Using grid</h1>
+                                <p> This one is also quite effective, but not the one I usually go for.</p>
+                            </header>
+                            
+                            <!--how it works-->
+                            <article>
+                                <h2> How it works</h2>
+                                <p> In order to center a div using grid display we will need to use the <em>justify-content</em> of the grid and set it to <em>center</em>.</p>
+                            </article>
+                            
+                            <!--CSS code-->
+                            <article>
+                                <h2> CSS Implementation</h2>
+                                <p> The CSS implementation: </p>
+                                <!--&emsp; &ensp; &nbsp;-->
+                                <div class="code">
+                                    .center {<br>
+                                    &emsp; display: grid;<br>
+                                    &emsp; justify-content: center;<br>
+                                    }
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <!--the footer-->
+                    <footer></footer>
                 </div>
-                <!--the footer-->
-                <footer> Created by <a href="https://www.khanacademy.org/profile/fotis2008/" target="_blank"> fotis2008</a></footer>
             </div>
         </div>
 
