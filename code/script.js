@@ -125,28 +125,34 @@ function changeNav(s=0) {
 
 function changeScreen(screen) {
     if (screen != "settings" && screen != "non-settings") {
+        $("footer").fadeOut();
         $("#" + currentScreen).fadeOut(() => {
             currentScreen = screen;
+            window.scroll(0, 0);
             $("#" + screen).fadeIn();
+            $("footer").fadeIn();
         });
-        window.scroll(0, 0);
     } else if (screen === "settings") {
-        window.scroll(0, 0);
         $("#nav-bar").slideUp();
         setTimeout(() => {
             $("#non-settings").css("animation-name", "move-out-2");
+            $("footer").fadeOut();
+            window.scroll(0, 0);
             setTimeout(() => {
+                $("footer").fadeIn();
                 $("#non-settings").hide();
                 $("#settings").show();
             }, 1000);
         }, 350);
     } else {
-        window.scroll(0, 0);
         $("#settings").css("animation-name", "move-out-1");
+        $("footer").fadeOut();
         setTimeout(() => {
             $("#settings").hide();
             $("#non-settings").show();
+            window.scroll(0, 0);
             $("#non-settings").css("animation-name", "move-in-2");
+            $("footer").fadeIn();
             setTimeout(() => {
                 $("#nav-bar").slideDown();
                 $("#settings").css("animation-name", "move-in-1");
