@@ -7,6 +7,9 @@ html {
 body {
     padding: 0;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -182,6 +185,7 @@ a:hover {
 }
 
 #everything {
+    min-height: 85vh;
     padding-left: 10px;
 }
 
