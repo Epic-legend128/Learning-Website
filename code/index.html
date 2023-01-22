@@ -385,16 +385,16 @@
                             <article>
                                 <h2> Javascript Implementation</h2>
                                 <p> The code needed to write this algorithm in Javascript is the following:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code"> 
                                     //this function returns the index at which the key is found but if it's not then it returns -1<br>
                                     function linear(array, key) {<br>
-                                    &emsp; for (var i = 0; i &lt; array.length; i++) {<br>
-                                    &emsp; &ensp; if (array[i] == key) {<br>
-                                    &emsp; &ensp; &nbsp; return i;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; return -1;<br>
+                                    &nbsp; for (var i = 0; i &lt; array.length; i++) {<br>
+                                    &nbsp; &nbsp; if (array[i] == key) {<br>
+                                    &nbsp; &nbsp; &nbsp; return i;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return -1;<br>
                                     }
                                 </div>
                             </article>
@@ -420,25 +420,25 @@
                             <article>
                                 <h2>Javascript Implementation</h2>
                                 <p>The code needed to write this algorithm in Javascript is the following:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     //this works for arrays sorted in ascending order<br>
                                     function binary(array, key) {<br>
-                                    &emsp; var start = 0;<br>
-                                    &emsp; var end = array.length;<br>
-                                    &emsp; while(start &lt;= end) {<br>
-                                    &emsp; &ensp; var mid = Math.floor((start+end)/2);<br>
-                                    &emsp; &ensp; if (array[mid] == key) {<br>
-                                    &emsp; &ensp; &nbsp; return mid;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else if (array[mid] > key) {<br>
-                                    &emsp; &ensp; &nbsp; end = mid-1;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; start = mid+1;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; return -1;<br>
+                                    &nbsp; var start = 0;<br>
+                                    &nbsp; var end = array.length;<br>
+                                    &nbsp; while(start &lt;= end) {<br>
+                                    &nbsp; &nbsp; var mid = Math.floor((start+end)/2);<br>
+                                    &nbsp; &nbsp; if (array[mid] == key) {<br>
+                                    &nbsp; &nbsp; &nbsp; return mid;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else if (array[mid] > key) {<br>
+                                    &nbsp; &nbsp; &nbsp; end = mid-1;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; start = mid+1;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return -1;<br>
                                     }
                                 </div>
                             </article>
@@ -462,22 +462,22 @@
                                 <h2> Javascript Implementation</h2>
                                 <p> The following code is Bubble Sort written in Javascript:</p>
                                 <div class="code"> 
-                                    <!--note: &ensp; &emsp; and  &nbsp; helped me indent the "code"-->
+                                    <!--note: &nbsp; &nbsp; and  &nbsp; helped me indent the "code"-->
                                     var Bubble = function(array) {
-                                    <br> &ensp;var end = array.length; //this is how to know when to stop the for loop and do while loop
-                                    <br> &ensp;var swapped = false; // a variable used to exit the do while loop
-                                    <br> &ensp;do {
-                                    <br> &emsp; for (var i = 0; end > i-1; i++) {
-                                    <br> &emsp; &ensp; //if the current element is bigget than the next one then swap
-                                    <br> &emsp; &ensp; if (array[i] > array[i+1]) {
-                                    <br> &emsp; &ensp; &nbsp; var temp = array[i];
-                                    <br> &emsp; &ensp; &nbsp; array[i] = array[i+1];
-                                    <br> &emsp; &ensp; &nbsp; array[i+1] = temp;
-                                    <br> &emsp; &ensp; &nbsp; swapped = true;
-                                    <br> &emsp; &ensp; }
-                                    <br> &emsp; }
-                                    <br> &emsp; end--; //because the last element gets sorted
-                                    <br> &ensp; } while (swapped && end >= 0);
+                                    <br> &nbsp;var end = array.length; //this is how to know when to stop the for loop and do while loop
+                                    <br> &nbsp;var swapped = false; // a variable used to exit the do while loop
+                                    <br> &nbsp;do {
+                                    <br> &nbsp; for (var i = 0; end > i-1; i++) {
+                                    <br> &nbsp; &nbsp; //if the current element is bigget than the next one then swap
+                                    <br> &nbsp; &nbsp; if (array[i] > array[i+1]) {
+                                    <br> &nbsp; &nbsp; &nbsp; var temp = array[i];
+                                    <br> &nbsp; &nbsp; &nbsp; array[i] = array[i+1];
+                                    <br> &nbsp; &nbsp; &nbsp; array[i+1] = temp;
+                                    <br> &nbsp; &nbsp; &nbsp; swapped = true;
+                                    <br> &nbsp; &nbsp; }
+                                    <br> &nbsp; }
+                                    <br> &nbsp; end--; //because the last element gets sorted
+                                    <br> &nbsp; } while (swapped && end >= 0);
                                     <br>}
                                 </div>
                             </article>
@@ -501,23 +501,23 @@
                                 <h2> Javascript implementation</h2>
                                 <p> The following code is Selection Sort written in Javascript:</p>
                                 <div class="code"> 
-                                    <!--&emsp; &ensp; &nbsp;-->
+                                    <!--&nbsp;-->
                                     var Selection = function(array) {
-                                    <br> &emsp;var mn; //mn means minimum
-                                    <br> &emsp;var limit = array.length;
-                                    <br> &emsp;for (var i = 0; array.length>i; i++) {
-                                    <br> &emsp; &ensp;mn = i;
-                                    <br> &emsp; &ensp;//find the index of the minimum element in the unsorted array
-                                    <br> &emsp; &ensp;for (var j = mn+1; limit > j; j++) {
-                                    <br> &emsp; &ensp; &nbsp;if (array[mn] > array[j]) {
-                                    <br> &emsp; &ensp; &nbsp; &emsp;mn = j;
-                                    <br> &emsp; &ensp; &nbsp;}
-                                    <br> &emsp; &ensp;}
-                                    <br> &emsp; &ensp;//swap the minimum element in the unsorted array with the first one
-                                    <br> &emsp; &ensp;var temp = array[mn];
-                                    <br> &emsp; &ensp;array[mn] = array[i];
-                                    <br> &emsp; &ensp;array[i] = temp;
-                                    <br> &emsp;}
+                                    <br> &nbsp;var mn; //mn means minimum
+                                    <br> &nbsp;var limit = array.length;
+                                    <br> &nbsp;for (var i = 0; array.length>i; i++) {
+                                    <br> &nbsp; &nbsp;mn = i;
+                                    <br> &nbsp; &nbsp;//find the index of the minimum element in the unsorted array
+                                    <br> &nbsp; &nbsp;for (var j = mn+1; limit > j; j++) {
+                                    <br> &nbsp; &nbsp; &nbsp;if (array[mn] > array[j]) {
+                                    <br> &nbsp; &nbsp; &nbsp; &nbsp;mn = j;
+                                    <br> &nbsp; &nbsp; &nbsp;}
+                                    <br> &nbsp; &nbsp;}
+                                    <br> &nbsp; &nbsp;//swap the minimum element in the unsorted array with the first one
+                                    <br> &nbsp; &nbsp;var temp = array[mn];
+                                    <br> &nbsp; &nbsp;array[mn] = array[i];
+                                    <br> &nbsp; &nbsp;array[i] = temp;
+                                    <br> &nbsp;}
                                     <br>}
                                 </div>
                             </article>
@@ -543,18 +543,18 @@
                             <!--implementation-->
                             <article>
                                 <h2> Javascript Implementation</h2>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code"> 
                                     var Insertion = function(array) {
-                                    <br> &emsp;for (var i = 1; array.length > i; i++) {
-                                    <br> &emsp; &ensp;var value = array[i];
-                                    <br> &emsp; &ensp;for (var j = i-1; j >= 0 && array[j] > value; j--) {
-                                    <br> &emsp; &ensp; &nbsp;//swap
-                                    <br> &emsp; &ensp; &nbsp;var temp = array[j+1];
-                                    <br> &emsp; &ensp; &nbsp;array[j+1] = array[j];
-                                    <br> &emsp; &ensp; &nbsp;array[j] = temp;
-                                    <br> &emsp; &ensp;}
-                                    <br> &emsp;}
+                                    <br> &nbsp;for (var i = 1; array.length > i; i++) {
+                                    <br> &nbsp; &nbsp;var value = array[i];
+                                    <br> &nbsp; &nbsp;for (var j = i-1; j >= 0 && array[j] > value; j--) {
+                                    <br> &nbsp; &nbsp; &nbsp;//swap
+                                    <br> &nbsp; &nbsp; &nbsp;var temp = array[j+1];
+                                    <br> &nbsp; &nbsp; &nbsp;array[j+1] = array[j];
+                                    <br> &nbsp; &nbsp; &nbsp;array[j] = temp;
+                                    <br> &nbsp; &nbsp;}
+                                    <br> &nbsp;}
                                     <br>}
                                 </div>
                             </article>
@@ -577,50 +577,50 @@
                             <article>
                                 <h2> Javascript Implementation</h2>
                                 <p> The following code is Merge Sort written in Javascript</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     function merge(array, p, q, r) {<br>
-                                    &emsp; var lowHalf = [];<br>
-                                    &emsp; var highHalf = [];<br>
-                                    &emsp; var k = p;<br>
-                                    &emsp; var i;<br>
-                                    &emsp; var j;<br>
-                                    &emsp; //first part of the array<br>
-                                    &emsp; for (i = 0; k &lt;= q; i++, k++) {<br>
-                                    &emsp; &ensp; lowHalf[i] = array[k];<br>
-                                    &emsp; }<br>
-                                    &emsp; //second part of the array<br>
-                                    &emsp; for (j = 0; k &lt;= r; j++, k++) {<br>
-                                    &emsp; &ensp; highHalf[j] = array[k];<br>
-                                    &emsp; }<br>
-                                    &emsp; k = p;<br>
-                                    &emsp; i = 0;<br>
-                                    &emsp; j = 0;<br>
-                                    &emsp; //merge the two arrays<br>
-                                    &emsp; while(i &lt; lowHalf.length && j &lt; highHalf.length) {<br>
-                                    &emsp; &ensp; if (lowHalf[i] &lt; highHalf[j]) {<br>
-                                    &emsp; &ensp; &nbsp; array[k] = lowHalf[i++];<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; array[k] = highHalf[j++];<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; k++;<br>
-                                    &emsp; }<br>
-                                    &emsp; while (i &lt; lowHalf.length) {<br>
-                                    &emsp; &ensp; array[k++] = lowHalf[i++];<br>
-                                    &emsp; }<br>
-                                    &emsp; while(j &lt; highHalf.length) {<br>
-                                    &emsp; &ensp; array[k++] = highHalf[j++];<br>
-                                    &emsp; }<br>
+                                    &nbsp; var lowHalf = [];<br>
+                                    &nbsp; var highHalf = [];<br>
+                                    &nbsp; var k = p;<br>
+                                    &nbsp; var i;<br>
+                                    &nbsp; var j;<br>
+                                    &nbsp; //first part of the array<br>
+                                    &nbsp; for (i = 0; k &lt;= q; i++, k++) {<br>
+                                    &nbsp; &nbsp; lowHalf[i] = array[k];<br>
+                                    &nbsp; }<br>
+                                    &nbsp; //second part of the array<br>
+                                    &nbsp; for (j = 0; k &lt;= r; j++, k++) {<br>
+                                    &nbsp; &nbsp; highHalf[j] = array[k];<br>
+                                    &nbsp; }<br>
+                                    &nbsp; k = p;<br>
+                                    &nbsp; i = 0;<br>
+                                    &nbsp; j = 0;<br>
+                                    &nbsp; //merge the two arrays<br>
+                                    &nbsp; while(i &lt; lowHalf.length && j &lt; highHalf.length) {<br>
+                                    &nbsp; &nbsp; if (lowHalf[i] &lt; highHalf[j]) {<br>
+                                    &nbsp; &nbsp; &nbsp; array[k] = lowHalf[i++];<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; array[k] = highHalf[j++];<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; k++;<br>
+                                    &nbsp; }<br>
+                                    &nbsp; while (i &lt; lowHalf.length) {<br>
+                                    &nbsp; &nbsp; array[k++] = lowHalf[i++];<br>
+                                    &nbsp; }<br>
+                                    &nbsp; while(j &lt; highHalf.length) {<br>
+                                    &nbsp; &nbsp; array[k++] = highHalf[j++];<br>
+                                    &nbsp; }<br>
                                     };<br>
                                     <br>
                                     function mergesort(array, p, r) {<br>
-                                    &emsp; if (p &lt; r) {<br>
-                                    &emsp; &ensp; var q = Math.floor((p+r)/2);<br>
-                                    &emsp; &ensp; mergesort(array, p, q);<br>
-                                    &emsp; &ensp; mergesort(array, q+1, r);<br>
-                                    &emsp; &ensp; merge(array, p, q, r);<br>
-                                    &emsp; }<br>
+                                    &nbsp; if (p &lt; r) {<br>
+                                    &nbsp; &nbsp; var q = Math.floor((p+r)/2);<br>
+                                    &nbsp; &nbsp; mergesort(array, p, q);<br>
+                                    &nbsp; &nbsp; mergesort(array, q+1, r);<br>
+                                    &nbsp; &nbsp; merge(array, p, q, r);<br>
+                                    &nbsp; }<br>
                                     };
                                 </div>
                             </article>
@@ -654,38 +654,38 @@
                                 <p> Here is the code needed for the partition() function in Javascript: </p>
                                 <!--partition in Javascript-->
                                 <div class="code">
-                                    <!--&emsp; &ensp; &nbsp;-->
+                                    <!--&nbsp;-->
                                     var partition = function(array, p, r) {
-                                    <br> &emsp;var q = p;
-                                    <br> &emsp;for (var j = p; r > j; j++) {
-                                    <br> &emsp; &ensp;if (array[r] >= array[j]) {
-                                    <br> &emsp; &ensp; &nbsp;//swap the elements
-                                    <br> &emsp; &ensp; &nbsp;var temp = array[j];
-                                    <br> &emsp; &ensp; &nbsp;array[j] = array[q];
-                                    <br> &emsp; &ensp; &nbsp;array[q] = temp;
-                                    <br> &emsp; &ensp; &nbsp;q++;
-                                    <br> &emsp; &ensp;}
-                                    <br> &emsp;}
-                                    <br> &emsp;//swap elements
-                                    <br> &emsp;var temp = array[r];
-                                    <br> &emsp;array[r] = array[q];
-                                    <br> &emsp;array[q] = temp;
-                                    <br> &emsp;//return the index of the pivot
-                                    <br> &emsp;return q;
+                                    <br> &nbsp;var q = p;
+                                    <br> &nbsp;for (var j = p; r > j; j++) {
+                                    <br> &nbsp; &nbsp;if (array[r] >= array[j]) {
+                                    <br> &nbsp; &nbsp; &nbsp;//swap the elements
+                                    <br> &nbsp; &nbsp; &nbsp;var temp = array[j];
+                                    <br> &nbsp; &nbsp; &nbsp;array[j] = array[q];
+                                    <br> &nbsp; &nbsp; &nbsp;array[q] = temp;
+                                    <br> &nbsp; &nbsp; &nbsp;q++;
+                                    <br> &nbsp; &nbsp;}
+                                    <br> &nbsp;}
+                                    <br> &nbsp;//swap elements
+                                    <br> &nbsp;var temp = array[r];
+                                    <br> &nbsp;array[r] = array[q];
+                                    <br> &nbsp;array[q] = temp;
+                                    <br> &nbsp;//return the index of the pivot
+                                    <br> &nbsp;return q;
                                     <br>}
                                 </div>
                                 <br>
                                 <p> Here is the code needed for the quicksort() function in Javascript:</p>
                                 <!--quicksort in Javascript-->
                                 <div class="code">
-                                    <!--&emsp; &ensp; &nbsp;-->
+                                    <!--&nbsp;-->
                                     //l is the left limit and r is the right one
                                     <br>var quicksort = function(array, l, r) {
-                                    <br> &emsp;if (l &lt; r) {
-                                    <br> &emsp; &ensp;var p = partition(array, l , r); //this is the pivot
-                                    <br> &emsp; &ensp;quicksort(array, l, p-1);
-                                    <br> &emsp; &ensp;quicksort(array, p+1, r);
-                                    <br> &emsp;}
+                                    <br> &nbsp;if (l &lt; r) {
+                                    <br> &nbsp; &nbsp;var p = partition(array, l , r); //this is the pivot
+                                    <br> &nbsp; &nbsp;quicksort(array, l, p-1);
+                                    <br> &nbsp; &nbsp;quicksort(array, p+1, r);
+                                    <br> &nbsp;}
                                     <br>}
                                 </div>
                             </article>
@@ -708,51 +708,51 @@
                             <article>
                                 <h2> The code</h2>
                                 <p> This is the code of the button object in Javascript:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button<br>
                                     var Button = function(x, y, w, h, Text, action, Color) {<br>
-                                    &emsp; //variables {<br>
-                                    &emsp; this.x = x; //the x coordinates<br>
-                                    &emsp; this.y = y; //the y coordinates<br>
-                                    &emsp; this.w = w; //the width<br>
-                                    &emsp; this.h = h; //the height<br>
-                                    &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                    &emsp; this.r = 3; //the radius of the button<br>
-                                    &emsp; this.Text = Text; //the text that the button has<br>
-                                    &emsp; this.color = Color;<br>
-                                    &emsp; this.size = 15;<br>
-                                    &emsp; //}<br>
+                                    &nbsp; //variables {<br>
+                                    &nbsp; this.x = x; //the x coordinates<br>
+                                    &nbsp; this.y = y; //the y coordinates<br>
+                                    &nbsp; this.w = w; //the width<br>
+                                    &nbsp; this.h = h; //the height<br>
+                                    &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &nbsp; this.r = 3; //the radius of the button<br>
+                                    &nbsp; this.Text = Text; //the text that the button has<br>
+                                    &nbsp; this.color = Color;<br>
+                                    &nbsp; this.size = 15;<br>
+                                    &nbsp; //}<br>
                                     <br>
-                                    &emsp; //the object's methods {<br>
-                                    &emsp; //check if the something at the given coordiantes is inside the object<br>
-                                    &emsp; this.isInside = function(x, y) {<br>
-                                    &emsp; &ensp; //x and y are the cooridnates that I want to check if they are inside the object<br>
-                                    &emsp; &ensp; return this.x &lt; x && this.x+this.w > x && this.y &LT; y && this.y+this.h > y;<br>
-                                    &emsp; };<br>
+                                    &nbsp; //the object's methods {<br>
+                                    &nbsp; //check if the something at the given coordiantes is inside the object<br>
+                                    &nbsp; this.isInside = function(x, y) {<br>
+                                    &nbsp; &nbsp; //x and y are the cooridnates that I want to check if they are inside the object<br>
+                                    &nbsp; &nbsp; return this.x &lt; x && this.x+this.w > x && this.y &LT; y && this.y+this.h > y;<br>
+                                    &nbsp; };<br>
                                         
-                                    &emsp; //display the button<br>
-                                    &emsp; this.display = function() {<br>
-                                    &emsp; &ensp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
-                                    &emsp; &ensp; &nbsp; //if clicked on button<br>
-                                    &emsp; &ensp; &nbsp; this.action();<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else if (this.isInside(mouseX, mouseY)) {<br>
-                                    &emsp; &ensp; &nbsp; //if above button<br>
-                                    &emsp; &ensp; &nbsp; this.r = 8;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; //else<br>
-                                    &emsp; &ensp; &nbsp; this.r = 3;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; fill(this.color);<br>
-                                    &emsp; &ensp; stroke(0, 0, 0);<br>
-                                    &emsp; &ensp; rect(this.x, this.y, this.w, this.h, this.r); //show the button<br>
-                                    &emsp; &ensp; fill(0, 0, 0); //color for the text<br>
-                                    &emsp; &ensp; textSize(this.size);<br>
-                                    &emsp; &ensp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2));//show the text<br>
-                                    &emsp; };<br>
-                                    &emsp; //}<br>
+                                    &nbsp; //display the button<br>
+                                    &nbsp; this.display = function() {<br>
+                                    &nbsp; &nbsp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
+                                    &nbsp; &nbsp; &nbsp; //if clicked on button<br>
+                                    &nbsp; &nbsp; &nbsp; this.action();<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else if (this.isInside(mouseX, mouseY)) {<br>
+                                    &nbsp; &nbsp; &nbsp; //if above button<br>
+                                    &nbsp; &nbsp; &nbsp; this.r = 8;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; //else<br>
+                                    &nbsp; &nbsp; &nbsp; this.r = 3;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; fill(this.color);<br>
+                                    &nbsp; &nbsp; stroke(0, 0, 0);<br>
+                                    &nbsp; &nbsp; rect(this.x, this.y, this.w, this.h, this.r); //show the button<br>
+                                    &nbsp; &nbsp; fill(0, 0, 0); //color for the text<br>
+                                    &nbsp; &nbsp; textSize(this.size);<br>
+                                    &nbsp; &nbsp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2));//show the text<br>
+                                    &nbsp; };<br>
+                                    &nbsp; //}<br>
                                     };
                                 </div>
                             </article>
@@ -791,66 +791,66 @@
                             <article>
                                 <h2> The Code</h2>
                                 <p> This is the code of the button object in Javascript:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button, Color2 == color when cursor is above button, textColor == the color of the text, sizeText == the size of the text, border == a boolean, if true then show a border for the button otherwise do not, borderColor == the color of the border, borderSize == the size of the border, radius == the radius when drawing the rectangle, radius2 == the radius when drawing the rectangle but the cursor is above the button<br><br>
                                     var Button = function(x, y, w, h, Text, action, Color, Color2, textColor, sizeText, border, borderColor, borderSize, radius, radius2) {<br>
-                                    &emsp; //variables {<br>
-                                    &emsp; this.x = x; //the x coordinates<br>
-                                    &emsp; this.y = y; //the y coordinates<br>
-                                    &emsp; this.w = w; //the width<br>
-                                    &emsp; this.h = h; //the height<br>
-                                    &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                    &emsp; this.r = radius; //the radius of the button<br>
-                                    &emsp; this.r2 = radius2; //the radius when the cursor is over the button<br>
-                                    &emsp; this.rTemp = this.r; // a temporary radius<br>
-                                    &emsp; this.Text = Text; //the text that the button has<br>
-                                    &emsp; this.color = Color; //the initial color of the button<br>
-                                    &emsp; this.color2 = Color2; // the color of the button when the cursor is hovering over it<br>
-                                    &emsp; this.textColor = textColor || color(0, 0, 0); //the color of the text<br>
-                                    &emsp; this.border = border; //it's a boolean, if it's true then it should have a border if it's false it will not have a border<br>
-                                    &emsp; this.bordColor = borderColor || color(0, 0, 0); //the color of the border<br>
-                                    &emsp; this.borderSize = borderSize || 1;<br>
-                                    &emsp; this.size = sizeText || 15; // the textSize<br>
-                                    &emsp; //}<br>
+                                    &nbsp; //variables {<br>
+                                    &nbsp; this.x = x; //the x coordinates<br>
+                                    &nbsp; this.y = y; //the y coordinates<br>
+                                    &nbsp; this.w = w; //the width<br>
+                                    &nbsp; this.h = h; //the height<br>
+                                    &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &nbsp; this.r = radius; //the radius of the button<br>
+                                    &nbsp; this.r2 = radius2; //the radius when the cursor is over the button<br>
+                                    &nbsp; this.rTemp = this.r; // a temporary radius<br>
+                                    &nbsp; this.Text = Text; //the text that the button has<br>
+                                    &nbsp; this.color = Color; //the initial color of the button<br>
+                                    &nbsp; this.color2 = Color2; // the color of the button when the cursor is hovering over it<br>
+                                    &nbsp; this.textColor = textColor || color(0, 0, 0); //the color of the text<br>
+                                    &nbsp; this.border = border; //it's a boolean, if it's true then it should have a border if it's false it will not have a border<br>
+                                    &nbsp; this.bordColor = borderColor || color(0, 0, 0); //the color of the border<br>
+                                    &nbsp; this.borderSize = borderSize || 1;<br>
+                                    &nbsp; this.size = sizeText || 15; // the textSize<br>
+                                    &nbsp; //}<br>
                                     <br>
-                                    &emsp; //the object's methods {<br>
-                                    &emsp; //check if the something at the given coordiantes is inside the object<br>
-                                    &emsp; this.isInside = function(x, y) {<br>
-                                    &emsp; &ensp; //x and y are the cooridnates that I want to check if they are inside the object<br>
-                                    &emsp; &ensp; return this.x &lt; x && this.x+this.w > x && this.y &lt; y && this.y+this.h > y;<br>
-                                    &emsp; };<br>
+                                    &nbsp; //the object's methods {<br>
+                                    &nbsp; //check if the something at the given coordiantes is inside the object<br>
+                                    &nbsp; this.isInside = function(x, y) {<br>
+                                    &nbsp; &nbsp; //x and y are the cooridnates that I want to check if they are inside the object<br>
+                                    &nbsp; &nbsp; return this.x &lt; x && this.x+this.w > x && this.y &lt; y && this.y+this.h > y;<br>
+                                    &nbsp; };<br>
                                     <br>
-                                    &emsp; //display the button<br>
-                                    &emsp; this.display = function() {<br>
-                                    &emsp; &ensp; fill(this.color2);<br>
-                                    &emsp; &ensp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
-                                    &emsp; &ensp; &nbsp; //if clicked on button<br>
-                                    &emsp; &ensp; &nbsp; this.action();<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else if (this.isInside(mouseX, mouseY)) {<br>
-                                    &emsp; &ensp; &nbsp; //if above button<br>
-                                    &emsp; &ensp; &nbsp; this.rTemp = this.r2;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; //else<br>
-                                    &emsp; &ensp; &nbsp; this.rTemp = this.r;<br>
-                                    &emsp; &ensp; &nbsp; fill(this.color);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; if (this.border) {<br>
-                                    &emsp; &ensp; &nbsp; stroke(this.bordColor);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; noStroke();<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; strokeWeight(this.borderSize);<br>
-                                    &emsp; &ensp; rect(this.x, this.y, this.w, this.h, this.rTemp); //show the button<br>
+                                    &nbsp; //display the button<br>
+                                    &nbsp; this.display = function() {<br>
+                                    &nbsp; &nbsp; fill(this.color2);<br>
+                                    &nbsp; &nbsp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
+                                    &nbsp; &nbsp; &nbsp; //if clicked on button<br>
+                                    &nbsp; &nbsp; &nbsp; this.action();<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else if (this.isInside(mouseX, mouseY)) {<br>
+                                    &nbsp; &nbsp; &nbsp; //if above button<br>
+                                    &nbsp; &nbsp; &nbsp; this.rTemp = this.r2;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; //else<br>
+                                    &nbsp; &nbsp; &nbsp; this.rTemp = this.r;<br>
+                                    &nbsp; &nbsp; &nbsp; fill(this.color);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; if (this.border) {<br>
+                                    &nbsp; &nbsp; &nbsp; stroke(this.bordColor);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; noStroke();<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; strokeWeight(this.borderSize);<br>
+                                    &nbsp; &nbsp; rect(this.x, this.y, this.w, this.h, this.rTemp); //show the button<br>
                                     <br>
-                                    &emsp; &ensp; fill(this.textColor); //color for the text<br>
-                                    &emsp; &ensp; textSize(this.size);<br>
-                                    &emsp; &ensp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2)-1);//show the text<br>
-                                    &emsp; };<br>
-                                    &emsp; //}<br>
+                                    &nbsp; &nbsp; fill(this.textColor); //color for the text<br>
+                                    &nbsp; &nbsp; textSize(this.size);<br>
+                                    &nbsp; &nbsp; text(this.Text, this.x+((this.w-textWidth(this.Text))/2), this.size+this.y+((this.h-this.size)/2)-1);//show the text<br>
+                                    &nbsp; };<br>
+                                    &nbsp; //}<br>
                                     };
                                 </div>
                             </article>
@@ -881,35 +881,35 @@
                             <article>
                                 <h2> The Code</h2>
                                 <p> This is the code of the button object in Javascript: </p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     //x == x position of the button, y == y position of the button, show is a function that draws the button that you want, isInside is function that checks if the cursor is inside the button, action is what should happen if the button is clicked, show2 a function that draws the button when your mouse hovers over it<br>
                                     var Button = function(x, y, show, isInside, action, show2) {<br>
-                                    &emsp; //variables {<br>
-                                    &emsp; this.x = x; //the x coordinates<br>
-                                    &emsp; this.y = y; //the y coordinates<br>
-                                    &emsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                    &emsp; this.isInside = isInside;<br>
-                                    &emsp; this.show = show;<br>
-                                    &emsp; this.show2 = show2 || show;<br>
-                                    &emsp; //}<br>
+                                    &nbsp; //variables {<br>
+                                    &nbsp; this.x = x; //the x coordinates<br>
+                                    &nbsp; this.y = y; //the y coordinates<br>
+                                    &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &nbsp; this.isInside = isInside;<br>
+                                    &nbsp; this.show = show;<br>
+                                    &nbsp; this.show2 = show2 || show;<br>
+                                    &nbsp; //}<br>
                                     <br>
-                                    &emsp; //the object's methods {<br>
-                                    &emsp; //display the button<br>
-                                    &emsp; this.display = function() {<br>
-                                    &emsp; &ensp; if (this.isInside() && mousePressed) {<br>
-                                    &emsp; &ensp; &nbsp; //if clicked on button<br>
-                                    &emsp; &ensp; &nbsp; this.action();<br>
-                                    &emsp; &ensp; &nbsp; this.show2();<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else if (this.isInside()) {<br>
-                                    &emsp; &ensp; &nbsp; this.show2();<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; this.show();<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; };<br>
-                                    &emsp; //}<br>
+                                    &nbsp; //the object's methods {<br>
+                                    &nbsp; //display the button<br>
+                                    &nbsp; this.display = function() {<br>
+                                    &nbsp; &nbsp; if (this.isInside() && mousePressed) {<br>
+                                    &nbsp; &nbsp; &nbsp; //if clicked on button<br>
+                                    &nbsp; &nbsp; &nbsp; this.action();<br>
+                                    &nbsp; &nbsp; &nbsp; this.show2();<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else if (this.isInside()) {<br>
+                                    &nbsp; &nbsp; &nbsp; this.show2();<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; this.show();<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; };<br>
+                                    &nbsp; //}<br>
                                     };
                                 </div>
                             </article>
@@ -932,36 +932,36 @@
                             <article>
                                 <h2> Code</h2>
                                 <p> This is the code needed for the Caesar Cipher in Javascript:</p>
-                                <!--&ensp; &emsp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     //encryption<br>
                                     var CaesarCipherEncrypt = function(text, key) {<br>
-                                    &ensp; var encryptedText = "";//holds the encrypted text<br>
-                                    &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                    &ensp; &emsp; var temp = (text.charCodeAt(i)+key)%256;<br>
-                                    &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
-                                    &ensp; &emsp; &nbsp; encryptedText += String.fromCharCode(temp);<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; &emsp; else {<br>
-                                    &ensp; &emsp; &nbsp; encryptedText += " ";<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; }<br>
-                                    &ensp; return encryptedText;<br>
+                                    &nbsp; var encryptedText = "";//holds the encrypted text<br>
+                                    &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &nbsp; &nbsp; var temp = (text.charCodeAt(i)+key)%256;<br>
+                                    &nbsp; &nbsp; if (text[i]!==" ") {//if it's not space<br>
+                                    &nbsp; &nbsp; &nbsp; encryptedText += String.fromCharCode(temp);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; encryptedText += " ";<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return encryptedText;<br>
                                     };<br>
                                     <br>
                                     //decryption<br>
                                     var CaesarCipherDecrypt = function(text, key) {<br>
-                                    &ensp; var decryptedText = "";<br>
-                                    &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                    &ensp; &emsp; var temp = (text.charCodeAt(i)+(256-key))%256;<br>
-                                    &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
-                                    &ensp; &emsp; &nbsp; decryptedText += String.fromCharCode(temp);<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; &emsp; else {<br>
-                                    &ensp; &emsp; &nbsp; decryptedText += " ";<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; }<br>
-                                    &ensp; return decryptedText;<br>
+                                    &nbsp; var decryptedText = "";<br>
+                                    &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &nbsp; &nbsp; var temp = (text.charCodeAt(i)+(256-key))%256;<br>
+                                    &nbsp; &nbsp; if (text[i]!==" ") {//if it's not space<br>
+                                    &nbsp; &nbsp; &nbsp; decryptedText += String.fromCharCode(temp);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; decryptedText += " ";<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return decryptedText;<br>
                                     };<br>
                                 </div>
                             </article>
@@ -985,70 +985,70 @@
                             <article>
                                 <h2> Code</h2>
                                 <p> The code for Vigenere Cipher: </p>
-                                <!--&emsp; &ensp; enbsp;-->
+                                <!--&nbsp; &nbsp; enbsp;-->
                                 <div class="code">
                                     function removeSpaces(shiftWordEl) {<br>
-                                    &emsp; var k = 0;<br>
-                                    &emsp; var wholeKey = "";<br>
-                                    &emsp; while (k&lt;shiftWordEl.length) {<br>
-                                    &emsp; &ensp; if (shiftWordEl[k] !== " ") {<br>
-                                    &emsp; &ensp; &nbsp; wholeKey += shiftWordEl[k];<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; k++;<br>
-                                    &emsp; }<br>
-                                    &emsp; return wholeKey;<br>
+                                    &nbsp; var k = 0;<br>
+                                    &nbsp; var wholeKey = "";<br>
+                                    &nbsp; while (k&lt;shiftWordEl.length) {<br>
+                                    &nbsp; &nbsp; if (shiftWordEl[k] !== " ") {<br>
+                                    &nbsp; &nbsp; &nbsp; wholeKey += shiftWordEl[k];<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; k++;<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return wholeKey;<br>
                                     }<br>
                                     <br>
                                     function encrypt(input, shiftWord) {<br>
-                                    &emsp; var wholeKey = removeSpaces(shiftWord);<br>
-                                    &emsp; var encrypted = "";<br>
-                                    &emsp; var key = 0;<br>
-                                    &emsp; var counter = 0;<br>
-                                    &emsp; var counter2 = 0;<br>
-                                    &emsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length+counter) {<br>
-                                    &emsp; &ensp; counter = 0;<br>
-                                    &emsp; &ensp; counter2 = 0;<br>
-                                    &emsp; &ensp; for (var j = 0; j+counter2&lt;wholeKey.length && j+i&lt;input.length; j++) {<br>
-                                    &emsp; &ensp; &nbsp; if (input[j+counter+i]!==" ") {<br>
-                                    &emsp; &ensp; &nbsp; &emsp; if (wholeKey[j+counter2] === " ") {<br>
-                                    &emsp; &ensp; &nbsp; &emsp; &ensp; counter2++;<br>
-                                    &emsp; &ensp; &nbsp; &emsp; }<br>
-                                    &emsp; &ensp; &nbsp; &emsp; key = wholeKey.charCodeAt(j+counter2);<br>
-                                    &emsp; &ensp; &nbsp; &emsp; encrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+key)%256);<br>
-                                    &emsp; &ensp; &nbsp; }<br>
-                                    &emsp; &ensp; &nbsp; else {<br>
-                                    &emsp; &ensp; &nbsp; &emsp; encrypted += " ";<br>
-                                    &emsp; &ensp; &nbsp; &emsp; counter++;<br>
-                                    &emsp; &ensp; &nbsp; &emsp; j--;<br>
-                                    &emsp; &ensp; &nbsp; }<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; return encrypted;<br>
+                                    &nbsp; var wholeKey = removeSpaces(shiftWord);<br>
+                                    &nbsp; var encrypted = "";<br>
+                                    &nbsp; var key = 0;<br>
+                                    &nbsp; var counter = 0;<br>
+                                    &nbsp; var counter2 = 0;<br>
+                                    &nbsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length+counter) {<br>
+                                    &nbsp; &nbsp; counter = 0;<br>
+                                    &nbsp; &nbsp; counter2 = 0;<br>
+                                    &nbsp; &nbsp; for (var j = 0; j+counter2&lt;wholeKey.length && j+i&lt;input.length; j++) {<br>
+                                    &nbsp; &nbsp; &nbsp; if (input[j+counter+i]!==" ") {<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; if (wholeKey[j+counter2] === " ") {<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; counter2++;<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; key = wholeKey.charCodeAt(j+counter2);<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; encrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+key)%256);<br>
+                                    &nbsp; &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; encrypted += " ";<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; counter++;<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; j--;<br>
+                                    &nbsp; &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return encrypted;<br>
                                     }<br>
                                     <br>
                                     function decrypt(input, shiftWord) {<br>
-                                    &emsp; var wholeKey = removeSpaces(shiftWord);<br>
-                                    &emsp; var decrypted = "";<br>
-                                    &emsp; var counter = 0;<br>
-                                    &emsp; var counter2 = 0;<br>
-                                    &emsp; var key = 0;<br>
-                                    &emsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length) {<br>
-                                    &emsp; &ensp; for (var j = 0; (j+i)&lt;input.length && j&lt;wholeKey.length; j++) {<br>
-                                    &emsp; &ensp; &nbsp; if (input[j+counter+i] !== " ") {<br>
-                                    &emsp; &ensp; &nbsp; &emsp; if (wholeKey[j+counter2] === " ") {<br>
-                                    &emsp; &ensp; &nbsp; &emsp; &ensp; counter2++;<br>
-                                    &emsp; &ensp; &nbsp; &emsp; }<br>
-                                    &emsp; &ensp; &nbsp; &emsp; key = wholeKey.charCodeAt(j+counter2);<br>
-                                    &emsp; &ensp; &nbsp; &emsp; decrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+(256-key))%256);<br>
-                                    &emsp; &ensp; &nbsp; }<br>
-                                    &emsp; &ensp; &nbsp; else {<br>
-                                    &emsp; &ensp; &nbsp; &emsp; decrypted += " ";<br>
-                                    &emsp; &ensp; &nbsp; &emsp; counter++;<br>
-                                    &emsp; &ensp; &nbsp; &emsp; j--;<br>
-                                    &emsp; &ensp; &nbsp; }<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; return decrypted;<br>
+                                    &nbsp; var wholeKey = removeSpaces(shiftWord);<br>
+                                    &nbsp; var decrypted = "";<br>
+                                    &nbsp; var counter = 0;<br>
+                                    &nbsp; var counter2 = 0;<br>
+                                    &nbsp; var key = 0;<br>
+                                    &nbsp; for (var i = 0; i&lt;input.length; i+=wholeKey.length) {<br>
+                                    &nbsp; &nbsp; for (var j = 0; (j+i)&lt;input.length && j&lt;wholeKey.length; j++) {<br>
+                                    &nbsp; &nbsp; &nbsp; if (input[j+counter+i] !== " ") {<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; if (wholeKey[j+counter2] === " ") {<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; counter2++;<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; key = wholeKey.charCodeAt(j+counter2);<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; decrypted += String.fromCharCode((input.charCodeAt(i+j+counter)+(256-key))%256);<br>
+                                    &nbsp; &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; decrypted += " ";<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; counter++;<br>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; j--;<br>
+                                    &nbsp; &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return decrypted;<br>
                                     }
                                 </div>
                             </article>
@@ -1071,36 +1071,36 @@
                             <article>
                                 <h2> Code</h2>
                                 <p> This is the code needed to encrypt/decrypt using the Polybius Square in Javascript:</p>
-                                <!--&ensp; &emsp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     //encryption<br>
                                     var PolybiusSquareEncrypt = function(text) {<br>
-                                    &ensp; var encrypt = "";<br>
-                                    &ensp; for (var i = 0; i &lt; text.length; i++) {<br>
-                                    &ensp; &emsp; var temp = text.charCodeAt(i)-97; //turns a character into a number according to its value on the ascii table<br>
-                                    &ensp; &emsp; if (temp &lt;= 26 && temp >= 0) {<br>
-                                    &ensp; &emsp; &nbsp; encrypt += Math.floor(temp/5) + "" + temp%5;<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; &emsp; else if (temp+97 === 32) {<br>
-                                    &ensp; &emsp; &nbsp; encrypt += " ";<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; }<br>
-                                    &ensp; return encrypt;<br>
+                                    &nbsp; var encrypt = "";<br>
+                                    &nbsp; for (var i = 0; i &lt; text.length; i++) {<br>
+                                    &nbsp; &nbsp; var temp = text.charCodeAt(i)-97; //turns a character into a number according to its value on the ascii table<br>
+                                    &nbsp; &nbsp; if (temp &lt;= 26 && temp >= 0) {<br>
+                                    &nbsp; &nbsp; &nbsp; encrypt += Math.floor(temp/5) + "" + temp%5;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else if (temp+97 === 32) {<br>
+                                    &nbsp; &nbsp; &nbsp; encrypt += " ";<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return encrypt;<br>
                                     };<br>
                                     <br>
                                     //decryption<br>
                                     var CaesarCipherDecrypt = function(text, key) {<br>
-                                    &ensp; var decryptedText = "";<br>
-                                    &ensp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                    &ensp; &emsp; var temp = (text.charCodeAt(i)-97+(26-key))%26;<br>
-                                    &ensp; &emsp; if (text[i]!==" ") {//if it's not space<br>
-                                    &ensp; &emsp; &nbsp; decryptedText += String.fromCharCode(temp+97);<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; &emsp; else {<br>
-                                    &ensp; &emsp; &nbsp; decryptedText += " ";<br>
-                                    &ensp; &emsp; }<br>
-                                    &ensp; }<br>
-                                    &ensp; return decryptedText;<br>
+                                    &nbsp; var decryptedText = "";<br>
+                                    &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &nbsp; &nbsp; var temp = (text.charCodeAt(i)-97+(26-key))%26;<br>
+                                    &nbsp; &nbsp; if (text[i]!==" ") {//if it's not space<br>
+                                    &nbsp; &nbsp; &nbsp; decryptedText += String.fromCharCode(temp+97);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; decryptedText += " ";<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return decryptedText;<br>
                                     };
                                 </div>
                             </article>
@@ -1123,41 +1123,41 @@
                             <article>
                                 <h2> Code</h2>
                                 <p> This is the code needed to encrypt/decrypt using the One Time Pad in Javascript:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     function encryptOTP(text, otp) {<br>
-                                    &emsp; var keys = [];<br>
-                                    &emsp; keys = otp;<br>
-                                    &emsp; var encrypted = "";<br>
-                                    &emsp; countSpaces=0;<br>
-                                    &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                    &emsp; &ensp; if (text[i]!==" ") {<br>
-                                    &emsp; &ensp; &nbsp; char = text.charCodeAt(i);<br>
-                                    &emsp; &ensp; &nbsp; encrypted += String.fromCharCode((char+keys.charCodeAt(i-countSpaces))%256);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; encrypted += " ";<br>
-                                    &emsp; &ensp; &nbsp; countSpaces++;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; return encrypted;<br>
+                                    &nbsp; var keys = [];<br>
+                                    &nbsp; keys = otp;<br>
+                                    &nbsp; var encrypted = "";<br>
+                                    &nbsp; countSpaces=0;<br>
+                                    &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &nbsp; &nbsp; if (text[i]!==" ") {<br>
+                                    &nbsp; &nbsp; &nbsp; char = text.charCodeAt(i);<br>
+                                    &nbsp; &nbsp; &nbsp; encrypted += String.fromCharCode((char+keys.charCodeAt(i-countSpaces))%256);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; encrypted += " ";<br>
+                                    &nbsp; &nbsp; &nbsp; countSpaces++;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return encrypted;<br>
                                     }<br><br>
                                     function decryptOTP(text, keysInput) {<br>
-                                    &emsp; var keys = keysInput;<br>
-                                    &emsp; var countSpaces = 0;<br>
-                                    &emsp; var char;<br>
-                                    &emsp; var decrypted = "";<br>
-                                    &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                    &emsp; &ensp; if (text[i] !== " ") {<br>
-                                    &emsp; &ensp; &nbsp; char = (text.charCodeAt(i));<br>
-                                    &emsp; &ensp; &nbsp; decrypted += String.fromCharCode((char+(256-keys.charCodeAt(i-countSpaces)))%256);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; decrypted += " ";<br>
-                                    &emsp; &ensp; &nbsp; countSpaces++;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; return decrypted;<br>
+                                    &nbsp; var keys = keysInput;<br>
+                                    &nbsp; var countSpaces = 0;<br>
+                                    &nbsp; var char;<br>
+                                    &nbsp; var decrypted = "";<br>
+                                    &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &nbsp; &nbsp; if (text[i] !== " ") {<br>
+                                    &nbsp; &nbsp; &nbsp; char = (text.charCodeAt(i));<br>
+                                    &nbsp; &nbsp; &nbsp; decrypted += String.fromCharCode((char+(256-keys.charCodeAt(i-countSpaces)))%256);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; decrypted += " ";<br>
+                                    &nbsp; &nbsp; &nbsp; countSpaces++;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return decrypted;<br>
                                     }
                                 </div>
                             </article>
@@ -1180,31 +1180,31 @@
                             <article>
                                 <h2> Code</h2>
                                 <p> This is the code needed to encrypt/decrypt using the ASCII in Javascript:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     function toBin(text) {<br>
-                                    &emsp; var final = "";<br>
-                                    &emsp; for (var i = 0; i&lt;text.length; i++) {<br>
-                                    &emsp; &ensp; var temp = parseInt(text.charCodeAt(i));<br>
-                                    &emsp; &ensp; var temp2 = (temp.toString(2)).toString();<br>
-                                    &emsp; &ensp; for (var j = temp2.length; j&lt;8; j++) {<br>
-                                    &emsp; &ensp; &nbsp; temp2 = "0" + temp2;<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; final += temp2;<br>
-                                    &emsp; }<br>
-                                    &emsp; return final;<br>
+                                    &nbsp; var final = "";<br>
+                                    &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
+                                    &nbsp; &nbsp; var temp = parseInt(text.charCodeAt(i));<br>
+                                    &nbsp; &nbsp; var temp2 = (temp.toString(2)).toString();<br>
+                                    &nbsp; &nbsp; for (var j = temp2.length; j&lt;8; j++) {<br>
+                                    &nbsp; &nbsp; &nbsp; temp2 = "0" + temp2;<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; final += temp2;<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return final;<br>
                                     }<br>
                                     <br>
                                     function fromBin(binNum) {<br>
-                                    &emsp; var final = "";<br>
-                                    &emsp; for (var i = 0; i&lt;binNum.length; i+=8) {<br>
-                                    &emsp; &ensp; var temp = "";<br>
-                                    &emsp; &ensp; for (var j = i; j&lt;i+8; j++) {<br>
-                                    &emsp; &ensp; &nbsp; temp += binNum[j];<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; final += String.fromCharCode(parseInt(temp, 2));<br>
-                                    &emsp; }<br>
-                                    &emsp; return final;<br>
+                                    &nbsp; var final = "";<br>
+                                    &nbsp; for (var i = 0; i&lt;binNum.length; i+=8) {<br>
+                                    &nbsp; &nbsp; var temp = "";<br>
+                                    &nbsp; &nbsp; for (var j = i; j&lt;i+8; j++) {<br>
+                                    &nbsp; &nbsp; &nbsp; temp += binNum[j];<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; final += String.fromCharCode(parseInt(temp, 2));<br>
+                                    &nbsp; }<br>
+                                    &nbsp; return final;<br>
                                     }
             
             
@@ -1228,32 +1228,32 @@
                             <article>
                                 <h2> Javascript Implementation</h2>
                                 <p> This is the code needed to make a mountains in the background in Javascript:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     width=1000;<br>
                                     height=800;<br>
                                     //create one mountain range<br>
                                     var mountainRange = function(start, x, y, Color) {<br>
-                                    &emsp; //NOTE: x doesn't completely work with positive values<br>
-                                    &emsp; //x and y parameters work more like width and height<br>
-                                    &emsp; pushMatrix();<br>
-                                    &emsp; translate(x, y);<br>
-                                    &emsp; stroke(Color);<br>
-                                    &emsp; var increase = 0.01;<br>
-                                    &emsp; for (var t = start; t&lt;increase*width+abs(x/100)+start; t+=increase) {<br>
-                                    &emsp; &ensp; var temp = noise(t);<br>
-                                    &emsp; &ensp; var rectHeight = map(temp, 0, 1, 0, 200);<br>
-                                    &emsp; &ensp; rect(t*100-start*100, height-rectHeight, 1, rectHeight-y);<br>
-                                    &emsp; }<br>
-                                    &emsp; popMatrix();<br>
+                                    &nbsp; //NOTE: x doesn't completely work with positive values<br>
+                                    &nbsp; //x and y parameters work more like width and height<br>
+                                    &nbsp; pushMatrix();<br>
+                                    &nbsp; translate(x, y);<br>
+                                    &nbsp; stroke(Color);<br>
+                                    &nbsp; var increase = 0.01;<br>
+                                    &nbsp; for (var t = start; t&lt;increase*width+abs(x/100)+start; t+=increase) {<br>
+                                    &nbsp; &nbsp; var temp = noise(t);<br>
+                                    &nbsp; &nbsp; var rectHeight = map(temp, 0, 1, 0, 200);<br>
+                                    &nbsp; &nbsp; rect(t*100-start*100, height-rectHeight, 1, rectHeight-y);<br>
+                                    &nbsp; }<br>
+                                    &nbsp; popMatrix();<br>
                                     };<br>
                                     <br>
                                     //create the background<br>
                                     var createBackground = function() {<br>
-                                    &emsp; background(146, 236, 252);<br>
-                                    &emsp; mountainRange(300, 0, -201, color(189, 187, 189));<br>
-                                    &emsp; mountainRange(150, 0, -100, color(99, 97, 99));<br>
-                                    &emsp; mountainRange(0, 0, 0, color(0, 0, 0));<br>
+                                    &nbsp; background(146, 236, 252);<br>
+                                    &nbsp; mountainRange(300, 0, -201, color(189, 187, 189));<br>
+                                    &nbsp; mountainRange(150, 0, -100, color(99, 97, 99));<br>
+                                    &nbsp; mountainRange(0, 0, 0, color(0, 0, 0));<br>
                                     };<br>
                                     <br>
                                     createBackground();
@@ -1277,32 +1277,32 @@
                             <!--code-->
                             <article>
                                 <h2> Javascript Implementation</h2>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     width=800;<br>
                                     height=600;<br>
                                     //create one cloud, recommended not to put a very small or big value for last parameter, around 10 to 20 is good enough<br>
                                     var cloud = function(x, y, Color, size, amount) {<br>
-                                    &emsp; pushMatrix();<br>
-                                    &emsp; translate(x, y);<br>
-                                    &emsp; scale(1.1, 0.4);<br>
-                                    &emsp; fill(Color);<br>
-                                    &emsp; noStroke();<br>
-                                    &emsp; ellipse(x,y,size/2,size/2);<br>
-                                    &emsp; for (var i = 0; i&lt;amount; i++) {<br>
-                                    &emsp; &ensp; pushMatrix();<br>
-                                    &emsp; &ensp; ellipse(x+Math.floor(Math.random()*size/1.1), y+Math.floor(Math.random()*size/1.1), size, size);<br>
-                                    &emsp; &ensp; rotate(360/amount*i);<br>
-                                    &emsp; &ensp; popMatrix();<br>
-                                    &emsp; }<br>
-                                    &emsp; popMatrix();<br>
+                                    &nbsp; pushMatrix();<br>
+                                    &nbsp; translate(x, y);<br>
+                                    &nbsp; scale(1.1, 0.4);<br>
+                                    &nbsp; fill(Color);<br>
+                                    &nbsp; noStroke();<br>
+                                    &nbsp; ellipse(x,y,size/2,size/2);<br>
+                                    &nbsp; for (var i = 0; i&lt;amount; i++) {<br>
+                                    &nbsp; &nbsp; pushMatrix();<br>
+                                    &nbsp; &nbsp; ellipse(x+Math.floor(Math.random()*size/1.1), y+Math.floor(Math.random()*size/1.1), size, size);<br>
+                                    &nbsp; &nbsp; rotate(360/amount*i);<br>
+                                    &nbsp; &nbsp; popMatrix();<br>
+                                    &nbsp; }<br>
+                                    &nbsp; popMatrix();<br>
                                     };<br>
                                     <br>
                                     function createBackground() {<br>
-                                    &emsp; background(146, 236, 252);<br>
-                                    &emsp; cloud(139, 200, color(255, 255, 255), 200, 10);<br>
-                                    &emsp; cloud(50, 81, color(255, 255, 255), 100, 10);<br>
-                                    &emsp; cloud(200, 327, color(255, 255, 255), 80, 10);<br>
+                                    &nbsp; background(146, 236, 252);<br>
+                                    &nbsp; cloud(139, 200, color(255, 255, 255), 200, 10);<br>
+                                    &nbsp; cloud(50, 81, color(255, 255, 255), 100, 10);<br>
+                                    &nbsp; cloud(200, 327, color(255, 255, 255), 80, 10);<br>
                                     }<br>
                                     <br>
                                     createBackground();
@@ -1327,34 +1327,34 @@
                             <article>
                                 <h2> Javascript Implementation</h2>
                                 <p> This is the code needed to make the linear gradient function for the background:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     height = 700;<br>
                                     width = 600;<br>
                                     //if start == 1 then colors start from top-left to bottom right, 2 == top-right to bottom-left, 3 == top to bottom, 4 == left to right<br>
                                     function linearGradient(Color1, Color2, start) {<br>
-                                    &emsp; pushMatrix();<br>
-                                    &emsp; var factor = 1;<br>
-                                    &emsp; if (start &lt;= 2) {<br>
-                                    &emsp; &ensp; factor = 2;<br>
-                                    &emsp; &ensp; if (start === 2) {<br>
-                                    &emsp; &ensp; &nbsp; translate(width, 0);<br>
-                                    &emsp; &ensp; &nbsp; rotate(Math.PI/2);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; for (var i = 0; i&lt;height*2; i+=0.5) {<br>
-                                    &emsp; &ensp; stroke(lerpColor(Color1, Color2, map(i, 0, height*factor, 0, 1)));<br>
-                                    &emsp; &ensp; if (start &lt;= 2) {<br>
-                                    &emsp; &ensp; &nbsp; line(0, i, i, 0);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else if (start === 3) {<br>
-                                    &emsp; &ensp; &nbsp; line(0, i, width, i);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; &ensp; else {<br>
-                                    &emsp; &ensp; &nbsp; line(i, 0, i, height);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; popMatrix();<br>
+                                    &nbsp; pushMatrix();<br>
+                                    &nbsp; var factor = 1;<br>
+                                    &nbsp; if (start &lt;= 2) {<br>
+                                    &nbsp; &nbsp; factor = 2;<br>
+                                    &nbsp; &nbsp; if (start === 2) {<br>
+                                    &nbsp; &nbsp; &nbsp; translate(width, 0);<br>
+                                    &nbsp; &nbsp; &nbsp; rotate(Math.PI/2);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; for (var i = 0; i&lt;height*2; i+=0.5) {<br>
+                                    &nbsp; &nbsp; stroke(lerpColor(Color1, Color2, map(i, 0, height*factor, 0, 1)));<br>
+                                    &nbsp; &nbsp; if (start &lt;= 2) {<br>
+                                    &nbsp; &nbsp; &nbsp; line(0, i, i, 0);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else if (start === 3) {<br>
+                                    &nbsp; &nbsp; &nbsp; line(0, i, width, i);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; &nbsp; else {<br>
+                                    &nbsp; &nbsp; &nbsp; line(i, 0, i, height);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; popMatrix();<br>
                                     }<br>
                                     <br>
                                     linearGradient(color(230, 37, 37), color(8, 84, 199), 1);
@@ -1382,34 +1382,34 @@
                             <article>
                                 <h2> Javascript Implementation</h2>
                                 <p> I made two different functions for the radial background. You can use wichever one you want. This is the code needed to write both of them in Javascript:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     size(500, 500);<br>
                                     <br>
                                     //this one changes the individual color of every pixel<br>
                                     function radialBackground(Color1, Color2, distance) {<br>
-                                    &emsp; loadPixels();<br>
-                                    &emsp; var pointX = width/2;<br>
-                                    &emsp; var pointY = height/2;<br>
-                                    &emsp; for (var y = 0; y&lt;height; y++) {<br>
-                                    &emsp; &ensp; for (var x = 0; x&lt;width; x++) {<br>
-                                    &emsp; &ensp; &nbsp; var d = dist(pointX, pointY, x, y);<br>
-                                    &emsp; &ensp; &nbsp; var d = map(d, 0, distance, 255, 0);<br>
-                                    &emsp; &ensp; &nbsp; var tempColor = lerpColor(Color1, Color2, map(abs(d), 255, 0, 0, 1));<br>
-                                    &emsp; &ensp; &nbsp; set(x, y, tempColor);<br>
-                                    &emsp; &ensp; }<br>
-                                    &emsp; }<br>
-                                    &emsp; updatePixels();<br>
+                                    &nbsp; loadPixels();<br>
+                                    &nbsp; var pointX = width/2;<br>
+                                    &nbsp; var pointY = height/2;<br>
+                                    &nbsp; for (var y = 0; y&lt;height; y++) {<br>
+                                    &nbsp; &nbsp; for (var x = 0; x&lt;width; x++) {<br>
+                                    &nbsp; &nbsp; &nbsp; var d = dist(pointX, pointY, x, y);<br>
+                                    &nbsp; &nbsp; &nbsp; var d = map(d, 0, distance, 255, 0);<br>
+                                    &nbsp; &nbsp; &nbsp; var tempColor = lerpColor(Color1, Color2, map(abs(d), 255, 0, 0, 1));<br>
+                                    &nbsp; &nbsp; &nbsp; set(x, y, tempColor);<br>
+                                    &nbsp; &nbsp; }<br>
+                                    &nbsp; }<br>
+                                    &nbsp; updatePixels();<br>
                                     }<br>
                                     <br>
                                     //this one uses a for loop to draw ellipses each one being 1 pixel smaller than the previous one and with a bit of a closer color to the one on the center<br>
                                     function radialBackground2(Color1, Color2) {<br>
-                                    &emsp; noStroke();<br>
-                                    &emsp; var end = Math.sqrt(width*width+height*height);<br>
-                                    &emsp; for (var i = end; i>0; i--) {<br>
-                                    &emsp; &ensp; fill(lerpColor(Color1, Color2, map(i, 1, end, 0, 1)));<br>
-                                    &emsp; &ensp; ellipse(width/2, height/2, i, i);<br>
-                                    &emsp; }<br>
+                                    &nbsp; noStroke();<br>
+                                    &nbsp; var end = Math.sqrt(width*width+height*height);<br>
+                                    &nbsp; for (var i = end; i>0; i--) {<br>
+                                    &nbsp; &nbsp; fill(lerpColor(Color1, Color2, map(i, 1, end, 0, 1)));<br>
+                                    &nbsp; &nbsp; ellipse(width/2, height/2, i, i);<br>
+                                    &nbsp; }<br>
                                     }<br>
                                     <br>
                                     radialBackground2(color(27, 132, 224), color(217, 115, 115));<br>
@@ -1435,10 +1435,10 @@
                             <article>
                                 <h2> CSS Implementation</h2>
                                 <p> This is the code needed to write it in CSS:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     .center {<br>
-                                    &emsp; margin: 0 auto;<br>
+                                    &nbsp; margin: 0 auto;<br>
                                     }
                                 </div>
                             </article>
@@ -1459,12 +1459,12 @@
                             <article>
                                 <h2> CSS Implementation</h2>
                                 <p> This is the code needed to write it in CSS:</p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     .center {<br>
-                                    &emsp; display: flex;<br>
-                                    &emsp; justify-content: center;<br>
-                                    &emsp; color: green;<br>
+                                    &nbsp; display: flex;<br>
+                                    &nbsp; justify-content: center;<br>
+                                    &nbsp; color: green;<br>
                                     }
                                 </div>
                             </article>
@@ -1487,11 +1487,11 @@
                             <article>
                                 <h2> CSS Implementation</h2>
                                 <p> The CSS implementation: </p>
-                                <!--&emsp; &ensp; &nbsp;-->
+                                <!--&nbsp;-->
                                 <div class="code">
                                     .center {<br>
-                                    &emsp; display: grid;<br>
-                                    &emsp; justify-content: center;<br>
+                                    &nbsp; display: grid;<br>
+                                    &nbsp; justify-content: center;<br>
                                     }
                                 </div>
                             </article>
