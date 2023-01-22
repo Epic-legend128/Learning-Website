@@ -463,7 +463,7 @@
                                 <p> The following code is Bubble Sort written in Javascript:</p>
                                 <div class="code"> 
                                     <!--note: &nbsp; &nbsp; and  &nbsp; helped me indent the "code"-->
-                                    var Bubble = function(array) {
+                                    function Bubble(array) {
                                     <br> &nbsp;var end = array.length; //this is how to know when to stop the for loop and do while loop
                                     <br> &nbsp;var swapped = false; // a variable used to exit the do while loop
                                     <br> &nbsp;do {
@@ -502,7 +502,7 @@
                                 <p> The following code is Selection Sort written in Javascript:</p>
                                 <div class="code"> 
                                     <!--&nbsp;-->
-                                    var Selection = function(array) {
+                                    function Selection(array) {
                                     <br> &nbsp;var mn; //mn means minimum
                                     <br> &nbsp;var limit = array.length;
                                     <br> &nbsp;for (var i = 0; array.length>i; i++) {
@@ -545,7 +545,7 @@
                                 <h2> Javascript Implementation</h2>
                                 <!--&nbsp;-->
                                 <div class="code"> 
-                                    var Insertion = function(array) {
+                                    function Insertion(array) {
                                     <br> &nbsp;for (var i = 1; array.length > i; i++) {
                                     <br> &nbsp; &nbsp;var value = array[i];
                                     <br> &nbsp; &nbsp;for (var j = i-1; j >= 0 && array[j] > value; j--) {
@@ -655,7 +655,7 @@
                                 <!--partition in Javascript-->
                                 <div class="code">
                                     <!--&nbsp;-->
-                                    var partition = function(array, p, r) {
+                                    function partition(array, p, r) {
                                     <br> &nbsp;var q = p;
                                     <br> &nbsp;for (var j = p; r > j; j++) {
                                     <br> &nbsp; &nbsp;if (array[r] >= array[j]) {
@@ -680,7 +680,7 @@
                                 <div class="code">
                                     <!--&nbsp;-->
                                     //l is the left limit and r is the right one
-                                    <br>var quicksort = function(array, l, r) {
+                                    <br>function quicksort(array, l, r) {
                                     <br> &nbsp;if (l &lt; r) {
                                     <br> &nbsp; &nbsp;var p = partition(array, l , r); //this is the pivot
                                     <br> &nbsp; &nbsp;quicksort(array, l, p-1);
@@ -711,28 +711,29 @@
                                 <!--&nbsp;-->
                                 <div class="code">
                                     //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button<br>
-                                    var Button = function(x, y, w, h, Text, action, Color) {<br>
-                                    &nbsp; //variables {<br>
-                                    &nbsp; this.x = x; //the x coordinates<br>
-                                    &nbsp; this.y = y; //the y coordinates<br>
-                                    &nbsp; this.w = w; //the width<br>
-                                    &nbsp; this.h = h; //the height<br>
-                                    &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                    &nbsp; this.r = 3; //the radius of the button<br>
-                                    &nbsp; this.Text = Text; //the text that the button has<br>
-                                    &nbsp; this.color = Color;<br>
-                                    &nbsp; this.size = 15;<br>
-                                    &nbsp; //}<br>
+                                    class Button {<br>
+                                    &nbsp; constructor(x, y, w, h, Text, action, Color) {<br>
+                                    &nbsp; &nbsp; //variables<br>
+                                    &nbsp; &nbsp; this.x = x; //the x coordinates<br>
+                                    &nbsp; &nbsp; this.y = y; //the y coordinates<br>
+                                    &nbsp; &nbsp; this.w = w; //the width<br>
+                                    &nbsp; &nbsp; this.h = h; //the height<br>
+                                    &nbsp; &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &nbsp; &nbsp; this.r = 3; //the radius of the button<br>
+                                    &nbsp; &nbsp; this.Text = Text; //the text that the button has<br>
+                                    &nbsp; &nbsp; this.color = Color;<br>
+                                    &nbsp; &nbsp; this.size = 15;<br>
+                                    &nbsp; }<br>
                                     <br>
                                     &nbsp; //the object's methods {<br>
                                     &nbsp; //check if the something at the given coordiantes is inside the object<br>
-                                    &nbsp; this.isInside = function(x, y) {<br>
+                                    &nbsp; isInside(x, y) {<br>
                                     &nbsp; &nbsp; //x and y are the cooridnates that I want to check if they are inside the object<br>
                                     &nbsp; &nbsp; return this.x &lt; x && this.x+this.w > x && this.y &LT; y && this.y+this.h > y;<br>
                                     &nbsp; };<br>
                                         
                                     &nbsp; //display the button<br>
-                                    &nbsp; this.display = function() {<br>
+                                    &nbsp; display() {<br>
                                     &nbsp; &nbsp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
                                     &nbsp; &nbsp; &nbsp; //if clicked on button<br>
                                     &nbsp; &nbsp; &nbsp; this.action();<br>
@@ -794,35 +795,36 @@
                                 <!--&nbsp;-->
                                 <div class="code">
                                     //x == x position of the button, y == y position of the button, w == width of the button, h == height of the button, Text == the text that you want to be displayed, action == what the button should do when it's clicked on(must be a function), Color == the color of the button, Color2 == color when cursor is above button, textColor == the color of the text, sizeText == the size of the text, border == a boolean, if true then show a border for the button otherwise do not, borderColor == the color of the border, borderSize == the size of the border, radius == the radius when drawing the rectangle, radius2 == the radius when drawing the rectangle but the cursor is above the button<br><br>
-                                    var Button = function(x, y, w, h, Text, action, Color, Color2, textColor, sizeText, border, borderColor, borderSize, radius, radius2) {<br>
-                                    &nbsp; //variables {<br>
-                                    &nbsp; this.x = x; //the x coordinates<br>
-                                    &nbsp; this.y = y; //the y coordinates<br>
-                                    &nbsp; this.w = w; //the width<br>
-                                    &nbsp; this.h = h; //the height<br>
-                                    &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                    &nbsp; this.r = radius; //the radius of the button<br>
-                                    &nbsp; this.r2 = radius2; //the radius when the cursor is over the button<br>
-                                    &nbsp; this.rTemp = this.r; // a temporary radius<br>
-                                    &nbsp; this.Text = Text; //the text that the button has<br>
-                                    &nbsp; this.color = Color; //the initial color of the button<br>
-                                    &nbsp; this.color2 = Color2; // the color of the button when the cursor is hovering over it<br>
-                                    &nbsp; this.textColor = textColor || color(0, 0, 0); //the color of the text<br>
-                                    &nbsp; this.border = border; //it's a boolean, if it's true then it should have a border if it's false it will not have a border<br>
-                                    &nbsp; this.bordColor = borderColor || color(0, 0, 0); //the color of the border<br>
-                                    &nbsp; this.borderSize = borderSize || 1;<br>
-                                    &nbsp; this.size = sizeText || 15; // the textSize<br>
-                                    &nbsp; //}<br>
+                                    class Button {<br>
+                                    &nbsp; constructor(x, y, w, h, Text, action, Color, Color2, textColor, sizeText, border, borderColor, borderSize, radius, radius2) {<br>
+                                    &nbsp; &nbsp; //variables<br>
+                                    &nbsp; &nbsp; this.x = x; //the x coordinates<br>
+                                    &nbsp; &nbsp; this.y = y; //the y coordinates<br>
+                                    &nbsp; &nbsp; this.w = w; //the width<br>
+                                    &nbsp; &nbsp; this.h = h; //the height<br>
+                                    &nbsp; &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &nbsp; &nbsp; this.r = radius; //the radius of the button<br>
+                                    &nbsp; &nbsp; this.r2 = radius2; //the radius when the cursor is over the button<br>
+                                    &nbsp; &nbsp; this.rTemp = this.r; // a temporary radius<br>
+                                    &nbsp; &nbsp; this.Text = Text; //the text that the button has<br>
+                                    &nbsp; &nbsp; this.color = Color; //the initial color of the button<br>
+                                    &nbsp; &nbsp; this.color2 = Color2; // the color of the button when the cursor is hovering over it<br>
+                                    &nbsp; &nbsp; this.textColor = textColor || color(0, 0, 0); //the color of the text<br>
+                                    &nbsp; &nbsp; this.border = border; //it's a boolean, if it's true then it should have a border if it's false it will not have a border<br>
+                                    &nbsp; &nbsp; this.bordColor = borderColor || color(0, 0, 0); //the color of the border<br>
+                                    &nbsp; &nbsp; this.borderSize = borderSize || 1;<br>
+                                    &nbsp; &nbsp; this.size = sizeText || 15; // the textSize<br>
+                                    &nbsp; }<br>
                                     <br>
                                     &nbsp; //the object's methods {<br>
                                     &nbsp; //check if the something at the given coordiantes is inside the object<br>
-                                    &nbsp; this.isInside = function(x, y) {<br>
+                                    &nbsp; isInside(x, y) {<br>
                                     &nbsp; &nbsp; //x and y are the cooridnates that I want to check if they are inside the object<br>
                                     &nbsp; &nbsp; return this.x &lt; x && this.x+this.w > x && this.y &lt; y && this.y+this.h > y;<br>
                                     &nbsp; };<br>
                                     <br>
                                     &nbsp; //display the button<br>
-                                    &nbsp; this.display = function() {<br>
+                                    &nbsp; display() {<br>
                                     &nbsp; &nbsp; fill(this.color2);<br>
                                     &nbsp; &nbsp; if (this.isInside(mouseX, mouseY) && mousePressed) {<br>
                                     &nbsp; &nbsp; &nbsp; //if clicked on button<br>
@@ -884,19 +886,20 @@
                                 <!--&nbsp;-->
                                 <div class="code">
                                     //x == x position of the button, y == y position of the button, show is a function that draws the button that you want, isInside is function that checks if the cursor is inside the button, action is what should happen if the button is clicked, show2 a function that draws the button when your mouse hovers over it<br>
-                                    var Button = function(x, y, show, isInside, action, show2) {<br>
-                                    &nbsp; //variables {<br>
-                                    &nbsp; this.x = x; //the x coordinates<br>
-                                    &nbsp; this.y = y; //the y coordinates<br>
-                                    &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
-                                    &nbsp; this.isInside = isInside;<br>
-                                    &nbsp; this.show = show;<br>
-                                    &nbsp; this.show2 = show2 || show;<br>
-                                    &nbsp; //}<br>
+                                    class Button {<br>
+                                    &nbsp; constructor(x, y, show, isInside, action, show2)constructor(x, y, show, isInside, action, show2) {<br>
+                                    &nbsp; &nbsp; //variables<br>
+                                    &nbsp; &nbsp; this.x = x; //the x coordinates<br>
+                                    &nbsp; &nbsp; this.y = y; //the y coordinates<br>
+                                    &nbsp; &nbsp; this.action = action; //action is going to be a function that gets run when the user clicks on the button<br>
+                                    &nbsp; &nbsp; this.isInside = isInside;<br>
+                                    &nbsp; &nbsp; this.show = show;<br>
+                                    &nbsp; &nbsp; this.show2 = show2 || show;<br>
+                                    &nbsp; }<br>
                                     <br>
                                     &nbsp; //the object's methods {<br>
                                     &nbsp; //display the button<br>
-                                    &nbsp; this.display = function() {<br>
+                                    &nbsp; display() {<br>
                                     &nbsp; &nbsp; if (this.isInside() && mousePressed) {<br>
                                     &nbsp; &nbsp; &nbsp; //if clicked on button<br>
                                     &nbsp; &nbsp; &nbsp; this.action();<br>
@@ -935,7 +938,7 @@
                                 <!--&nbsp;-->
                                 <div class="code">
                                     //encryption<br>
-                                    var CaesarCipherEncrypt = function(text, key) {<br>
+                                    function CaesarCipherEncrypt(text, key) {<br>
                                     &nbsp; var encryptedText = "";//holds the encrypted text<br>
                                     &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
                                     &nbsp; &nbsp; var temp = (text.charCodeAt(i)+key)%256;<br>
@@ -950,7 +953,7 @@
                                     };<br>
                                     <br>
                                     //decryption<br>
-                                    var CaesarCipherDecrypt = function(text, key) {<br>
+                                    function CaesarCipherDecrypt(text, key) {<br>
                                     &nbsp; var decryptedText = "";<br>
                                     &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
                                     &nbsp; &nbsp; var temp = (text.charCodeAt(i)+(256-key))%256;<br>
@@ -1074,7 +1077,7 @@
                                 <!--&nbsp;-->
                                 <div class="code">
                                     //encryption<br>
-                                    var PolybiusSquareEncrypt = function(text) {<br>
+                                    function PolybiusSquareEncrypt(text) {<br>
                                     &nbsp; var encrypt = "";<br>
                                     &nbsp; for (var i = 0; i &lt; text.length; i++) {<br>
                                     &nbsp; &nbsp; var temp = text.charCodeAt(i)-97; //turns a character into a number according to its value on the ascii table<br>
@@ -1089,7 +1092,7 @@
                                     };<br>
                                     <br>
                                     //decryption<br>
-                                    var CaesarCipherDecrypt = function(text, key) {<br>
+                                    function CaesarCipherDecrypt(text, key) {<br>
                                     &nbsp; var decryptedText = "";<br>
                                     &nbsp; for (var i = 0; i&lt;text.length; i++) {<br>
                                     &nbsp; &nbsp; var temp = (text.charCodeAt(i)-97+(26-key))%26;<br>
@@ -1233,7 +1236,7 @@
                                     width=1000;<br>
                                     height=800;<br>
                                     //create one mountain range<br>
-                                    var mountainRange = function(start, x, y, Color) {<br>
+                                    function mountainRange(start, x, y, Color) {<br>
                                     &nbsp; //NOTE: x doesn't completely work with positive values<br>
                                     &nbsp; //x and y parameters work more like width and height<br>
                                     &nbsp; pushMatrix();<br>
@@ -1249,7 +1252,7 @@
                                     };<br>
                                     <br>
                                     //create the background<br>
-                                    var createBackground = function() {<br>
+                                    function createBackground() {<br>
                                     &nbsp; background(146, 236, 252);<br>
                                     &nbsp; mountainRange(300, 0, -201, color(189, 187, 189));<br>
                                     &nbsp; mountainRange(150, 0, -100, color(99, 97, 99));<br>
@@ -1282,7 +1285,7 @@
                                     width=800;<br>
                                     height=600;<br>
                                     //create one cloud, recommended not to put a very small or big value for last parameter, around 10 to 20 is good enough<br>
-                                    var cloud = function(x, y, Color, size, amount) {<br>
+                                    function cloud(x, y, Color, size, amount) {<br>
                                     &nbsp; pushMatrix();<br>
                                     &nbsp; translate(x, y);<br>
                                     &nbsp; scale(1.1, 0.4);<br>
