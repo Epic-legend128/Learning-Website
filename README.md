@@ -1,5 +1,3 @@
 # Learning-Website
-A website that contains helpful code snippets
-# Why
-This website was created in order for progammers around the world to access it and help themselves if they ever need to. Also, it was a great chance to showcase some of my webpage building skills by adding this to my portfolio.
-
+A website that contains helpful code snippets.
+This site was an interesting project which I created a couple of years ago and thought it would be nice if I uploaded it here. Back then I didn't know anything about backend so I only developed the frontend part of the site. Maybe I will update it in the future, though it would need some seriously big renovations in order to integrate backend properly.
