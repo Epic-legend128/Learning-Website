@@ -102,7 +102,7 @@ $(".tab").hide();
 $("#" + currentScreen).show();
 $("#settings input[type='range']").attr("min", "0").attr("max", "255").attr("value", "255");
 
-$("footer").html("Created by <a href=\"https://www.khanacademy.org/profile/fotis2008/\" target=\"_blank\"> fotis2008</a>");
+$("footer").html("Created by <a href=\"https://github.com/Epic-legend128\" target=\"_blank\"> Epic-legend128</a>");
 
 function changeDisplay() {
     if ($("#background-style").val() == 1) {
